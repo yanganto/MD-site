@@ -1,13 +1,13 @@
-name = "jiaxiang.wang"
-description = "A fast and beautiful theme for creators, used by https://blog.jiaxiang.wang, porting from Halo-theme-hao."
+name = "Morning Diver"
+description = ""
 license = "AGPL"
-homepage = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
+homepage = "https://github.com/iWangJiaxiang/"
 min_version = "0.19.2"
-demo = "https://theme.jiaxiang.wang/"
+demo = "https://"
 
 [author]
 name = "Jiaxiang Wang"
-homepage = "https://blog.jiaxiang.wang"
+homepage = "https://blog.Morning Diver"
 
 [original]
 author =  "chengzhongxue"
@@ -16,13 +16,9 @@ repo = "https://github.com/chengzhongxue/halo-theme-hao"
 
 [extra]
 
-# 站点设置
 [extra.site]
-# SEO 设置
-seo = "一个博客网站，基于 https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang 主题构建"
-# 网站logo
+seo = "A site for diving technology"
 logo = "/img/logo.webp"
-# 网站favicon 尺寸比logo更小
 favicon = "/img/logo.webp"
 # 建站时间
 # site_start_time = "2024-11-05"
@@ -34,18 +30,13 @@ compliance_icp = "ICP"
 # compliance_security_link = "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=xxxxxx"
 # 文章默认封面
 default_cover = "/img/default-cover.webp"
-# 网站联系邮箱
 email = "mail@example.com"
-# 建站时间，用于底部显示年份
-start_year = "2024"
+start_year = "2025"
 
 [extra.site.author]
-# 作者头像
 avatar = "/img/logo.webp"
-# 关于页面的横版图片
 about_image = "/img/logo.webp"
-# MBTI 性格
-mbti = 'enfp'
+mbti = 'dive'
 
 # 是否启用页面统计
 [extra.site.analytics]
@@ -163,9 +154,9 @@ video = ""
 # Banner 左侧
 [extra.top.banner_left]
 # 大标题 支持HTML语法
-title_big = "<div class=\"banners-title-big\">jiaxiang.wang</div><div class=\"banners-title-big\"><a target=\"_blank]\" href=\"https://blog.jiaxiang.wang\">点击预览主题</a></div>"
+title_big = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\"><a target=\"_blank]\" href=\"https://blog.Morning Diver\">点击预览主题</a></div>"
 # 小标题 支持HTML语法
-title_small = "<br><a target=\"_blank]\" href=\"https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang\">点击访问开源代码仓库</a>"
+title_small = "<br><a target=\"_blank]\" href=\"https://github.com/iWangJiaxiang/Morning Diver\">点击访问开源代码仓库</a>"
 
 # 分组
 [[extra.top.banner_left.category_groups]]
@@ -250,14 +241,14 @@ archive_switch = false
 
 # 不同页面小部件设置
 [extra.sidebar.widgets]
-# "profile"个人卡片 "wechat"公众号 "power"爱发电赞助 "steam"Steam卡片 "music"音乐卡片 "friend-link"通讯录
+# "profile"个人卡片 "social"公众号 "power"爱发电赞助 "steam"Steam卡片 "music"音乐卡片 "friend-link"通讯录
 # "recent-posts"最新文章 "visit-posts"热门文章 "comments"最新评论 "categories"文章分类 "tags"文章标签
 # "stat"统计 "tags-stat"标签&归档&统计 "adbox"广告区域 "custom_html"自定义
 
 # 首页小部件
 indexWidget = [
     { widget = "profile" },
-    { widget = "wechat" },
+    { widget = "social" },
     { widget = "comments" },
     { widget = "recent-posts" },
     { widget = "categories" },
@@ -267,7 +258,7 @@ indexWidget = [
 # 文章页面小部件
 postWidget = [
     { widget = "profile" },
-    { widget = "wechat" },
+    { widget = "social" },
     { widget = "toc" },
     { widget = "comments" },
     { widget = "recent-posts" },
@@ -277,7 +268,7 @@ postWidget = [
 # 分类页面小部件
 taxonomyWidget = [
     { widget = "profile" },
-    { widget = "wechat" },
+    { widget = "social" },
     { widget = "comments" },
     { widget = "recent-posts" },
     { widget = "categories" },
@@ -294,21 +285,21 @@ background_img = "/img/sidebar/profile.webp"
 profile_desc = "为创造者而生的开源 Zola 主题~"
 # 社交媒体
 socialMedia = [
-    { icon = "icon-github", name = "GitHub", url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang" },
+    { icon = "icon-github", name = "GitHub", url = "https://github.com/iWangJiaxiang/Morning Diver" },
 ]
 
 # 公众号
-[extra.sidebar.wechat]
+[extra.sidebar.social]
 # 背景颜色
 color = "#07C160"
 # 背景图
-wechatImg = "/img/wechat/gzh_cover.avif"
+socialImg = "/img/social/gzh_cover.avif"
 # 链接
 url = "/subscribe"
 # 公众号正面图
-wechatImgFace = "/img/wechat/qr-green.avif"
+socialImgFace = "/img/social/qr-green.avif"
 # 公众号背面图
-wechatImgBack = "/img/wechat/qr-white.avif"
+socialImgBack = "/img/social/qr-white.avif"
 
 # 爱发电
 [extra.sidebar.power]
@@ -381,13 +372,13 @@ url = "mailto:mail@example.com"
 option_social_data = "icon"
 icon = "icon-github"
 name = "Github"
-url = "https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang"
+url = "https://github.com/iWangJiaxiang/Morning Diver"
 
-# 页脚友链
+# 页脚相關網站
 [extra.footer.footer_group]
 # 是否显示
 enable = true
-# 友链数
+# 相關網站数
 num = 3
 
 # 文章相关配置
@@ -462,13 +453,13 @@ reprintContent = """
 本文是转载文章，版权归原作者所有。建议访问原文，转载本文请联系原作者。
 """
 
-# 友链设置
+# 相關網站设置
 [extra.friend]
 # 小标题
 small_title = "友情链接"
 # 大标题
 big_title = "与各位博主一同进步"
-# 友链链接
+# 相關網站链接
 links_url = "/friends"
 # 评论开关
 enable_comment = true
@@ -522,7 +513,7 @@ author_info_right_tags = [
 ]
 
 # 我的介绍 支持 HTML 语法
-content = "<div class=\"title1\">云海之中很高兴和你相遇👋</div> <div class=\"title2\">这里是 <span class=\"inline-word\">zola-theme-jiaxiang.wang</span> 博客主题预览站点</div>"
+content = "<div class=\"title1\">云海之中很高兴和你相遇👋</div> <div class=\"title2\">这里是 <span class=\"inline-word\">Morning Diver</span> 博客主题预览站点</div>"
 # 我的想法 支持 HTML 语法
 idea = "<div class=\"author-content-item-tips\">我的创作</div> <h2>主要围绕以下<span class=\"inline-word\"/>领域</span> <div class=\"mask\"> <span class=\"first-tips\" data-show=\"\">博客</span> <span>主题</span> <span data-up=\"\">………</span> </div> </h2>"
 
@@ -854,7 +845,7 @@ introduction_tip = "查看本站为你的个人隐私做出的努力"
 # 点击跳转地址
 introduction_url = "/privacy"
 # 按钮标题
-introduction_name = "本站如何保护你的隐私"
+introduction_name = "本站注重你的隐私"
 
 # 右下角悬浮操作按钮
 [extra.tool.rightside]
@@ -894,8 +885,7 @@ progress_bar = true
 
 # 404 页面
 [extra.other.error_404]
-# 副标题
-subtitle = "请尝试站内搜索寻找文章"
+subtitle = "請蒐尋你需要的文章"
 # 背景
 background = "/img/404.svg"
 
@@ -906,11 +896,11 @@ enable = false
 # 设置
 settings = [
     { greeting = "晚安😴", start_time = 0, end_time = 5 },
-    { greeting = "早上好鸭👋, 祝你一天好心情！", start_time = 6, end_time = 9 },
-    { greeting = "上午好👋, 状态很好，鼓励一下", start_time = 10, end_time = 10 },
-    { greeting = "11点多啦, 在坚持一下就吃饭啦～", start_time = 11, end_time = 11 },
-    { greeting = "午安👋, 宝贝", start_time = 12, end_time = 14 },
-    { greeting = "🌈充实的一天辛苦啦！", start_time = 14, end_time = 18 },
-    { greeting = "19点喽, 奖励一顿丰盛的大餐吧🍔。", start_time = 19, end_time = 19 },
-    { greeting = "晚上好👋, 在属于自己的时间好好放松😌~", start_time = 20, end_time = 24 },
+    { greeting = "GoGoGo Morning divers", start_time = 6, end_time = 9 },
+    { greeting = "早安👋, 準備下水了嗎？", start_time = 10, end_time = 10 },
+    { greeting = "上午潛完, 肚子餓！", start_time = 11, end_time = 11 },
+    { greeting = "午安👋，不要吃太撐，暈船才不會吐", start_time = 12, end_time = 14 },
+    { greeting = "🌈充實的一天，有要夜潛嗎？", start_time = 14, end_time = 18 },
+    { greeting = "夜潛不要忘記帶手電筒！", start_time = 19, end_time = 19 },
+    { greeting = "晚安👋，早點睡，才能好好排氮", start_time = 20, end_time = 24 },
 ]

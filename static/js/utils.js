@@ -408,7 +408,7 @@ var wjx = {
             $("#cookies-window").hide())
     },
 
-    // 页脚友链
+    // 页脚相關網站
     addFriendLinksInFooter: function () {
         var footerRandomFriendsBtn = document.getElementById("footer-random-friends-btn");
         if(!footerRandomFriendsBtn) return;

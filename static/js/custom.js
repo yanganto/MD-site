@@ -566,7 +566,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    // flink 友链标签
+    // flink 相關網站标签
     customElements.define(
         "flink",
         class HaoFlink extends HTMLElement {

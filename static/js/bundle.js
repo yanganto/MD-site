@@ -103,7 +103,7 @@ window.onload = function () {
     wjx.initThemeColor();
 }
 
-// 友链随机传送
+// 相關網站随机传送
 window.travelling = function (files, success) {
     // 动态读取缓存
     const data = JSON.parse(saveToLocal.get('links-data'))
@@ -122,7 +122,7 @@ window.travelling = function (files, success) {
         name = randomFriendLinks[0].display_name;
         link = randomFriendLinks[0].url;
     }
-    var msg = "点击前往按钮进入随机一个友链，不保证跳转网站的安全性和可用性。本次随机到的是本站友链：「" + name + "」";
+    var msg = "点击前往按钮进入随机一个相關網站，不保证跳转网站的安全性和可用性。本次随机到的是本站相關網站：「" + name + "」";
     const style = document.createElement('style');
     document.head.appendChild(style);
     const styleSheet = style.sheet;
@@ -150,7 +150,7 @@ window.totraveling = function (files, success) {
         }, "5000")
 }
 
-// 添加友链按钮
+// 添加相關網站按钮
 window.addFriendLink = function (files, success) {
     var input = document.getElementsByClassName(GLOBAL_CONFIG.source.comments.textarea)[0];
     let evt = document.createEvent('HTMLEvents');
@@ -980,7 +980,7 @@ if (typeof isTagsRandomColor !== "undefined" && isTagsRandomColor) {
     generateTagsColor();
 }
 
-//页脚友链
+//页脚相關網站
 GLOBAL_CONFIG.isFriendLinksInFooter && wjx.addFriendLinksInFooter()
 
 window.trackExternalLink()

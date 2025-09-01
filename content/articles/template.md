@@ -19,7 +19,7 @@ cover = "cover.webp"
 # 注意，由于 zola 框架尚未支持 avif 格式转换，请勿在 global_cover 中使用 avif 格式的图片，否则会报错
 global_cover  = "/articles/misc/path/to/cover.webp"
 # 微信公众号链接
-wechat_url = "https://mp.weixin.qq.com/s/xxx"
+social_url = "https://mp.weixin.qq.com/s/xxx"
 # 是否在正文提示文章更新时间过久，内容可能过时
 update_tip_enable = true
 # 转载链接

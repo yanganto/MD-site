@@ -80,24 +80,21 @@ name = '标签'
 [menu]
 # 顶部菜单
 nav_menu = [
-    { name = "文库", menus = [
+    { name = "服務項目", menus = [
+        { name = "關於我", href = "/about", icon = "icon-rocket", target = "_self" },
+        { name = "我的装备", href = "/equipment", icon = "icon-artstation", target = "_self" },
+        { name = "我的项目", href = "/tags/project", icon = "icon-lightbulb", target = "_self" },
+    ] },
+    { name = "文章", menus = [
         { name = "全部文章", href = "/archives", icon = "icon-book-open", target = "_self" },
         { name = "分类列表", href = "/categories", icon = "icon-folder-open", target = "_self" },
         { name = "标签列表", href = "/tags", icon = "icon-tags", target = "_self" },
         { name = "随机文章", href = "javascript:toRandomPost()", icon = "icon-artstation", target = "_self" },
     ] },
-    { name = "推荐", is_vertical = true, href = "/tags/work", menus = [
-        { name = "博客主题介绍", href = "/articles/docs/readme", icon = "icon-music", target = "_self" },
-        { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum", icon = "icon-music", target = "_self" },
-    ] },
-    { name = "友链", menus = [
-        { name = "友链列表", href = "/friends", icon = "icon-link", target = "_self" },
-        { name = "随机发现", href = "javascript:travelling()", icon = "icon-paper-plane", target = "_self" },
-    ] },
-    { name = "我的", menus = [
-        { name = "关于本人", href = "/about", icon = "icon-rocket", target = "_self" },
-        { name = "我的装备", href = "/equipment", icon = "icon-artstation", target = "_self" },
-        { name = "我的项目", href = "/tags/project", icon = "icon-lightbulb", target = "_self" },
+    { name = "推薦", is_vertical = true, href = "/tags/work", menus = [
+        { name = "潛水相關", href = "/friends", icon = "icon-link", target = "_self" },
+        # { name = "博客主题介绍", href = "/articles/docs/readme", icon = "icon-music", target = "_self" },
+        # { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum", icon = "icon-music", target = "_self" },
     ] },
 ]
 
@@ -112,14 +109,16 @@ nav_left_menu = [
 
 # 底部菜单
 footer_menu = [
-    { name = "文库", menus = [
+    { name = "服務項目", menus = [
+        { name = "關於我", href = "/about" },
+        { name = "我的装备", href = "/equipment" },
+        { name = "我的项目", href = "/tags/project" },
+    ] },
+    { name = "文章", menus = [
         { name = "全部文章", href = "/archives" },
         { name = "分类列表", href = "/categories" },
         { name = "标签列表", href = "/tags" },
         { name = "随机文章", href = "javascript:toRandomPost()" },
-    ] },
-    { name = "作品", href = "/tags/work", menus = [
-        { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum" },
     ] },
     { name = "协议", menus = [
         { name = "隐私协议", href = "/privacy" },
@@ -127,22 +126,6 @@ footer_menu = [
         { name = "版权协议", href = "/copyright" },
     ] },
 ]
-
-# 友链分组
-# 采用动态加载的技术，请修改 /static/data/friends.json 文件内容
-# 修改下面内容无效
-# [friend]
-# [[friend.groups]]
-# # 分组名称
-# display_name = "推荐"
-# # 描述
-# description = "使用本主题的博客"
-# # 样式 beautify 或 default
-# display_style = "beautify"
-# # 友链列表
-# items = [
-#     { display_name = "王嘉祥", description = "专注于科技、音乐等领域跨界创新，分享经验与见解", url = "https://blog.jiaxianag.wang/", logo = "/img/friends/wangjiaxiang.webp" },
-# ]
 
 [equipment]
 [[equipment.groups]]

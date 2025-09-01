@@ -7411,7 +7411,7 @@ span.fund_name {
 }
 
 /* 微信公众号 */
-#aside-content .card-widget#card-wechat {
+#aside-content .card-widget#card-social {
     background: #07C160;
     display: flex;
     justify-content: center;
@@ -7422,7 +7422,7 @@ span.fund_name {
     height: 110px;
 }
 
-#aside-content .card-widget#card-wechat img {
+#aside-content .card-widget#card-social img {
     max-height: 110px;
     object-fit: cover;
 }
@@ -10931,7 +10931,7 @@ span.post-meta-pv-cv {
 }
 
 /* 微信公众号同步 */
-span.post-meta-wechat {
+span.post-meta-social {
     margin-right: 10px;
     opacity: 0.6;
 }
@@ -13760,7 +13760,7 @@ figure.gallery-group:hover .gallery-group-name::after {
 /* 友情链接页面 */
 /* ---------------------------------------------------------------- */
 
-/* 炙焰友链间距 */
+/* 炙焰相關網站间距 */
 .flink#friend-container .flink-list {
     padding: 0;
     margin: 0.5rem -6px 1rem -6px;
@@ -13791,7 +13791,7 @@ figure.gallery-group:hover .gallery-group-name::after {
     color: var(--wjx-card-bg);
 }
 
-/* 友链标题 */
+/* 相關網站标题 */
 .flink-list-item .flink-item-info {
     display: flex;
     flex-direction: column;
@@ -13827,7 +13827,7 @@ figure.gallery-group:hover .gallery-group-name::after {
     background: none;
 }
 
-/* 友链头像 */
+/* 相關網站头像 */
 .flink#friend-container .flink-list > .flink-list-item a img {
     border-radius: 32px;
     margin: 15px 20px 15px 15px;
@@ -13849,7 +13849,7 @@ figure.gallery-group:hover .gallery-group-name::after {
     min-height: 0px;
 }
 
-/* 友链右侧图标 */
+/* 相關網站右侧图标 */
 
 #article-container .flink-list > .flink-list-item:hover .flink-item-info > img {
     opacity: .8 !important;
@@ -13877,7 +13877,7 @@ figure.gallery-group:hover .gallery-group-name::after {
     transition: 0.3s;
 }
 
-/* 友链描述 */
+/* 相關網站描述 */
 .flink#friend-container .flink-list > .flink-list-item:hover a .flink-item-desc {
     overflow: hidden;
     width: 100%;
@@ -13920,7 +13920,7 @@ figure.gallery-group:hover .gallery-group-name::after {
 }
 
 
-/* 超级博主友链 */
+/* 超级博主相關網站 */
 
 /* 超级博主标题 */
 
@@ -14129,7 +14129,7 @@ figure.gallery-group:hover .gallery-group-name::after {
     box-shadow: var(--wjx-shadow-main);
 }
 
-/* 友链文章 */
+/* 相關網站文章 */
 .article-sort-item-info a {
     margin-right: auto;
     overflow: hidden;
@@ -17143,7 +17143,7 @@ div#wjx-footer-bar .footer-bar-description {
     position: relative
 }
 
-.rss-plan-item.rss-plan-wechat {
+.rss-plan-item.rss-plan-social {
     background: #27c125;
     overflow: hidden
 }
@@ -17248,7 +17248,7 @@ img.rss-plan-icon {
     border-radius: 12px;
 }
 
-#article-container a:not(.fancybox).rss-plan-item.rss-plan-wechat:hover {
+#article-container a:not(.fancybox).rss-plan-item.rss-plan-social:hover {
     background: #27c125;
 }
 
