@@ -10,7 +10,7 @@
 {% elif section %}
     {% set doc = section %}    
 {% endif %}
-{# 如果当前页面是分类页面，则设置 html_type 为 page #}
+{# 如果当前页面是分類页面，则设置 html_type 为 page #}
 {% if taxonomy %}
     {% set html_type = 'page' %}
 {% else %}
@@ -100,7 +100,7 @@
     <script defer src='/libs/canvas/dark.js'></script>
 {% endif %}
 
-<!--  https://raphamorim.io/waterfall.js/  应该是这个 还有相关的 js 代码 是否可以调整-->
+<!--  https://raphamorim.io/waterfall.js/  应该是这个 还有相關的 js 代码 是否可以调整-->
 <script src='/libs/waterfall/waterfall.min.js'></script>
 <!-- 获取主色 https://lokeshdhakar.com/projects/color-thief/ -->
 <script src='/libs/fast-average-color/index.browser.min.js'></script>
@@ -172,7 +172,7 @@
 {% include "partial/common/code.html" %}
 
 {% if config.extra.site.analytics.umami.enable %}
-{# 名称改为不易被屏蔽的，统计网站访问量 #}
+{# 名稱改为不易被屏蔽的，统计网站访问量 #}
 <script defer src="{{ config.extra.site.analytics.umami.js }}" data-website-id="{{ config.extra.site.analytics.umami.id }}"
     {% if config.extra.site.analytics.umami.remote_url %}data-host-url="{{ config.extra.site.analytics.umami.remote_url | safe }}"{% endif %}
     {% if config.extra.site.analytics.umami.domain %}data-domains="{{ config.extra.site.analytics.umami.domain | safe }}"{% endif %}>

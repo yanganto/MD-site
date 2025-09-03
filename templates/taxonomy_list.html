@@ -25,7 +25,7 @@
         <div id="page">
             <h1 class="page-title" style="display: inline;">{{ macro::taxonomy_name(taxonomy=taxonomy.name) }}</h1>
             <div class="category-lists">
-                <!-- <div class="category-title is-center">分类 - <span class="category-amount">11</span></div> -->
+                <!-- <div class="category-title is-center">分類 - <span class="category-amount">11</span></div> -->
                 <div class="tag-cloud-list is-center">
                     {% set data = load_data(path="data.toml") %}
                     {% set taxonomies = data.post[taxonomy.name] | sort(attribute="index") %}

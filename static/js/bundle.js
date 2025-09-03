@@ -2,7 +2,7 @@
 
 // 定义区
 (function() {
-// 随机跳转
+// 随機跳转
 async function fetchRSSAndGetLink(url) {
     try {
         const response = await fetch(url);
@@ -103,7 +103,7 @@ window.onload = function () {
     wjx.initThemeColor();
 }
 
-// 相關網站随机传送
+// 相關網站随機传送
 window.travelling = function (files, success) {
     // 动态读取缓存
     const data = JSON.parse(saveToLocal.get('links-data'))
@@ -122,7 +122,7 @@ window.travelling = function (files, success) {
         name = randomFriendLinks[0].display_name;
         link = randomFriendLinks[0].url;
     }
-    var msg = "点击前往按钮进入随机一个相關網站，不保证跳转网站的安全性和可用性。本次随机到的是本站相關網站：「" + name + "」";
+    var msg = "点击前往按钮进入随機一个相關網站，不保证跳转网站的安全性和可用性。本次随機到的是本站相關網站：「" + name + "」";
     const style = document.createElement('style');
     document.head.appendChild(style);
     const styleSheet = style.sheet;
@@ -139,9 +139,9 @@ window.travelling = function (files, success) {
     });
 }
 
-//前往开往项目
+//前往开往項目
 window.totraveling = function (files, success) {
-    btf.snackbarShow("即将跳转到「开往」项目的成员博客，不保证跳转网站的安全性和可用性", function (element) {
+    btf.snackbarShow("即将跳转到「开往」項目的成员博客，不保证跳转网站的安全性和可用性", function (element) {
         element.style.opacity = 0,
             travellingsTimer && clearTimeout(travellingsTimer)
     }, 5000, "取消"),
@@ -155,7 +155,7 @@ window.addFriendLink = function (files, success) {
     var input = document.getElementsByClassName(GLOBAL_CONFIG.source.comments.textarea)[0];
     let evt = document.createEvent('HTMLEvents');
     evt.initEvent('input', true, true);
-    input.value = '昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n';
+    input.value = '昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主頁）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n';
     input.dispatchEvent(evt);
     wjx.scrollTo("#post-comment");
     input.focus();
@@ -215,8 +215,8 @@ function coverColor() {
     }
 }
 
-// 标签侧边栏小组件
-// 随机颜色生成器
+// 標籤侧边栏小组件
+// 随機颜色生成器
 function getRandomColor() {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
@@ -428,7 +428,7 @@ function initObserver() {
     )).observe(e)
 }
 
-//从一个给定的数组arr中,随机返回num个不重复项
+//从一个给定的数组arr中,随機返回num个不重复项
 window.getArrayItems = function(arr, num) {
     //新建一个数组,将传入的数组复制过来,用于运算,而不要直接操作传入的数组;
     var temp_array = new Array();
@@ -440,9 +440,9 @@ window.getArrayItems = function(arr, num) {
     for (var i = 0; i < num; i++) {
         //判断如果数组还有可以取出的元素,以防下标越界
         if (temp_array.length > 0) {
-            //在数组中产生一个随机索引
+            //在数组中产生一个随機索引
             var arrIndex = Math.floor(Math.random() * temp_array.length);
-            //将此随机索引的对应的数组元素值复制出来
+            //将此随機索引的对应的数组元素值复制出来
             return_array[i] = temp_array[arrIndex];
             //然后删掉此索引的数组元素,这时候temp_array变为新的数组
             temp_array.splice(arrIndex, 1);
@@ -494,7 +494,7 @@ var tocFn = function () {
     }
 }
 
-// 分类展开
+// 分類展开
 var toggleCardCategory = function () {
     const $cardCategory = document.querySelectorAll('#aside-cat-list .card-category-list-item.parent i')
     if ($cardCategory.length) {
@@ -724,7 +724,7 @@ var clickFnOfTagHide = function () {
     }
 }
 
-// 文章页标签切换
+// 文章页標籤切换
 var tabsFn = {
     clickFnOfTabs: function () {
         document.querySelectorAll('#article-container .tab > button').forEach(function (item) {
@@ -889,7 +889,7 @@ $(window).on('keydown', function (ev) {
             return false;
         }
 
-        //随机文章 shift+R
+        //随機文章 shift+R
         if (ev.keyCode == 82) {
             toRandomPost();
             return false;
@@ -947,7 +947,7 @@ document.querySelector('#console') && document.querySelector('#console').addEven
 // 检测按键：开发者模式
 window.onkeydown = function (e) {
     if (e.keyCode === 123) {
-        btf.snackbarShow('开发者模式已打开，请遵循GPL协议', false, 3000)
+        btf.snackbarShow('开发者模式已打开，请遵循GPL協議', false, 3000)
     }
 }
 
@@ -955,7 +955,7 @@ window.onkeydown = function (e) {
 $(document).unbind('keydown').bind('keydown', function (e) {
     if (GLOBAL_CONFIG.rightMenuEnable) {
         if ((e.ctrlKey || e.metaKey) && (e.keyCode == 67) && (selectTextNow != '')) {
-            btf.snackbarShow('复制成功，复制和转载请标注本文地址');
+            btf.snackbarShow('复制成功，复制和轉載请标注本文地址');
             rm.rightmenuCopyText(selectTextNow);
             return false;
         }
@@ -975,7 +975,7 @@ document.addEventListener('touchstart', e => {
     RemoveRewardMask()
 }, false)
 
-// 标签侧边栏小组件随机颜色
+// 標籤侧边栏小组件随機颜色
 if (typeof isTagsRandomColor !== "undefined" && isTagsRandomColor) {
     generateTagsColor();
 }

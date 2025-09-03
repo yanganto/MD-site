@@ -8,7 +8,7 @@ function runPostAbstract() {
     };
 
     let ai =  GLOBAL_CONFIG.source.postAi.ai;
-    let randomNum = GLOBAL_CONFIG.source.postAi.randomNum; //按钮最大的随机次数，也就是一篇文章最大随机出来几种
+    let randomNum = GLOBAL_CONFIG.source.postAi.randomNum; //按钮最大的随機次数，也就是一篇文章最大随機出来几种
     let basicWordCount = GLOBAL_CONFIG.source.postAi.basicWordCount; // 最低获取字符数, 最小1000, 最大1999
     let btnLink = GLOBAL_CONFIG.source.postAi.btnLink;
     let gptName = GLOBAL_CONFIG.source.postAi.gptName;
@@ -17,7 +17,7 @@ function runPostAbstract() {
     let keys = GLOBAL_CONFIG.source.postAi.keys;
     let Referers = GLOBAL_CONFIG.source.postAi.Referers;
 
-    // 当前随机到的ai摘要到index
+    // 当前随機到的ai摘要到index
     let lastAiRandomIndex = -1;
     let animationRunning = true; // 标志变量，控制动画函数的运行
     // 当前gpt模式
@@ -179,11 +179,11 @@ function runPostAbstract() {
         } else {
             const strArr = ai.split(",").map(item => item.trim()); // 将字符串转换为数组，去除每个字符串前后的空格
             if (strArr.length !== 1) {
-                let randomIndex = Math.floor(Math.random() * strArr.length); // 随机生成一个索引
-                while (randomIndex === lastAiRandomIndex) { // 如果随机到了上次的索引
-                    randomIndex = Math.floor(Math.random() * strArr.length); // 再次随机
+                let randomIndex = Math.floor(Math.random() * strArr.length); // 随機生成一个索引
+                while (randomIndex === lastAiRandomIndex) { // 如果随機到了上次的索引
+                    randomIndex = Math.floor(Math.random() * strArr.length); // 再次随機
                 }
-                lastAiRandomIndex = randomIndex; // 更新上次随机到的索引
+                lastAiRandomIndex = randomIndex; // 更新上次随機到的索引
                 startAI(strArr[randomIndex]);
             } else {
                 startAI(strArr[0])
@@ -217,9 +217,9 @@ function runPostAbstract() {
 
     function Introduce() {
         if (mode == "tianli") {
-            startAI("我是文章辅助AI: TianliGPT，点击下方的按钮，让我生成本文简介、推荐相关文章等。")
+            startAI("我是文章辅助AI: TianliGPT，点击下方的按钮，让我生成本文简介、推荐相關文章等。")
         } else {
-            startAI("我是文章辅助AI: " + gptName + " GPT，点击下方的按钮，让我生成本文简介、推荐相关文章等。")
+            startAI("我是文章辅助AI: " + gptName + " GPT，点击下方的按钮，让我生成本文简介、推荐相關文章等。")
         }
     }
     function aiTitleRefreshIconClick() {
@@ -255,7 +255,7 @@ function runPostAbstract() {
                     }
                 });
             }
-            return `很抱歉，无法找到类似的文章，你也可以看看本站最新发布的文章：<br /><div class="ai-recommend">${list}</div>`;
+            return `很抱歉，无法找到类似的文章，你也可以看看本站最新發佈的文章：<br /><div class="ai-recommend">${list}</div>`;
         }
         thumbnail.forEach(item => {
             if (item) {

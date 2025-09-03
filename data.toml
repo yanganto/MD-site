@@ -1,4 +1,4 @@
-# 存放经常修改的配置，一般是网站的推荐文章、分类、标签等信息
+# 存放经常修改的配置，一般是网站的推荐文章、分類、標籤等信息
 
 [post]
 # 首页 Header 右侧推荐，建议 6 篇，填写 content 到 md 文件的相对地址
@@ -27,11 +27,11 @@ cover = "/path/to/banner.jpg"
 small_title = "今日推薦"
 
 
-# 必须，下述标签被用于网站导航中
+# 必须，下述標籤被用于网站导航中
 [[post.tags]]
 id = 'project'
 index = 0
-name = '项目'
+name = '項目'
 [[post.tags]]
 id = 'works'
 index = 0
@@ -43,9 +43,9 @@ name = '必看'
 [[post.tags]]
 id = 'hot'
 index = 0
-name = '热门'
+name = '熱門'
 
-# 可选，下述标签仅用于文章分类
+# 可选，下述標籤仅用于文章分類
 [[post.tags]]
 id = 'tech'
 index = 1
@@ -66,7 +66,7 @@ name = '課程'
 [[post.categories]]
 id = 'misc'
 index = 2
-name = '杂谈'
+name = '雜記'
 
 [[post.taxonomies]]
 id = 'categories'
@@ -83,13 +83,13 @@ nav_menu = [
     { name = "服務項目", menus = [
         { name = "關於我", href = "/about", icon = "icon-rocket", target = "_self" },
         { name = "我的装备", href = "/equipment", icon = "icon-artstation", target = "_self" },
-        { name = "我的项目", href = "/tags/project", icon = "icon-lightbulb", target = "_self" },
+        { name = "我的項目", href = "/tags/project", icon = "icon-lightbulb", target = "_self" },
     ] },
     { name = "文章", menus = [
         { name = "全部文章", href = "/archives", icon = "icon-book-open", target = "_self" },
-        { name = "分类列表", href = "/categories", icon = "icon-folder-open", target = "_self" },
-        { name = "标签列表", href = "/tags", icon = "icon-tags", target = "_self" },
-        { name = "随机文章", href = "javascript:toRandomPost()", icon = "icon-artstation", target = "_self" },
+        { name = "分類列表", href = "/categories", icon = "icon-folder-open", target = "_self" },
+        { name = "標籤列表", href = "/tags", icon = "icon-tags", target = "_self" },
+        { name = "随機文章", href = "javascript:toRandomPost()", icon = "icon-artstation", target = "_self" },
     ] },
     { name = "推薦", is_vertical = true, href = "/friends", menus = [] },
 ]
@@ -108,13 +108,13 @@ footer_menu = [
     { name = "服務項目", menus = [
         { name = "關於我", href = "/about", target = "_self" },
         { name = "我的装备", href = "/equipment", target = "_self" },
-        { name = "我的项目", href = "/tags/project", target = "_self" },
+        { name = "我的項目", href = "/tags/project", target = "_self" },
     ] },
     { name = "文章", menus = [
         { name = "全部文章", href = "/archives", target = "_self" },
-        { name = "分类列表", href = "/categories", target = "_self" },
-        { name = "标签列表", href = "/tags", target = "_self" },
-        { name = "随机文章", href = "javascript:toRandomPost()" },
+        { name = "分類列表", href = "/categories", target = "_self" },
+        { name = "標籤列表", href = "/tags", target = "_self" },
+        { name = "随機文章", href = "javascript:toRandomPost()" },
     ] },
     { name = "文件表單", menus = [
         { name = "網站版權", href = "/copyright", target = "_self" },

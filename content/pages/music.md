@@ -1,5 +1,5 @@
 +++
-title = "原创音乐"
+title = "原創音乐"
 template = "page/music.html"
 path = "music"
 draft = true

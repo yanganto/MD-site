@@ -20,7 +20,7 @@
       <div class="console-card-group-right">
         <div class="console-card tags" onclick="wjx.hideConsole()">
           <div class="card-content">
-            <div class="author-content-item-tips">标签</div>
+            <div class="author-content-item-tips">標籤</div>
             <span class="author-content-item-title">寻找感兴趣的领域</span>
           </div>
           {% set tags = get_taxonomy(kind="tags") | get(key="items") | slice(end=config.extra.sidebar.tag_quantity) %}

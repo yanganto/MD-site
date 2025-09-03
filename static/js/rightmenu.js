@@ -87,7 +87,7 @@ window.oncontextmenu = function (event) {
             $rightMenuSearch.hide();
         }
 
-        //检查是否右键点击了链接a标签
+        //检查是否右键点击了链接a標籤
         if (href) {
             pluginMode = true;
             $rightMenuNewWindow.show();
@@ -173,7 +173,7 @@ rm.writeClipImg = function (imgsrc) {
         rm.downloadimging = true;
         setTimeout(function () {
             copyImage(imgsrc);
-            btf.snackbarShow('复制成功！图片已添加盲水印，请遵守版权协议');
+            btf.snackbarShow('复制成功！图片已添加盲水印，请遵守版权協議');
             rm.downloadimging = false;
         }, "10000")
     }

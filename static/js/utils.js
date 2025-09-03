@@ -313,7 +313,7 @@ var btf = {
         });
       },
 
-    //过滤标签
+    //过滤標籤
     changeContent: (content,length = null)=>{
         if (content === '') return content
 
@@ -555,12 +555,12 @@ var wjx = {
                     let url = canvas.toDataURL("image/png"); //得到图片的base64编码数据
                     let a = document.createElement("a"); // 生成一个a元素
                     let event = new MouseEvent("click"); // 创建一个单击事件
-                    a.download = name || "photo"; // 设置图片名称
+                    a.download = name || "photo"; // 设置图片名稱
                     a.href = url; // 将生成的URL设置为a.href属性
                     a.dispatchEvent(event); // 触发a的单击事件
                 };
                 image.src = imgsrc;
-                btf.snackbarShow('图片已添加盲水印，请遵守版权协议');
+                btf.snackbarShow('图片已添加盲水印，请遵守版权協議');
                 rm.downloadimging = false;
             }, "10000");
         } else {
@@ -718,7 +718,7 @@ var wjx = {
             rm.hideRightMenu()
     },
 
-    //获取音乐中的名称
+    //获取音乐中的名稱
     musicGetName: function () {
         for (var e = $(".aplayer-title"), t = [], o = e.length - 1; o >= 0; o--)
             t[o] = e[o].innerText;
@@ -839,10 +839,10 @@ var wjx = {
 
     //匿名评论
     addRandomCommentInfo: function () {
-        // 从形容词数组中随机取一个值
+        // 从形容词数组中随機取一个值
         const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
 
-        // 从蔬菜水果动物名字数组中随机取一个值
+        // 从蔬菜水果动物名字数组中随機取一个值
         const randomName = vegetablesAndFruits[Math.floor(Math.random() * vegetablesAndFruits.length)];
 
         // 将两个值组合成一个字符串

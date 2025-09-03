@@ -264,7 +264,7 @@
 </script>
 {% endmacro %}
 
-{#尝试获取类型名称 {{ macro::taxonomy_map(taxonomy=taxonomy,term=term) }} #}
+{#尝试获取类型名稱 {{ macro::taxonomy_map(taxonomy=taxonomy,term=term) }} #}
 {% macro taxonomy_map(taxonomy, term) %}
     {% set data = load_data(path="data.toml") %}
     {% set value = data.post[taxonomy] | filter(attribute="id", value=term) | first %}
@@ -275,17 +275,17 @@
     {% endif %}
 {% endmacro %}
 
-{#尝试获取标签名称 {{ macro::tag_name(tag=tag) }} #}
+{#尝试获取標籤名稱 {{ macro::tag_name(tag=tag) }} #}
 {% macro tag_name(tag) %}
 {{- macro::taxonomy_map(taxonomy="tags",term=tag) | trim -}}
 {% endmacro %}
 
-{#尝试获取分类名称 {{ macro::category_name(category=category) }} #}
+{#尝试获取分類名稱 {{ macro::category_name(category=category) }} #}
 {% macro category_name(category) %}
 {{- macro::taxonomy_map(taxonomy="categories",term=category) | trim -}}
 {% endmacro %}
 
-{#尝试获取分类名称 {{ macro::taxonomy_name(taxonomy=taxonomy) }} #}
+{#尝试获取分類名稱 {{ macro::taxonomy_name(taxonomy=taxonomy) }} #}
 {% macro taxonomy_name(taxonomy) %}
 {{- macro::taxonomy_map(taxonomy="taxonomies",term=taxonomy) | trim -}}
 {% endmacro %}

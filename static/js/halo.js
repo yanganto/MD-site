@@ -352,7 +352,7 @@ var halo = {
     },
 
     changeMarginLeft(element) {
-        var randomMargin = Math.floor(Math.random() * 901) + 100; // 生成100-1000之间的随机数
+        var randomMargin = Math.floor(Math.random() * 901) + 100; // 生成100-1000之间的随機数
         element.style.marginLeft = randomMargin + 'px';
     },
 

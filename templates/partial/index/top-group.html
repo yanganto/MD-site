@@ -1,4 +1,4 @@
-<!-- 推荐文章 -->
+<!-- 推薦文章 -->
 {% set data = load_data(path="data.toml") %}
 <div class="topGroup" id="topGroup">
     <div class="recent-post-group">
@@ -30,7 +30,7 @@
         {% endfor %}
     </div>
 
-    <!-- 今日推荐 -->
+    <!-- 今日推薦 -->
     {% if config.extra.top.banner_right.today_recommend.enable %}
         {% if data.post.today_recommend.post_path %}
             {% set post = get_page(path=data.post.today_recommend.post_path ) %}
@@ -53,7 +53,7 @@
             <div class="banner-button-group">
                 <button class="banner-button" onclick="window.event.cancelBubble=!0;wjx.hideTodayCard()">
                     <i class="icon-circle-plus"></i>
-                    <span class="banner-button-text">更多推荐</span>
+                    <span class="banner-button-text">更多推薦</span>
                 </button>
             </div>
         </div>

@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             constructor() {
                 super();
                 this.options = {
-                    type: this.getAttribute("type"), // 小标签类型
+                    type: this.getAttribute("type"), // 小標籤类型
                     content: this.innerHTML, // 内容
                 };
                 this.render();
@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     );
 
-    // 上标标签 tip
+    // 上标標籤 tip
     customElements.define(
         "tip",
         class HaoTip extends HTMLElement {
@@ -566,7 +566,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 
-    // flink 相關網站标签
+    // flink 相關網站標籤
     customElements.define(
         "flink",
         class HaoFlink extends HTMLElement {

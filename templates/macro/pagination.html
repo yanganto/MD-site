@@ -1,7 +1,7 @@
 {# 分页模块 #}
 {# @param  path       '/path/page/n' 中的 `/path` 需要保留 `/` #}
 {# @param  section    部分 不再需要，可以去掉 #}
-{# @param  isIndex    是否主页 #}
+{# @param  isIndex    是否主頁 #}
 {# @param  _param     参数 #}
 {% macro pagination(path, is_index, _param) %}
 
@@ -93,7 +93,7 @@
                 function scrollToPost() {
                 }
         {% endif %}
-        {# 当前往首页时使用该地址 #}
+        {# 当前往首頁时使用该地址 #}
         var paginatorFirstUrl = "{{ paginator.first | safe }}"
         var paginatorBaseUrl = "{{ paginator.base_url | safe }}"
         </script>

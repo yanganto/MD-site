@@ -5,7 +5,7 @@
 
 {% macro post_list(_path) %}
     <div class="recent-posts" id="recent-posts">
-        <!-- card，需要添加在没有图片时使用随机图片 -->
+        <!-- card，需要添加在没有图片时使用随機图片 -->
         {% set index = 0 %}
         {% for post in paginator.pages %}
             <div class="recent-post-item {{ config.extra.layout.post.columns }} {{ config.extra.layout.post.cover_position }} {% if index % 2 == 0 %}even{% else %}odd{% endif %} {% if post.pinned %}pinned-post-item{% endif %}"

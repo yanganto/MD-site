@@ -201,7 +201,7 @@ if(GLOBAL_CONFIG.htmlType!='comments' && document.querySelector('#post-comment')
         </div>
         <a class="barrageContent" href="javascript:wjx.scrollTo('${id}');">${comment}</a>
         `
-        // 获取barrage标签内的所有pre元素
+        // 获取barrage標籤内的所有pre元素
         let Pres = barrage.querySelectorAll(".barrageContent pre");
 
         // 遍历每个pre元素，将其替换为"【代码】"
@@ -211,7 +211,7 @@ if(GLOBAL_CONFIG.htmlType!='comments' && document.querySelector('#post-comment')
             pre.parentNode.replaceChild(codePlaceholder, pre);
         });
 
-        // 获取标签内的所有图片元素
+        // 获取標籤内的所有图片元素
         let Images = barrage.querySelectorAll(".barrageContent img");
 
         // 遍历每个图片元素，将其替换为"【图片】"，但排除带有class=tk-owo-emotion的图片

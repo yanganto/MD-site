@@ -4,7 +4,7 @@
 {% set section = get_section(path="articles/_index.md", lang=lang) %}
 {% set posts = section.pages %}
 
-<!-- card，需要添加在没有图片时使用随机图片 -->
+<!-- card，需要添加在没有图片时使用随機图片 -->
 {% for post in paginator.pages%}
     {% set isEven = loop.index is even %}
     <div class="recent-post-item {{ config.extra.layout.post.columns }} {{ config.extra.layout.post.cover_position }} 
