@@ -18570,16 +18570,12 @@ body[data-type=neodb] .sort-button-group button,body[data-type=neodb] .type-butt
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 8px;
+    margin: 8px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
     width: fit-content;
-}
-
-.course-item-content-item-name:hover {
-    color: var(--wjx-main);
 }
 
 .course-item-content-item-specification {

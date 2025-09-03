@@ -343,7 +343,7 @@ video = ""
 
 # Banner 左侧
 [extra.top.banner_left]
-title_big = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\">符合你的潛水課程</div>"
+title_big = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\">適合你的潛水</div>"
 title_small = ""
 
 # 分组
@@ -648,7 +648,7 @@ prefer_local_logo = false
 dynamic_render = true
 
 [extra.course]
-background_img = "/img/courses/bg.webp"
+background_img = "/img/courses/AOW.jpg"
 small_title = "課程"
 big_title = "彈性且客制化的訓練"
 detail = "安全永遠是我們的底線"
