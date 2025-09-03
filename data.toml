@@ -15,7 +15,7 @@ recommend_posts = [
 [post.today_recommend]
 ## 1， 推荐特定文章
 # 文章地址
-post_path = "articles/docs/01 Read Me/index.md"
+post_path = "articles/course/OW/index.md"
 ## 2. 跳转指定页面
 # 跳转地址
 url = "/"
@@ -24,7 +24,7 @@ title = "Lorem Ipsum"
 # 背景图地址
 cover = "/path/to/banner.jpg"
 # 小标题
-small_title = "今日推荐"
+small_title = "今日推薦"
 
 
 # 必须，下述标签被用于网站导航中
@@ -51,18 +51,18 @@ id = 'tech'
 index = 1
 name = '技术'
 [[post.tags]]
-id = 'docs'
+id = 'traning'
 index = 2
-name = '文档'
+name = '訓練'
 [[post.tags]]
 id = 'blog'
 index = 3
 name = '博客'
 
 [[post.categories]]
-id = 'theme'
+id = 'course'
 index = 1
-name = '主题'
+name = '課程'
 [[post.categories]]
 id = 'misc'
 index = 2
@@ -71,11 +71,11 @@ name = '杂谈'
 [[post.taxonomies]]
 id = 'categories'
 index = 1
-name = '分类'
+name = '分類'
 [[post.taxonomies]]
 id = 'tags'
 index = 2
-name = '标签'
+name = '標籤'
 
 [menu]
 # 顶部菜单
@@ -91,11 +91,7 @@ nav_menu = [
         { name = "标签列表", href = "/tags", icon = "icon-tags", target = "_self" },
         { name = "随机文章", href = "javascript:toRandomPost()", icon = "icon-artstation", target = "_self" },
     ] },
-    { name = "推薦", is_vertical = true, href = "/friends", menus = [
-        # { name = "潛水相關", href = "/friends", icon = "icon-link", target = "_self" },
-        # { name = "博客主题介绍", href = "/articles/docs/readme", icon = "icon-music", target = "_self" },
-        # { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum", icon = "icon-music", target = "_self" },
-    ] },
+    { name = "推薦", is_vertical = true, href = "/friends", menus = [] },
 ]
 
 # 导航栏最左侧折叠菜单，只支持两级菜单
