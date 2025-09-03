@@ -70,7 +70,7 @@
                 <div class="footer-title-group">
                     <h3 class="footer-title">相關網站</h3>
                     <button class="random-friends-btn" id="footer-random-friends-btn"
-                       onclick="javascript:wjx.addFriendLinksInFooter();" title="换一批友情链接">
+                       onclick="javascript:wjx.addFriendLinksInFooter();" title="載入更多相關網站">
                        <i class="icon-arrow-rotate-right" style="font-size: 16px;"></i>
                     </button>
                 </div>
@@ -98,7 +98,6 @@
                             {{ macro::img_progressive_loading_single_size(src=config.extra.site.logo, id="copyright-logo") }}
                             {{ config.title }}
                         </a>
-                        {# 动态调整 #}
                         <script defer>
                             var startYear = {{ config.extra.site.start_year }};
                             var currentYear = new Date().getFullYear();
@@ -116,7 +115,7 @@
                         </a>
                         {% endif %}
                         {% if config.extra.site.compliance_icp and config.extra.footer.icp_icon %}
-                        <a class="footer-bar-link" href="https://beian.miit.gov.cn/#/Integrated/index"
+                        <a class="footer-bar-link" href="https://www.tdisdi.com/iso-certified/"
                            rel="noopener external nofollow noreferrer"
                            target="_blank">
                            {{ config.extra.site.compliance_icp }}
@@ -130,22 +129,16 @@
                 </div>
             </div>
             <div class="footer-bar-right">
-                <a class="footer-bar-link" href="/subscribe" target="_blank">订阅</a>
-
-                {% if config.extra.footer.theme %}
-                <a class="footer-bar-link" target="_blank" href="https://github.com/iWangJiaxiang/Morning Diver">主题</a>
-                {% endif %}
-
                 {% if config.extra.footer.about %}
-                <a class="footer-bar-link" href="/about" >关于</a>
+                <a class="footer-bar-link" href="/about" >關於我</a>
                 {% endif %}
 
                 {% if config.extra.footer.feedback %}
-                <a class="footer-bar-link" href="{{ config.extra.footer.feedback_url }}" target="_blank">反馈</a>
+                <a class="footer-bar-link" href="{{ config.extra.footer.feedback_url }}" target="_blank">來信</a>
                 {% endif %}
 
                 {% if config.extra.footer.copyright %}
-                <a class="footer-bar-link cc" rel="license" href="/copyright" title="CC版权协议" target="_blank">
+                <a class="footer-bar-link cc" rel="license" href="/copyright" title="CC BY-NC-ND授權" target="_blank">
                     <i class="icon-copyright-line"></i>
                     <i class="icon-creative-commons-by-line"></i>
                     <i class="icon-creative-commons-nc-line"></i>

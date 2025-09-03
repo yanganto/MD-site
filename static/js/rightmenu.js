@@ -59,12 +59,12 @@ window.oncontextmenu = function (event) {
         let $rightMenuCopyImg = $('#menu-copyimg');
         let $rightMenuDownloadImg = $('#menu-downloadimg');
         let $rightMenuSearch = $('#menu-search');
-        let $rightMenuSearchBaidu = $('#menu-searchBaidu');
-        let $rightMenuMusicToggle = $('#menu-music-toggle');
-        let $rightMenuMusicBack = $('#menu-music-back');
-        let $rightMenuMusicForward = $('#menu-music-forward');
-        let $rightMenuMusicPlaylist = $('#menu-music-playlist');
-        let $rightMenuMusicCopyMusicName = $('#menu-music-copyMusicName');
+        // let $rightMenuSearchBaidu = $('#menu-searchBaidu');
+        // let $rightMenuMusicToggle = $('#menu-music-toggle');
+        // let $rightMenuMusicBack = $('#menu-music-back');
+        // let $rightMenuMusicForward = $('#menu-music-forward');
+        // let $rightMenuMusicPlaylist = $('#menu-music-playlist');
+        // let $rightMenuMusicCopyMusicName = $('#menu-music-copyMusicName');
         let href = event.target.href;
         let imgsrc = event.target.currentSrc;
 
@@ -405,7 +405,7 @@ function addRightMenuClickEvent() {
     $('#menu-pastetext').on('click', rm.pasteText);
     $('#menu-copytext').on('click', function () {
         rm.rightmenuCopyText(selectTextNow);
-        btf.snackbarShow('复制成功，复制和转载请标注本文地址');
+        btf.snackbarShow('已複製，分享請註明本網站，已符合 CC BY-NC-ND 版權要求');
     });
     $('#menu-commenttext').on('click', function () {
         rm.rightMenuCommentText(selectTextNow);
@@ -424,14 +424,5 @@ function addRightMenuClickEvent() {
     });
     $('#menu-copyimg').on('click', function () {
         rm.writeClipImg(domImgSrc);
-    });
-    $('#menu-searchBaidu').on('click', rm.searchBaidu);
-    //音乐
-    $('#menu-music-toggle').on('click', wjx.musicToggle);
-    $('#menu-music-back').on('click', wjx.musicSkipBack);
-    $('#menu-music-forward').on('click', wjx.musicSkipForward);
-    $('#menu-music-copyMusicName').on('click', function () {
-        rm.rightmenuCopyText(wjx.musicGetName());
-        btf.snackbarShow('复制歌曲名称成功', false, 3000);
     });
 }

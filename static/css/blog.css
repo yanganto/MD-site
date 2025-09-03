@@ -8330,10 +8330,24 @@ div#banners {
     border-radius: 50%;
 }
 
-.tags-group-icon img, .tags-group-icon svg{
+.tags-group-icon svg{
     width: 60%;
     height: 60%;
     /*rotate: -50deg;*/
+}
+
+.tags-group-icon img {
+    width: 100%;
+    height: 100%;
+    /*rotate: -50deg;*/
+    border-radius: 30px;
+}
+
+.tags-group-icon video {
+    width: 100%;
+    height: 100%;
+    /*rotate: -50deg;*/
+    border-radius: 30px;
 }
 
 .nowrapMove .tags-group-icon img {

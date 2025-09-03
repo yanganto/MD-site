@@ -91,8 +91,8 @@ nav_menu = [
         { name = "标签列表", href = "/tags", icon = "icon-tags", target = "_self" },
         { name = "随机文章", href = "javascript:toRandomPost()", icon = "icon-artstation", target = "_self" },
     ] },
-    { name = "推薦", is_vertical = true, href = "/tags/work", menus = [
-        { name = "潛水相關", href = "/friends", icon = "icon-link", target = "_self" },
+    { name = "推薦", is_vertical = true, href = "/friends", menus = [
+        # { name = "潛水相關", href = "/friends", icon = "icon-link", target = "_self" },
         # { name = "博客主题介绍", href = "/articles/docs/readme", icon = "icon-music", target = "_self" },
         # { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum", icon = "icon-music", target = "_self" },
     ] },
@@ -110,20 +110,18 @@ nav_left_menu = [
 # 底部菜单
 footer_menu = [
     { name = "服務項目", menus = [
-        { name = "關於我", href = "/about" },
-        { name = "我的装备", href = "/equipment" },
-        { name = "我的项目", href = "/tags/project" },
+        { name = "關於我", href = "/about", target = "_self" },
+        { name = "我的装备", href = "/equipment", target = "_self" },
+        { name = "我的项目", href = "/tags/project", target = "_self" },
     ] },
     { name = "文章", menus = [
-        { name = "全部文章", href = "/archives" },
-        { name = "分类列表", href = "/categories" },
-        { name = "标签列表", href = "/tags" },
+        { name = "全部文章", href = "/archives", target = "_self" },
+        { name = "分类列表", href = "/categories", target = "_self" },
+        { name = "标签列表", href = "/tags", target = "_self" },
         { name = "随机文章", href = "javascript:toRandomPost()" },
     ] },
-    { name = "协议", menus = [
-        { name = "隐私协议", href = "/privacy" },
-        { name = "Cookies", href = "/cookies" },
-        { name = "版权协议", href = "/copyright" },
+    { name = "文件表單", menus = [
+        { name = "網站版權", href = "/copyright", target = "_self" },
     ] },
 ]
 
@@ -148,83 +146,66 @@ items = [
 # 全局生效的 svg sprite
 svg_sprite = "/img/icons/sprite.svg"
 
-[[skill.items]]
-name = "唱歌"
-# webfont class
-#icon = "skill-icon skill-icon-sing"
-# 图片连接
-#logo = "/img/icons/sing.svg"
-bg_color = "#eb6840"
-# 当前 item 生效的 svg sprite
-#svg_sprite = "/img/icons/sprite.svg"
-svg_symbol_id = "sing"
+#[[skill.items]]
+#name = "唱歌"
+## webfont class
+##icon = "skill-icon skill-icon-sing"
+## 图片连接
+##logo = "/img/icons/sing.svg"
+#bg_color = "#eb6840"
+## 当前 item 生效的 svg sprite
+##svg_sprite = "/img/icons/sprite.svg"
+#svg_symbol_id = "sing"
 
 [[skill.items]]
-name = "Docker"
-bg_color = "#57b6e6"
-svg_symbol_id = "docker"
-
-[[skill.items]]
-name = "潜水"
+name = "潛水"
 bg_color = "#57b6e6"
 svg_symbol_id = "divemask"
 
 [[skill.items]]
-name = "VR"
-bg_color = "#8f55ba"
-svg_symbol_id = "vr"
+name = "早安潛水"
+bg_color = "#f3fdfe"
+logo = "/img/logo.webp"
 
 [[skill.items]]
-name = "Python"
-bg_color = "#fff"
-svg_symbol_id = "python"
+name = "揚旛蝴蝶魚"
+bg_color = "#3e5054"
+logo = "/holobios/butterfly_fish.jpg"
 
 [[skill.items]]
-name = "乒乓"
-bg_color = "#eb6840"
-svg_symbol_id = "pingpang"
-
-[[skill.items]]
-name = "钢琴"
+name = "東方豹魴鮄"
 bg_color = "#57b6e6"
-svg_symbol_id = "piano"
+video = "/holobios/Dactyloptena.mp4"
 
 [[skill.items]]
-name = "Rust"
-bg_color = "#eb6840"
-svg_symbol_id = "rust"
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "吉他"
-bg_color = "#989bf8"
-svg_symbol_id = "guitar"
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "平衡车"
-bg_color = "#989bf8"
-svg_symbol_id = "pinghengche"
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "C#"
-bg_color = "#03c85c"
-svg_symbol_id = "csharp"
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "漂移板"
-bg_color = "#989bf8"
-svg_symbol_id = "piaoyiban" 
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "诗歌"
-bg_color = "#e65164"
-svg_symbol_id = "poem"
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "TypeScript"
-bg_color = "#fff"
-svg_symbol_id = "typescript"
-
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"
 [[skill.items]]
-name = "智能家居"
-bg_color = "#f7cb4f"
-svg_symbol_id = "ha"
+name = "潛水"
+bg_color = "#57b6e6"
+svg_symbol_id = "divemask"

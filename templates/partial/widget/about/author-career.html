@@ -20,6 +20,11 @@
                                         <i class="{{ tech.icon }}"></i>
                                         {% elif tech.svg_symbol_id %}
                                         <svg><use href="{{ tech.svg_sprite | default(value=data.skill.svg_sprite) | safe }}#{{ tech.svg_symbol_id | safe }}"/></svg>
+                                        {% elif tech.video %}
+                                        <video autoplay muted>
+                                          <source src="{{ tech.video }}" type="video/mp4">
+                                          unsupported video
+                                        </video>
                                         {% endif %}
                                     </div>
                             {% if not odd %}

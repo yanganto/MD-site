@@ -205,7 +205,7 @@ index_format = "elasticlunr_javascript"
 # 站点设置
 [extra.site]
 # SEO 设置
-seo = "一个博客网站，基于 https://github.com/iWangJiaxiang/Morning Diver 主题构建"
+seo = "一個潛水教學網站"
 # 网站logo
 logo = "/img/logo.webp"
 # 网站favicon 尺寸比logo更小
@@ -217,7 +217,7 @@ compliance_icp = "ISO/IEC 17065"
 # compliance_security_link = "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=xxxxxx"
 # 文章默认封面
 default_cover = "/img/default-cover.webp"
-email = "mail@example.com"
+email = "yanganto@gmail.com"
 start_year = "2025"
 
 [extra.site.author]
@@ -343,20 +343,18 @@ video = ""
 
 # Banner 左侧
 [extra.top.banner_left]
-# 大标题 支持HTML语法
-title_big = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\"><a target=\"_blank]\" href=\"https://blog.Morning Diver\">点击预览主题</a></div>"
-# 小标题 支持HTML语法
-title_small = "<br><a target=\"_blank]\" href=\"https://github.com/iWangJiaxiang/Morning Diver\">点击访问开源代码仓库</a>"
+title_big = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\">符合你的潛水課程</div>"
+title_small = ""
 
 # 分组
 [[extra.top.banner_left.category_groups]]
-title = "推荐"
+title = "推薦課程"
 icon = "icon-book"
 url = "/tags/featured"
 colors = { light_one = "#358bff", light_two = "#15c6ff", dark_one = "#0653b8", dark_two = "#2fcbff" }
 
 [[extra.top.banner_left.category_groups]]
-title = "热门"
+title = "最近更新"
 icon = "icon-fire"
 url = "/tags/hot"
 colors = { light_one = "#ff6655", light_two = "#ffbf37", dark_one = "#e22a16", dark_two = "#da980c" }
@@ -637,15 +635,15 @@ reprintContent = """
 # 相關網站设置
 [extra.friend]
 # 小标题
-small_title = "友情链接"
+small_title = ""
 # 大标题
-big_title = "与各位博主一同进步"
+big_title = "認識海洋的相關網站"
 # 相關網站链接
 links_url = "/friends"
 # 评论开关
-enable_comment = true
+enable_comment = false
 # 如果有本地logo，则优先使用本地logo
-prefer_local_logo = true
+prefer_local_logo = false
 # 是否使用 js 动态加载（推荐）
 dynamic_render = true
 

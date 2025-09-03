@@ -18,7 +18,6 @@
     <script>
         GLOBAL_CONFIG.htmlType = 'links';
     </script>
-    <!-- 头部导航栏 -->
     <header class="not-top-img" id="page-header">
         {{ macro::nav(title = "相關網站") }}
     </header>
@@ -33,9 +32,6 @@
             <div id="article-container">
                 {{ page.content | safe }}
             </div>
-            {# 评论组件 #}
-            {% include "partial/common/comment.html" %}
-
             <style>
                 /*修复相關網站页面表情选择器无法显示完全的bug*/
                 .tk-submit {

@@ -1,6 +1,5 @@
 +++
-# 首页的标题 配置该参数后不添加 | title 后缀
-title = "主页 | 王嘉祥博客主题"
+title = "早安潛水 | 首頁"
 template = "page/index.html"
 
 paginate_by = 8
