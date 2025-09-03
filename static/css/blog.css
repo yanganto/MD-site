@@ -18639,10 +18639,6 @@ img.course-item-content-item-image {
     height: 100%;
 }
 
-div#course {
-    margin-top: 26px;
-}
-
 .course-item-content-item-toolbar {
     display: flex;
     justify-content: space-between;
