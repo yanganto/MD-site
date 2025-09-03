@@ -1,0 +1,71 @@
+{% import "_macros.html" as macro %}
+{% import "macro/template.html" as macro_template %}
+{% import "macro/pagination.html" as macro_page %}
+{% import "macro/content-links.html" as macro_content_links %}
+{% import "macro/author-content.html" as macro_author_content %}
+
+{% extends "page/base.html" %}
+
+{% block head %}
+    {{ macro::head_meta(title = page.title, _permalink = page.path, excerpt = page.description | default(value= page.title ~ " | " ~ config.description), type = 'course') }}
+    <script id="ld-json" type="application/ld+json"></script>
+{% endblock %}
+
+{% block content %}
+    {% set doc = page | default(value=section) %}
+    {% set data = load_data(path="data.toml") %}
+    <!-- 头部导航栏 -->
+    <header class="not-top-img" id="page-header">
+        {{ macro::nav(title = "潛水課程") }}
+    </header>
+
+
+    <main class="layout hide-aside" id="content-inner">
+            <div id="page">
+            {{ macro_author_content::author_content(background = config.extra.course.background_img , smallTitle = config.extra.course.small_title, bigTitle = config.extra.course.big_title, detail = config.extra.course.detail, button_url = config.extra.course.btn_url, button_title = config.extra.course.btn_title) }}
+            {% if data.course.groups %}
+            <div id="course">
+                {% for group in data.course.groups %}
+                <div class="course-item">
+                    <h2 class="course-item-title">{{ group.name }}</h2>
+                    <div class="course-item-description">{{ group.description }}</div>
+                    <div class="course-item-content">
+                        {% for course in group.items %}
+                        <div class="course-item-content-item">
+                            <div class="course-item-content-item-cover">       
+                                {{ macro::img_progressive_loading(src=course.img, alt=course.name, class="course-item-content-item-image") }}                   
+                            </div>
+                            <div class="course-item-content-item-name" >
+                                {{ course.name }}
+                            </div>
+                            <div class="course-item-content-item-info">
+                                <div class="course-item-content-item-specification">{{ course.model }}</div>
+                                <div class="course-item-content-item-description">
+                                    {{ course.description }}
+                                </div>
+                                <div class="course-item-content-item-toolbar">
+                                    {% if course.button_url %}
+                                        <a class="course-item-content-item-link" href="{{ course.button_url }}" rel="noopener noreferrer external nofollow"
+                                            target="_blank">{{ course.button_title }}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            
+            {# 评论组件 #}
+            {% include "partial/common/comment.html" %}
+        </div>
+    </main>
+
+    {% include "partial/common/footer.html" %}
+    <!-- 卡片顶部气泡效果 -->
+    {% if theme.config.other.bubble_enable %}
+        <script async data-pjax src="/libs/canvas/bubble.js"></script>
+    {% endif %}
+{% endblock %}

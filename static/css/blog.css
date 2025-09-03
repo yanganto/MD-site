@@ -18530,14 +18530,14 @@ body[data-type=neodb] .sort-button-group button,body[data-type=neodb] .type-butt
 }
 
 /* 我的装备 */
-.equipment-item-content {
+.course-item-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 -8px;
 }
 
-.equipment-item-content-item {
+.course-item-content-item {
     width: calc(25% - 12px);
     border-radius: 12px;
     border: var(--style-border-always);
@@ -18550,23 +18550,23 @@ body[data-type=neodb] .sort-button-group button,body[data-type=neodb] .type-butt
 }
 
 @media screen and (max-width: 1200px) {
-    .equipment-item-content-item {
+    .course-item-content-item {
         width: calc(50% - 12px);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .equipment-item-content-item {
+    .course-item-content-item {
         width: 100%;
     }
 }
 
-.equipment-item-content-item-info {
+.course-item-content-item-info {
     padding: 8px 16px 16px 16px;
     margin-top: 12px;
 }
 
-.equipment-item-content-item-name {
+.course-item-content-item-name {
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
@@ -18578,11 +18578,11 @@ body[data-type=neodb] .sort-button-group button,body[data-type=neodb] .type-butt
     width: fit-content;
 }
 
-.equipment-item-content-item-name:hover {
+.course-item-content-item-name:hover {
     color: var(--wjx-main);
 }
 
-.equipment-item-content-item-specification {
+.course-item-content-item-specification {
     font-size: 12px;
     color: var(--wjx-secondtext);
     line-height: 1;
@@ -18592,7 +18592,7 @@ body[data-type=neodb] .sort-button-group button,body[data-type=neodb] .type-butt
     text-overflow: ellipsis;
 }
 
-.equipment-item-content-item-description {
+.course-item-content-item-description {
     line-height: 20px;
     color: var(--wjx-secondtext);
     height: 60px;
@@ -18603,7 +18603,7 @@ body[data-type=neodb] .sort-button-group button,body[data-type=neodb] .type-butt
     font-size: 14px;
 }
 
-a.equipment-item-content-item-link {
+a.course-item-content-item-link {
     font-size: 12px;
     background: var(--wjx-gray-op);
     padding: 4px 8px;
@@ -18611,22 +18611,22 @@ a.equipment-item-content-item-link {
     cursor: pointer;
 }
 
-a.equipment-item-content-item-link:hover {
+a.course-item-content-item-link:hover {
     background: var(--wjx-main);
     color: var(--wjx-white);
 }
 
-h2.equipment-item-title {
+h2.course-item-title {
     line-height: 1;
 }
 
-.equipment-item-description {
+.course-item-description {
     line-height: 1;
     margin: 4px 0 8px 0;
     color: var(--wjx-secondtext);
 }
 
-.equipment-item-content-item-cover {
+.course-item-content-item-cover {
     width: 100%;
     height: 200px;
     background: var(--wjx-secondbg);
@@ -18634,16 +18634,16 @@ h2.equipment-item-title {
     justify-content: center;
 }
 
-img.equipment-item-content-item-image {
+img.course-item-content-item-image {
     object-fit: cover;
     height: 100%;
 }
 
-div#equipment {
+div#course {
     margin-top: 26px;
 }
 
-.equipment-item-content-item-toolbar {
+.course-item-content-item-toolbar {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -18653,7 +18653,7 @@ div#equipment {
     padding: 0 16px;
 }
 
-.equipment-item-content-item-toolbar a.bber-reply {
+.course-item-content-item-toolbar a.bber-reply {
     cursor: pointer;
 }
 
