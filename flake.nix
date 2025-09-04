@@ -25,6 +25,9 @@
       devShell = pkgs.mkShell ({
         buildInputs = with pkgs; [ zola ];
       });
+      packages = {
+        default =  pkgs.callPackage ./nix/package.nix { source = self; };
+      };
     }
   );
 }
