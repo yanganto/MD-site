@@ -15,13 +15,13 @@
                             {% endif %}
                                     <div class="tags-group-icon" style="background:{{ tech.bg_color }}">
                                         {% if tech.logo %}
-                                        <img src="{{ tech.logo | safe }}" title="{{ tech.name }}" loading="lazy" decoding="async">
+                                        <img style="width: 120px; height: 120px; border-radius: 30px;" src="{{ tech.logo | safe }}" title="{{ tech.name }}" loading="lazy" decoding="async">
                                         {% elif tech.icon %}
                                         <i class="{{ tech.icon }}"></i>
                                         {% elif tech.svg_symbol_id %}
                                         <svg><use href="{{ tech.svg_sprite | default(value=data.holobios.svg_sprite) | safe }}#{{ tech.svg_symbol_id | safe }}"/></svg>
                                         {% elif tech.video %}
-                                        <video autoplay muted loop>
+                                        <video autoplay muted loop style="width: 120px; height: 120px; border-radius: 30px;">
                                           <source src="{{ tech.video }}" type="video/mp4">
                                           unsupported video
                                         </video>
