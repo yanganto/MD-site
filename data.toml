@@ -61,7 +61,7 @@ name = '課程'
 [[post.categories]]
 id = 'misc'
 index = 2
-name = '雜記'
+name = '文章'
 
 [[post.taxonomies]]
 id = 'categories'
@@ -76,14 +76,14 @@ name = '標籤'
 # 顶部菜单
 nav_menu = [
     { name = "服務項目", menus = [
-        { name = "關於我", href = "/about", icon = "icon-rocket", target = "_self" },
+        { name = "關於我們", href = "/about", icon = "icon-rocket", target = "_self" },
         { name = "潛水課程", href = "/course", icon = "icon-artstation", target = "_self" },
     ] },
     { name = "文章", menus = [
         { name = "全部文章", href = "/archives", icon = "icon-book-open", target = "_self" },
         { name = "分類列表", href = "/categories", icon = "icon-folder-open", target = "_self" },
         { name = "標籤列表", href = "/tags", icon = "icon-tags", target = "_self" },
-        { name = "随機文章", href = "javascript:toRandomPost()", icon = "icon-artstation", target = "_self" },
+        { name = "随機文章", href = "javascript:toRandomPost()", icon = "icon-dice", target = "_self" },
     ] },
     { name = "推薦", is_vertical = true, href = "/friends", menus = [] },
 ]
@@ -91,17 +91,18 @@ nav_menu = [
 # 导航栏最左侧折叠菜单，只支持两级菜单
 # 优先使用icon image
 nav_left_menu = [
-    { name = "作品", menus = [
-        { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum", icon = "icon-music", target = "_self" },
-        { name = "Lorem Ipsum", href = "/articles/misc/lorem-ipsum", icon = "icon-music", target = "_self" },
+    { name = "快速選單", menus = [
+        { name = "入門潛水員課程", href = "/courses/OW", icon = "icon-artstation", target = "_self" },
+        { name = "關於我們", href = "/about", icon = "icon-rocket", target = "_self" },
     ] },
 ]
 
 # 底部菜单
 footer_menu = [
     { name = "服務項目", menus = [
-        { name = "關於我", href = "/about", target = "_self" },
+        { name = "關於我們", href = "/about", target = "_self" },
         { name = "潛水課程", href = "/course", target = "_self" },
+        { name = "聯絡我們", href = "/contact", target = "_self" },
     ] },
     { name = "文章", menus = [
         { name = "全部文章", href = "/archives", target = "_self" },
@@ -118,7 +119,7 @@ footer_menu = [
 name = "基礎課程"
 description = "成為潛水員的必經之路"
 items = [
-    { name = "潛水員課程", img = "/img/courses/OW.png", model = "初級", description = "邁向海底世界的第一步", button_title = "瞭解更多", button_url = "/courses/OW" },
+    { name = "入門潛水員課程", img = "/img/courses/OW.png", model = "初級", description = "邁向海底世界的第一步", button_title = "瞭解更多", button_url = "/courses/OW" },
     { name = "進階潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "成為獨當一面的潛水員" },
     { name = "救援潛水員", img = "/img/courses/AOW.jpg", model = "中級", description = "成為可以信賴的潛伴" },
 ]
