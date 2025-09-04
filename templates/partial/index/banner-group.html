@@ -6,7 +6,7 @@
             <div class="tags-group-wrapper">                 
                 {% set odd = true %}
                 {% set data = load_data(path="data.toml") %}
-                {% for tech in data.skill.items %}
+                {% for tech in data.holobios.items %}
                     {% if odd %}
                         <div class="tags-group-icon-pair">
                     {% endif %}
@@ -16,7 +16,7 @@
                                 {% elif tech.icon %}
                                 <i class="{{ tech.icon }}"></i>
                                 {% elif tech.svg_symbol_id %}
-                                <svg><use href="{{ tech.svg_sprite | default(value=data.skill.svg_sprite) | safe }}#{{ tech.svg_symbol_id | safe }}"/></svg>
+                                <svg><use href="{{ tech.svg_sprite | default(value=data.holobios.svg_sprite) | safe }}#{{ tech.svg_symbol_id | safe }}"/></svg>
                                 {% elif tech.video %}
                                 <video autoplay muted loop>
                                   <source src="{{ tech.video }}" type="video/mp4">

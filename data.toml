@@ -135,14 +135,14 @@ items = [
 
 # icon 无法将多种颜色的图形编程font，无法合并路径，使用起来麻烦，先将svg合并 https://svgsprit.es/
 # 可以在 https://icomoon.io/ 导入 iconfont svg 文件然后重新打包 更新自己的图标
-[skill]
+[holobios]
 # 全局生效的 svg sprite
 svg_sprite = "/img/icons/sprite.svg"
 
-#[[skill.items]]
+#[[holobios.items]]
 #name = "唱歌"
 ## webfont class
-##icon = "skill-icon skill-icon-sing"
+##icon = "holobios-icon holobios-icon-sing"
 ## 图片连接
 ##logo = "/img/icons/sing.svg"
 #bg_color = "#eb6840"
@@ -150,55 +150,52 @@ svg_sprite = "/img/icons/sprite.svg"
 ##svg_sprite = "/img/icons/sprite.svg"
 #svg_symbol_id = "sing"
 
-[[skill.items]]
+[[holobios.items]]
 name = "潛水"
 bg_color = "#57b6e6"
 svg_symbol_id = "divemask"
 
-[[skill.items]]
+[[holobios.items]]
 name = "早安潛水"
 bg_color = "#f3fdfe"
 logo = "/img/logo.webp"
 
-[[skill.items]]
+[[holobios.items]]
 name = "揚旛蝴蝶魚"
 bg_color = "#3e5054"
 logo = "/holobios/butterfly_fish.jpg"
 
-[[skill.items]]
+[[holobios.items]]
 name = "東方豹魴鮄"
-bg_color = "#57b6e6"
+bg_color = "#0e5f87"
 video = "/holobios/Dactyloptena.mp4"
 
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
-[[skill.items]]
-name = "潛水"
-bg_color = "#57b6e6"
-svg_symbol_id = "divemask"
+[[holobios.items]]
+name = "硨磲貝"
+bg_color = "#58d5dd"
+logo = "/holobios/Tridacninae.jpg"
+
+[[holobios.items]]
+name = "玫瑰珊瑚"
+bg_color = "#53574d"
+logo = "/holobios/RoseCoral.jpg"
+
+[[holobios.items]]
+name = "魚群風暴"
+bg_color = "#003592"
+video = "/holobios/Fishes.mp4"
+
+[[holobios.items]]
+name = "海嵾"
+bg_color = "#93d8df"
+video = "/holobios/SeaCucumber.mp4"
+
+[[holobios.items]]
+name = "蝠鱝"
+bg_color = "#003592"
+video = "/holobios/MentaRay.mp4"
+
+[[holobios.items]]
+name = "自由潛水"
+bg_color = "#007386"
+logo = "/holobios/FreeDive.jpg"

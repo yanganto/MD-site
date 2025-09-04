@@ -15758,7 +15758,7 @@ div#wjx-footer-bar .footer-bar-description {
 }
 
 /* 关于页面我的技能 */
-.author-content-item.skills {
+.author-content-item.holobioss {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -15767,24 +15767,24 @@ div#wjx-footer-bar .footer-bar-description {
     min-height: 450px;
 }
 
-.author-content-item.skills .tags-group-all {
+.author-content-item.holobioss .tags-group-all {
     display: flex;
     transform: rotate(0deg);
     transition: 0.3s;
 }
 
-.author-content-item.skills .tags-group-wrapper {
+.author-content-item.holobioss .tags-group-wrapper {
     margin-top: 40px;
     display: flex;
     flex-wrap: nowrap;
     animation: rowleft 60s linear infinite;
 }
 
-.author-content-item.skills .skills-style-group {
+.author-content-item.holobioss .holobioss-style-group {
     position: relative;
 }
 
-.author-content-item.skills .skills-list {
+.author-content-item.holobioss .holobioss-list {
     display: flex;
     opacity: 0;
     transition: 0.3s;
@@ -15797,15 +15797,15 @@ div#wjx-footer-bar .footer-bar-description {
     margin-top: 10px;
 }
 
-.author-content-item.skills:hover .skills-style-group .tags-group-all {
+.author-content-item.holobioss:hover .holobioss-style-group .tags-group-all {
     opacity: 0;
 }
 
-.author-content-item.skills:hover .skills-style-group .skills-list {
+.author-content-item.holobioss:hover .holobioss-style-group .holobioss-list {
     opacity: 1;
 }
 
-.author-content-item.skills .skill-info {
+.author-content-item.holobioss .holobios-info {
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -15817,12 +15817,12 @@ div#wjx-footer-bar .footer-bar-description {
     box-shadow: var(--wjx-shadow-border);
 }
 
-.author-content-item.skills .etc {
+.author-content-item.holobioss .etc {
     margin-right: 10px;
     margin-top: 10px;
 }
 
-.author-content-item.skills .skill-icon {
+.author-content-item.holobioss .holobios-icon {
     width: 32px;
     height: 32px;
     border-radius: 32px;
@@ -15833,12 +15833,12 @@ div#wjx-footer-bar .footer-bar-description {
     user-select: none
 }
 
-.author-content-item.skills .skill-icon img, .author-content-item.skills .skill-icon svg {
+.author-content-item.holobioss .holobios-icon img, .author-content-item.holobioss .holobios-icon svg {
     width: 18px;
     height: 18px;
 }
 
-.author-content-item.skills .skill-name {
+.author-content-item.holobioss .holobios-name {
     font-weight: bold;
     line-height: 1
 }
