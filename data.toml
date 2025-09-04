@@ -3,12 +3,6 @@
 [post]
 # 首页 Header 右侧推荐，建议 6 篇，填写 content 到 md 文件的相对地址
 recommend_posts = [
-    "articles/misc/Lorem Ipsum/index.md",
-    "articles/misc/Lorem Ipsum 2/index.md",
-    "articles/misc/Lorem Ipsum 3/index.md",
-    "articles/misc/Lorem Ipsum 4/index.md",
-    "articles/misc/Lorem Ipsum 5/index.md",
-    "articles/misc/Lorem Ipsum 6/index.md",
 ]
 
 # 首页 header 右侧
@@ -59,7 +53,7 @@ id = 'course'
 index = 1
 name = '課程'
 [[post.categories]]
-id = 'misc'
+id = 'article'
 index = 2
 name = '文章'
 
