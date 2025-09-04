@@ -487,15 +487,6 @@ powerLink = "/"
 # 最大展示条数
 showNum = 3
 
-# 最新评论
-[extra.sidebar.newcomment]
-# 跳转地址
-newcommentUrl = "/newest"
-# 最大展示条数 最新评论数量, 小于 0 则展示5条评论
-newcommentnumber = 5
-# 头像服务镜像地址 使用官方源则留空 示例：https://gravatar.com
-providerMirror = "https://gravatar.com"
-
 # 页脚栏
 [extra.footer]
 # 底部启用
