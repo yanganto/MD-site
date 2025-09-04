@@ -1,27 +1,20 @@
 +++
-title = "Lorem Ipsum"
-date = 2024-12-15
-slug = "lorem-ipsum"
-description = "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+title = "潛水中無所不在的中性浮力"
+date = 2025-12-15
+slug = "neutral buoyancy"
+description = "在水下每個分開的物件，在不同的深度都會有不同的中性浮力"
 
 [taxonomies]
-tags = ["blog", "featured", "hot"]
+tags = ["featured"]
 categories = ["article"]
 
 [extra]
-cover = "cover.webp"
+cover = "cover.jpg"
+reel = "DOLb7urEsoy"
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec diam id libero egestas hendrerit. Suspendisse suscipit, libero vitae suscipit suscipit, magna justo feugiat nibh, at fermentum justo ex sed ex. Fusce tincidunt non dolor mollis fringilla. Mauris dui justo, dapibus et dui eu, mollis viverra eros. Aenean molestie ipsum quis rutrum tempus. Cras ac ipsum fringilla dui elementum viverra id vitae libero. Phasellus sed neque a est rutrum vulputate nec id nunc.
+中性浮力是每個有證照潛水員都耳熟能詳的一個現象，是指物體所受的重力與浮力剛好相等，而此物體的平均密度剛好與流體的密度相等，因此物體可以自由的懸浮在流體中。
 
-```bash
-echo "Hello World!"
-```
+由於人體呼吸的過程中，肺的體積變化也直接導致潛水員的浮力變化，因此如何靠呼吸讓潛水員自身達到中性浮力，是剛入門的潛水員的第一難關。而随著潛水中，呼出空氣的流失，氣瓶也會越來越輕，鋁製的氣瓶會慢慢的從沉於水變成浮於水。尤於每個人的調節器重量不同會在不同的氣瓶氣壓下變成中性浮力的狀態，大約是在70 bar的時候會發生。
 
-Maecenas bibendum egestas urna, non luctus metus vestibulum ut. Suspendisse potenti. Proin vehicula feugiat magna, at ultricies mi suscipit id. Morbi ornare felis magna, in dictum magna tempor quis. Etiam ac eros luctus, tempus nisl vestibulum, laoreet tortor. Donec porttitor massa sed quam suscipit, sit amet convallis sem congue. Etiam eget accumsan arcu. Praesent euismod et enim luctus vulputate.
-
-Pellentesque pharetra vitae est eget elementum. Morbi tempor placerat arcu, et sollicitudin odio efficitur non. Aliquam a lectus eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam congue eleifend urna. Duis id laoreet massa, a interdum sem. Aliquam molestie facilisis est eu feugiat. Nulla varius dui ut risus imperdiet mattis.
-
-Maecenas vestibulum mauris in elit volutpat, ac tincidunt ex venenatis. Duis luctus, ligula ac feugiat porttitor, erat magna fringilla enim, non dapibus neque enim at nulla. Donec malesuada, libero eget auctor elementum, tellus nisl commodo neque, at efficitur massa turpis quis est. Aenean sodales vestibulum rutrum. Sed accumsan ipsum purus, sit amet tempor orci iaculis sit amet. Integer faucibus ullamcorper congue. Morbi condimentum congue augue.
-
-Ut nec magna blandit, dapibus ante convallis, pulvinar nunc. Vivamus feugiat mauris non elementum dapibus. Phasellus rhoncus iaculis quam, id semper augue scelerisque ut. Donec at efficitur mauris. Donec et eleifend libero. Ut justo nisi, egestas in dignissim nec, viverra eget est. Vestibulum sed est dignissim, lacinia lorem a, feugiat ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam et tincidunt leo, vitae porta urna.
+而Insta 360全景相機因為胖胖的防水殼增加了不少浮力，但可以利用金屬潛水鈎調整，讓相機變成中性浮力。 這個影片就是讓氣氧、相機、跟潛水員自身都保持著中性浮力。在對自身及設備浮力有更好的瞭解後，在水下才能更好應對各種突發狀況。

@@ -3,6 +3,12 @@
 [post]
 # 首页 Header 右侧推荐，建议 6 篇，填写 content 到 md 文件的相对地址
 recommend_posts = [
+    "courses/OW/index.md",
+    "articles/neutral-buoyancy/index.md",
+    "courses/OW/index.md",
+    "articles/neutral-buoyancy/index.md",
+    "courses/OW/index.md",
+    "articles/neutral-buoyancy/index.md",
 ]
 
 # 首页 header 右侧

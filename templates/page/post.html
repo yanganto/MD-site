@@ -27,7 +27,7 @@
 {% endblock %}
 
 {% block content %}
-    {% set data = load_data(path="data.toml") %} 
+    {% set data = load_data(path="data.toml") %}
     {% set post = page %}
 
     <header class="post-bg" id="page-header">
@@ -47,20 +47,17 @@
                             {% set is_original = true %}
                         {% endif %}
                         {% set copyrightUrl = post.extra.copyright_url | default(value='/copyright') %}
-                        
                         {% if is_original %}
                             <a class="post-meta-original"
-                               title="该文章为原創文章，注意版权協議"
+                               title="此為原創內容，請注意版權"
                                href="{{ copyrightUrl | safe }}">原創</a>
                         {% endif %}
-                        
                         {% if not is_original %}
                             <a class="post-meta-original"
-                               title="该文章为轉載文章，版权归原作者所有"
+                               title="此內容為轉載收錄，版權為原作者所有"
                                href="{{ copyrightUrl | safe }}">轉載</a>
                         {% endif %}
                     {% endif %}
-                    
                     {% set post_categories = page.taxonomies.categories %}
                     {% if post_categories %}
                         {% for category in post_categories %}
@@ -99,15 +96,14 @@
                     {% endif %}
                     {% set wordCount = page.word_count %}
                     <span class="post-meta-wordcount">
-                        <i class="icon-file-word post-meta-icon" title="字数"></i>
-                        <span class="post-meta-label">字数:</span>
+                        <i class="icon-file-word post-meta-icon" title="字數"></i>
+                        <span class="post-meta-label">字數:</span>
                         <span class="word-count">{{ wordCount }}</span>
                         <span class="post-meta-separator"></span>
-                        <i class="icon-clock post-meta-icon" title="阅读耗时"></i>
-                        <span class="post-meta-label">阅读耗时:</span>
+                        <i class="icon-clock post-meta-icon" title="閱讀時間"></i>
+                        <span class="post-meta-label">閱讀時間:</span>
                         {# <span>{{ wordCount / 400 | round + 1 }} 分钟</span> #}
-                        <span>{{ macro::get_reading_time(minutes=page.reading_time) }} 分钟</span>
-                        
+                        <span>{{ macro::get_reading_time(minutes=page.reading_time) }} 分鐘</span>
                     </span>
                     <span class="post-meta-date">
                         <i class="icon-calendar-days post-meta-icon"></i>
@@ -118,7 +114,7 @@
                     </span>
                     {% if config.extra.post.update_time and post.updated %}
                         <span class="post-meta-date">
-                            <i class="icon-pencil post-meta-icon" title="最后更新时间"></i>
+                            <i class="icon-pencil post-meta-icon" title="最後更新時間"></i>
                             <time datetime="{{ post.updated | date(format='%Y-%m-%d') }}"
                                   title="{{ post.updated | date(format='%Y-%m-%d %H:%M:%S') }}">
                                 {{ post.updated | date(format='%Y/%m/%d') }}
@@ -148,11 +144,18 @@
         <div id="post">
             {% include "partial/post/abstract.html" %}
             <div class="note simple warning" id="passage-tip"{% if post.extra.update_tip_enable and config.extra.post.passage_tip.enable %} data-tip-enable=true data-update-date="{{ page.updated | default(value=page.date) | date(format='%Y-%m-%d') }}"{% endif %}>
-                {# js 动态生成 #}
+            {# dynamic js generated#}
             </div>
             <article class="post-content {% if config.extra.code.enable_line %}line-numbers{% endif %}" id="article-container">
                 {{ page.content | safe }}
             </article>
+            {% if page.extra.reel %}
+            <div style="margin-top: 50px;">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/{{ page.extra.reel }}" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 10px; max-width:1080px; min-width:px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+            {% endif %}
+
             {% include "partial/post/copyright.html" %}
             {% set previous_post = page.lower %}
             {% set next_post = page.higher %}
@@ -180,9 +183,8 @@
             </nav>
             {% include "partial/post/related-posts.html" %}
             <hr>
-            {% include "partial/common/comment.html" %}
         </div>
-        {# 侧边栏生成 #}
+        {# Side bar generator #}
         {{ macro::aside(widgets=config.extra.sidebar.widgets.postWidget) }}
     </main>
     {% include "partial/common/footer.html" %}
