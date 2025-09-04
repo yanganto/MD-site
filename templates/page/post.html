@@ -151,9 +151,12 @@
             </article>
             {% if page.extra.reel %}
             <div style="margin-top: 50px;">
-                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/{{ page.extra.reel }}" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 10px; max-width:1080px; min-width:px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
-                <script async src="//www.instagram.com/embed.js"></script>
+                <!-- <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/{{ page.extra.reel }}" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 10px; max-width:1080px; min-width:px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote> -->
+                <!-- <script async src="//www.instagram.com/embed.js"></script> -->
+                <!-- <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/reel/{{ page.extra.reel }}/embed/?cr=1&amp;wp=702&amp;rd=http%3A%2F%2F127.0.0.1%3A1111&amp;rp=%2Farticles%2Fneutral%2520buoyancy%2F#%7B%22ci%22%3A0%2C%22os%22%3A569.8000000044703%2C%22ls%22%3A64.89999999850988%2C%22le%22%3A536.6000000014901%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="684" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="max-width: 1080px; background: white; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe> -->
+                <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/reel/{{ page.extra.reel }}/embed/" allowtransparency="true" allowfullscreen="true" frameborder="0" height="684" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="max-width: 1080px; background: white; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
             </div>
+
             {% endif %}
 
             {% include "partial/post/copyright.html" %}
