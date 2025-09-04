@@ -1,0 +1,195 @@
+{% import "_macros.html" as macro %}
+{% import "macro/template.html" as macro_template %}
+{% import "macro/pagination.html" as macro_page %}
+
+{% extends "page/base.html" %}
+
+{% block head %}
+    {{ macro::head_meta(title = page.title, _permalink = page.path, cover = macro::post_cover(post=page), excerpt = page.description | default(value= page.title ~ " | " ~ config.description), type = 'article') }}
+    <script id="ld-json" type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Article",
+          "headline": "{{ page.title }}",
+          "author": {
+            "@type": "Person",
+            "name": "{{ config.author }}",
+            "url": "/about"
+          },
+          "image": "{{ macro::thumbnail_s(url=macro::post_cover(post=page)) | trim | safe }}",
+          "datePublished": "{{ page.date | date(format="%+", timezone="Asia/Shanghai") }}",
+          {% if page.updated %}
+          "dateModified": "{{ page.updated | date(format="%+", timezone="Asia/Shanghai") }}",
+          {% endif %}
+          "description": "{{ page.description | default(value=page.title) }}"
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+    {% set data = load_data(path="data.toml") %}
+    {% set post = page %}
+
+    <header class="post-bg" id="page-header">
+        {{ macro::nav(title = config.title) }}
+        {% set img = macro::thumbnail_s(url=macro::post_cover(post=post)) %}
+        <div class="coverdiv loaded" id="coverdiv">
+            <img alt="cover" class="nolazyload" id="post-cover"
+                 src="{{ img | safe }}" loading="lazy" decoding="async">
+        </div>
+        <div id="post-info">
+            <div id="post-firstinfo">
+                <div class="meta-firstline">
+                    {% if config.extra.post.copyrights.enable %}
+                        {% if post.extra.reprint_url %}
+                            {% set is_original = false %}
+                        {% else %}
+                            {% set is_original = true %}
+                        {% endif %}
+                        {% set copyrightUrl = post.extra.copyright_url | default(value='/copyright') %}
+                        {% if is_original %}
+                            <a class="post-meta-original"
+                               title="此為原創內容，請注意版權"
+                               href="{{ copyrightUrl | safe }}">原創</a>
+                        {% endif %}
+                        {% if not is_original %}
+                            <a class="post-meta-original"
+                               title="此內容為轉載收錄，版權為原作者所有"
+                               href="{{ copyrightUrl | safe }}">轉載</a>
+                        {% endif %}
+                    {% endif %}
+                    {% set post_categories = page.taxonomies.categories %}
+                    {% if post_categories %}
+                        {% for category in post_categories %}
+                        {% set category_url = get_taxonomy_url(kind="categories", name=category, lang=lang) %}
+                            <span class="post-meta-categories">
+                                <a href="{{ category_url }}"
+                                   title="{{ macro::category_name(category=category) }}">
+                                   {{ macro::category_name(category=category) }}
+                                </a>
+                            </span>
+                        {% endfor %}
+                    {% endif %}
+                    {% set post_tags = page.taxonomies.tags %}
+                    {% if post_tags %}
+                        <div class="tag_share">
+                            <div class="post-meta__tag-list">
+                                {% for tag in post_tags %}
+                                {% set tag_url = get_taxonomy_url(kind="tags", name=tag, lang=lang) %}
+                                <a class="post-meta__tags" href="{{ tag_url }}"
+                                       title="{{ macro::tag_name(tag=tag) }}">
+                                        <span class="tags-name tags-punctuation">{{ macro::tag_name(tag=tag) }}</span>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <h1 class="post-title">{{ page.title }}</h1>
+            <div id="post-meta">
+                <div class="meta-secondline">
+                    {% if is_original %}
+                    <span class="post-meta-author" data-flag-title="文章作者" title="文章作者">
+                        <i class="icon-zuozhe post-meta-icon"></i>{{ config.author }}
+                    </span>
+                    {% endif %}
+                    {% set wordCount = page.word_count %}
+                    <span class="post-meta-wordcount">
+                        <i class="icon-file-word post-meta-icon" title="字數"></i>
+                        <span class="post-meta-label">字數:</span>
+                        <span class="word-count">{{ wordCount }}</span>
+                        <span class="post-meta-separator"></span>
+                        <i class="icon-clock post-meta-icon" title="閱讀時間"></i>
+                        <span class="post-meta-label">閱讀時間:</span>
+                        {# <span>{{ wordCount / 400 | round + 1 }} 分钟</span> #}
+                        <span>{{ macro::get_reading_time(minutes=page.reading_time) }} 分鐘</span>
+                    </span>
+                    <span class="post-meta-date">
+                        <i class="icon-calendar-days post-meta-icon"></i>
+                        <time datetime="{{ page.date | date(format='%Y-%m-%d') }}"
+                              title="{{ page.date | date(format='%Y-%m-%d %H:%M:%S') }}">
+                            {{ page.date | date(format='%Y/%m/%d') }}
+                        </time>
+                    </span>
+                    {% if config.extra.post.update_time and post.updated %}
+                        <span class="post-meta-date">
+                            <i class="icon-pencil post-meta-icon" title="最後更新時間"></i>
+                            <time datetime="{{ post.updated | date(format='%Y-%m-%d') }}"
+                                  title="{{ post.updated | date(format='%Y-%m-%d %H:%M:%S') }}">
+                                {{ post.updated | date(format='%Y/%m/%d') }}
+                            </time>
+                        </span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <section class="main-hero-waves-area waves-area">
+            <svg class="waves-svg" preserveAspectRatio="none" shape-rendering="auto" viewBox="0 24 150 28"
+                 xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <path d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"
+                          id="gentle-wave"></path>
+                </defs>
+                <g class="parallax">
+                    <use href="#gentle-wave" x="48" y="0"></use>
+                    <use href="#gentle-wave" x="48" y="3"></use>
+                    <use href="#gentle-wave" x="48" y="5"></use>
+                    <use href="#gentle-wave" x="48" y="7"></use>
+                </g>
+            </svg>
+        </section>
+    </header>
+    <main class="layout {{ config.extra.sidebar.location }}" id="content-inner">
+        <div id="post">
+            {% include "partial/post/abstract.html" %}
+            <div class="note simple warning" id="passage-tip"{% if post.extra.update_tip_enable and config.extra.post.passage_tip.enable %} data-tip-enable=true data-update-date="{{ page.updated | default(value=page.date) | date(format='%Y-%m-%d') }}"{% endif %}>
+            {# dynamic js generated#}
+            </div>
+            <article class="post-content {% if config.extra.code.enable_line %}line-numbers{% endif %}" id="article-container">
+                {{ page.content | safe }}
+            </article>
+            {% if page.extra.reel %}
+            <div style="margin-top: 50px;">
+                <!-- <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/{{ page.extra.reel }}" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 10px; max-width:1080px; min-width:px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote> -->
+                <!-- <script async src="//www.instagram.com/embed.js"></script> -->
+                <!-- <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/reel/{{ page.extra.reel }}/embed/?cr=1&amp;wp=702&amp;rd=http%3A%2F%2F127.0.0.1%3A1111&amp;rp=%2Farticles%2Fneutral%2520buoyancy%2F#%7B%22ci%22%3A0%2C%22os%22%3A569.8000000044703%2C%22ls%22%3A64.89999999850988%2C%22le%22%3A536.6000000014901%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="684" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="max-width: 1080px; background: white; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe> -->
+                <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/reel/{{ page.extra.reel }}/embed/" allowtransparency="true" allowfullscreen="true" frameborder="0" height="684" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="max-width: 1080px; background: white; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+            </div>
+
+            {% endif %}
+
+            {% include "partial/post/copyright.html" %}
+            {% set previous_post = page.lower %}
+            {% set next_post = page.higher %}
+            <nav class="pagination-post needEndHide" id="pagination">
+                {% if previous_post %}
+                    <div class="prev-post {% if next_post %}pull-left{% else %}pull-full{% endif %}">
+                        <a href="{{ previous_post.permalink }}">
+                            <div class="pagination-info">
+                                <div class="label">上一篇</div>
+                                <div class="prev_info">{{ previous_post.title }}</div>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+                {% if next_post %}
+                    <div class="next-post {% if previous_post %}pull-right{% else %}pull-full{% endif %}">
+                        <a href="{{ next_post.permalink }}">
+                            <div class="pagination-info">
+                                <div class="label">下一篇</div>
+                                <div class="next_info">{{ next_post.title }}</div>
+                            </div>
+                        </a>
+                    </div>
+                {% endif %}
+            </nav>
+            {% include "partial/post/related-posts.html" %}
+            <hr>
+        </div>
+        {# Side bar generator #}
+        {{ macro::aside(widgets=config.extra.sidebar.widgets.postWidget) }}
+    </main>
+    {% include "partial/common/footer.html" %}
+{% endblock %}
+

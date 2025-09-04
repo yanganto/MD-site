@@ -1,0 +1,34 @@
+{% import "_macros.html" as macro %}
+{% import "macro/template.html" as macro_template %}
+{% import "macro/pagination.html" as macro_page %}
+
+{% extends "page/base.html" %}
+
+{% block head %}
+    {{ macro::head_meta(title = page.title, _permalink = page.path, excerpt = page.description | default(value= page.title ~ " | " ~ config.description), type = 'social') }}
+    <script id="ld-json" type="application/ld+json"></script>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ macro::get_production_path(path="/css/social.css") }}">
+<!-- 头部导航栏 -->
+<header class="{% if config.extra.top.above.enable_above %}full_page{% else %}not-top-img{% endif %}" id="page-header">
+    {{ macro::nav(title = config.title) }}
+</header>
+<div class="socialOA" style="margin-top: 10%;">
+    <div class="social">
+      <div class="social-card">
+        {{ macro::img_progressive_loading_single_size(src="/img/social/qr.jpg",class="qrcode", alt="qrcode") }}
+        <div class="tips">追蹤Instagram，瞭解更多！</div>
+        <div class="socialOA-card">
+          <div class="socialOA-head" style="background-image: url(/img/logo.webp);"></div>
+          <div class="socialOA-info">
+            <div class="socialOA-name">早安潛水</div>
+            <div class="socialOA-description">Morning Diver</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
+

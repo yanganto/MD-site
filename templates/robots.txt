@@ -1,0 +1,9 @@
+user-agent: *
+disallow: /friends
+allow: *
+
+user-agent: Algolia Crawler
+disallow: /friends
+allow: *
+
+sitemap: https://blog.Morning Diver/sitemap.xml

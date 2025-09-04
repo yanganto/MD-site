@@ -1,0 +1,20 @@
+<!-- 標籤统计 -->
+<div class="card-widget card-tags-stat">
+    <div class="item-headline">
+        <i class="icon-tags"></i>
+        <span>標籤统计</span>
+    </div>
+    <div class="tags-stat-content">
+        {% if tags %}
+            <ul>
+                {% for tag in tags %}
+                    <li>
+                        <a href="/tags/{{ tag }}">{{ tag }} ({{ tag.count }})</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>暂无標籤统计</p>
+        {% endif %}
+    </div>
+</div>

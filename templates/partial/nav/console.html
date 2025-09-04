@@ -1,0 +1,62 @@
+{# 控制台功能 #}
+<div id="console" >
+    <div class="close-btn" onclick="wjx.hideConsole()" href="javascript:void(0);">
+      <i class="icon-circle-xmark"></i>
+    </div>
+    <div class="console-card-group">
+      <!-- 右侧展示 tag -->
+      <div class="console-card-group-right">
+        <div class="console-card tags" onclick="wjx.hideConsole()">
+          <div class="card-content">
+            <div class="author-content-item-tips">標籤</div>
+            <span class="author-content-item-title">尋找感興趣的文章</span>
+          </div>
+          {% set tags = get_taxonomy(kind="tags") | get(key="items") | slice(end=config.extra.sidebar.tag_quantity) %}
+          <div class="card-tag-cloud">
+            {% for tag in tags %}
+            <a style="font-size:1em;color:#d3d3d3" href="{{ tag.permalink }}" rel="tag">
+              {{ macro::tag_name(tag=tag.name) }}<sup>{{ tag.page_count }}</sup>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- 底部展示时间归档 -->
+        <div class="console-card history" onclick="wjx.hideConsole()">
+          <div class="item-headline"><i class="fas fa-archive"></i><span>文章</span></div>
+          <ul class="card-archive-list">
+            {% set post_section = get_section(path="articles/_index.md") %}
+            {% for year, posts in post_section.pages | group_by(attribute="year") %}
+                <ul>
+                    {% for month, posts_monthly in posts | group_by(attribute="month") %}
+                        <li class="card-archive-list-item">
+                            <a class="card-archive-list-link" href="/archives">
+                                <span class="card-archive-list-date">
+                                    {{ year }} {{ month }}月
+                                </span>
+                                <div class="card-archive-list-count-group">
+                                    <span class="card-archive-list-count">{{ posts_monthly | length }}</span>
+                                    <span class="card-archive-list-count-unit">篇</span>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="button-group">
+      <div class="console-btn-item">
+        <button class="darkmode_switchbutton" href="javascript:void(0);" onclick="navFn.switchDarkMode();" rel="external nofollow"
+           title="切換顯示模式"><i class="icon-moon-clear-fill" style="font-size:1rem"></i>
+        </button>
+      </div>
+      <div class="console-btn-item" id="consoleHideAside" onclick="wjx.hideAsideBtn()" title="顯示側邊控制">
+        <button class="asideSwitch" title="側邊開關" ><i class="icon-arrows-left-right"></i></button>
+      </div>
+    </div>
+    <div class="console-mask" href="javascript:void(0);" onclick="wjx.hideConsole()">
+    </div>
+  </div>

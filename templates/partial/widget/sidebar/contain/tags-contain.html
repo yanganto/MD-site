@@ -1,0 +1,11 @@
+<!-- 標籤容器 -->
+<div class="tags-contain">
+    <h2>標籤</h2>
+    <ul>
+        {% for tag in tags %}
+            <li>
+                <a href="{{ tag.url }}">{{ tag.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

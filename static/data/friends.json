@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "display_name": "潛水教育 ",
+      "description": "Scuba diving certification agencies",
+      "display_style": "beautify",
+      "links": [
+        {
+          "display_name": "SDI",
+          "description": "Scuba Diving International (SDI) is a Scuba training and certification agency. It is the recreational arm of Technical Diving International, a technical diver training organization.",
+          "url": "https://www.tdisdi.com/",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/SDI.JPG"
+        }
+      ]
+    },
+    {
+      "display_name": "海洋生物辨識",
+      "description": "海洋生物資料庫及圖鑑",
+      "display_style": "beautify",
+      "links": [
+        {
+          "display_name": "(舊版)台灣魚類資料庫",
+          "description": "鑒於魚類分類系統及種名變動頻仍，臺灣魚種之新記錄或時空分布的資料也幾乎是與日俱增，因此建立之資料庫",
+          "url": "https://fishdb.sinica.edu.tw/chi/home.php",
+          "logo": "https://fishdb.sinica.edu.tw/images/tflogo.gif"
+        },
+        {
+          "display_name": "台灣魚類資料庫",
+          "description": "鑒於魚類分類系統及種名變動頻仍，臺灣魚種之新記錄或時空分布的資料也幾乎是與日俱增，因此建立之資料庫",
+          "url": "https://fishdb.sinica.edu.tw",
+          "logo": "https://fishdb.sinica.edu.tw/files/muse_fishdb/muse_banner/fishdb_logo_5.png"
+        }
+      ]
+    }
+  ]
+}
