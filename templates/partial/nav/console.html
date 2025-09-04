@@ -4,24 +4,12 @@
       <i class="icon-circle-xmark"></i>
     </div>
     <div class="console-card-group">
-      <!-- 评论，需要使用评论插件，获取最近评论 -->
-      <div class="console-card-group-left">
-        <div class="console-card" id="card-newest-comments" onclick="wjx.hideConsole()">
-          <div class="card-content">
-            <div class="author-content-item-tips">互动</div>
-            <span class="author-content-item-title">最近评论</span>
-          </div>
-          <div class="aside-list">
-            {% if config.extra.comments.system == "twikoo" %}<span>正在加载中...</span>{% endif %}
-          </div>
-        </div>
-      </div>
       <!-- 右侧展示 tag -->
       <div class="console-card-group-right">
         <div class="console-card tags" onclick="wjx.hideConsole()">
           <div class="card-content">
             <div class="author-content-item-tips">標籤</div>
-            <span class="author-content-item-title">寻找感兴趣的领域</span>
+            <span class="author-content-item-title">尋找感興趣的文章</span>
           </div>
           {% set tags = get_taxonomy(kind="tags") | get(key="items") | slice(end=config.extra.sidebar.tag_quantity) %}
           <div class="card-tag-cloud">
@@ -59,46 +47,15 @@
       </div>
     </div>
   
-    {% if config.extra.about_reward.reward.enable %}
-    <div class="console-card-group-reward">
-      <ul class="reward-all console-card">
-        <li class="reward-item">
-          <button href="{{ config.extra.about_reward.reward.wxPay }}"
-             rel="external nofollow noopener noreferrer" target="_blank" draggable="false">
-            {{ macro::img_progressive_loading_single_size(src=config.extra.about_reward.reward.wxPay, alt="微信") }}
-          </button>
-          <div class="post-qr-code-desc">微信</div>
-        </li>
-        <li class="reward-item">
-          <button href="{{ config.extra.about_reward.reward.alipay }}"
-             rel="external nofollow noopener noreferrer" target="_blank" draggable="false">
-            {{ macro::img_progressive_loading_single_size(src=config.extra.about_reward.reward.alipay, alt="支付宝") }}
-          </button>
-          <div class="post-qr-code-desc">支付宝</div>
-        </li>
-      </ul>
-    </div>
-    {% endif %}
     <div class="button-group">
       <div class="console-btn-item">
         <button class="darkmode_switchbutton" href="javascript:void(0);" onclick="navFn.switchDarkMode();" rel="external nofollow"
-           title="显示模式切换"><i class="icon-moon-clear-fill" style="font-size:1rem"></i>
+           title="切換顯示模式"><i class="icon-moon-clear-fill" style="font-size:1rem"></i>
         </button>
       </div>
-      <div class="console-btn-item" id="consoleHideAside" onclick="wjx.hideAsideBtn()" title="边栏显示控制">
-        <button class="asideSwitch" title="侧边栏开关" ><i class="icon-arrows-left-right"></i></button>
+      <div class="console-btn-item" id="consoleHideAside" onclick="wjx.hideAsideBtn()" title="顯示側邊控制">
+        <button class="asideSwitch" title="側邊開關" ><i class="icon-arrows-left-right"></i></button>
       </div>
-      <div class="console-btn-item on" id="consoleCommentBarrage" onclick="wjx.switchCommentBarrage()" title="热评开关">
-        <button class="commentBarrage" ><i class="icon-chat--fill"></i></button>
-      </div>
-  
-      {% if config.extra.tool.nav_music.enable %}
-      <div class="console-btn-item" id="consoleMusic" onclick="wjx.musicToggle()" title="音乐开关">
-        <button class="music-switch" >
-          <i class="icon-disc-fill"></i>
-        </button>
-      </div>
-      {% endif %}
     </div>
     <div class="console-mask" href="javascript:void(0);" onclick="wjx.hideConsole()">
     </div>

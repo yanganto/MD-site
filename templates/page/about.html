@@ -44,7 +44,7 @@
                         </div>
                     {% endif %}
                     <div class="author-img">
-                        {{ macro::img_progressive_loading_single_size(src=config.extra.site.logo) }}
+                        {{ macro::img_progressive_loading_single_size(src=config.extra.site.author.avatar) }}
                     </div>
                     {% if config.extra.about.author_info_right_tags | length > 0 %}
                         <div class="author-tag-right">
@@ -59,12 +59,10 @@
                 <div class="author-content" id="about-content">
                     <div class="create-site-post author-content-item single">{{ doc.content | safe }}</div>
                 </div>
-                {% include "partial/widget/about/about-reward.html" %}
             </div>
         </div>
     </main>
 
-
     {% include "partial/common/footer.html" %}
-{% endblock %}
+{% endblock content %}
 

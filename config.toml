@@ -221,12 +221,9 @@ email = "yanganto@gmail.com"
 start_year = "2025"
 
 [extra.site.author]
-# 作者头像
-avatar = "/img/logo.webp"
-# 关于页面的横版图片
-about_image = "/img/logo.webp"
-# MBTI 性格
-mbti = 'enfp'
+avatar = "/img/avatar.jpg"
+about_image = "/img/me.jpg"
+mbti = 'dive'
 
 # 是否启用页面统计
 [extra.site.analytics]
@@ -625,11 +622,10 @@ enable = true
 copy_info = false
 # 原創声明内容 支持html
 content = """
-本文是原創文章，採用 <a target="_blank" href="/copyright">CC BY-NC-ND 4.0</a> 協議，轉載请註明 <a href="/" target="_blank" >本站名稱及地址</a>
+採用 <a target="_blank" href="/copyright">CC BY-NC-ND 4.0</a> 授權，轉載请註明 <a href="/" target="_blank" >早安潛水及網址</a>
 """
-# 轉載声明内容 支持html
 reprintContent = """
-本文是轉載文章，版权归原作者所有。建议访问原文，轉載本文请联系原作者。
+本文是轉載文章，版權為早安潛水所有。
 """
 
 # 相關網站设置
@@ -659,39 +655,37 @@ btn_url = "/"
 [extra.about]
 # 小部件配置
 widget_list = [
+    # "hello-about",         # 我的问候
     "content-idea",        # 我的介绍&我的想法
-    "hello-about",         # 我的问候
     "author-career",       # 技能&职业生涯
     "personalities-photo", # 性格&图片
-    "textarea",            # 座右铭
-    "hobby",                # 爱好
-    "like-music",          # 关注偏好&音乐偏好
-    "statistics-map",      # 数据统计&作者相關信息
+    # "textarea",            # 座右铭
+    # "hobby",                # 爱好
+    # "like-music",          # 关注偏好&音乐偏好
+    # "statistics-map",      # 数据统计&作者相關信息
 ]
 
 # 头像左侧个人標籤 (也会出现在首页个人简介中)
 author_info_left_tags = [
-    "🤖️ 数码科技爱好者", 
-    "🔯 全栈架构都在行",
-    "🏠 智能家居小能手",
-    "🤝 科研科普两不误",
+    "🔍 喜歡探索水下世界",
+    "🤛 潛水保持安全距離",
+    "🏃 說走就走的行動派",
+    # "🔯 全栈架构都在行",
 ]
 
 # 头像右侧个人標籤 (也会出现在首页个人简介中)
 author_info_right_tags = [
-    "🎵 业余原創音乐人", 
-    "🏃 文艺青年细节控",
-    "🔍 探索世界涉猎广",
-    "🤛 热爱分享交朋友",
+    # "🤖️ 本業軟體工程師", 
+    # "🏠 除了潛水宅在家",
+    # "🤝 喜歡",
+    # "🎵 业余原創音乐人", 
 ]
 
-# 我的介绍 支持 HTML 语法
-content = "<div class=\"title1\">云海之中很高兴和你相遇👋</div> <div class=\"title2\">这里是 <span class=\"inline-word\">Morning Diver</span> 博客主题预览站点</div>"
-# 我的想法 支持 HTML 语法
-idea = "<div class=\"author-content-item-tips\">我的创作</div> <h2>主要围绕以下<span class=\"inline-word\"/>领域</span> <div class=\"mask\"> <span class=\"first-tips\" data-show=\"\">博客</span> <span>主题</span> <span data-up=\"\">………</span> </div> </h2>"
+# support HTML
+content = "<div class=\"title1\">早安👋</div> <div class=\"title2\">歡迎加入<span class=\"inline-word\">Morning Diver</span>，成為專業的潛水員</div>"
+idea = "<div class=\"author-content-item-tips\">專業潛水員</div> <h2>在<span class=\"inline-word\"/>潛水</span>的日子，只會<div class=\"mask\"> <span class=\"first-tips\" data-show=\"\">吃 Eat</span> <span>睡 Sleep</span> <span data-up=\"\">潛 Dive</span> </div> </h2>"
 
-# 我的问候
-hello = "Welcome!"
+hello = "Morning!"
 
 # 照片
 [[extra.about.photos]]
@@ -700,24 +694,44 @@ description = "照片"
 
 # 职业生涯
 [extra.about.careers]
-# 生涯标题
-title = "跨界 融合 创新"
-# 生涯背景图 建议找个透明图
+title = "專業 耐心 創新"
 bg = ""
 
-# 职位標籤
 [[extra.about.careers.tags]]
-# 颜色
 background = "#ff5f1f"
-# 描述
-occupation = "工程师"
+occupation = "SDI Instructor"
 
-# 职位標籤
 [[extra.about.careers.tags]]
-# 颜色
+background = "#ff5f1f"
+occupation = "PADI Dive Master (#561728)"
+
+[[extra.about.careers.tags]]
+background = "#ff5f1f"
+occupation = "YUHSIN Service & Maintenance Certificate (SMC2025E0090-002)"
+
+[[extra.about.careers.tags]]
+background = "#ff5f1f"
+occupation = "EFR-Primary Care(CPR) & Sec Care(1st aid) (2409AR0252)"
+
+[[extra.about.careers.tags]]
+background = "#ff5f1f"
+occupation = "SDI Equipment Specialist (#1653748)"
+
+[[extra.about.careers.tags]]
 background = "#1fffff"
-# 描述
-occupation = "架构师"
+occupation = "TDI Sidemount Diver (#1708793)"
+
+[[extra.about.careers.tags]]
+background = "#1fffff"
+occupation = "PADI Rescue Diver"
+
+[[extra.about.careers.tags]]
+background = "#1fffff"
+occupation = "PADI Advanced Open Water"
+
+[[extra.about.careers.tags]]
+background = "#1fffff"
+occupation = "PADI Open Water"
 
 # 文本块
 # 左边的一行10字 右面一行19字(设置两条数据，不然出不来)
@@ -802,74 +816,6 @@ authorInfoTitle = "毕业院校"
 authorInfoContent = "XXXX学校"
 # 颜色
 authorInfoColor = "#b04fe6"
-
-# 关于（打赏）设置
-[extra.about_reward]
-# 启用关于（打赏）模块
-enable = false
-
-# 标题
-title = "赞赏名单"
-# 内容
-content = "感谢赞赏的人，因为你们，让我感受到写博客这件事情能够给你们创造价值。这会让我在这条路上走得更远。"
-
-# 标记金额 大于等于该值自动标记
-reward_number = 10
-
-# 打赏名单地址
-reward_md_url = "/about"
-
-# 打赏按钮
-[extra.about_reward.reward]
-# 启用打赏
-enable = false
-# 文章页面打赏
-enable_wz = true
-# 打赏按钮名稱
-name = "赞赏作者"
-# 微信收款码二维码图片链接
-wxPay = "/"
-# 支付宝收款码二维码图片链接
-alipay = ""
-
-
-
-# 打赏名单
-[[extra.about_reward.sponsors]]
-# 姓名
-name = "1"
-# 金额
-amount = 1
-# 时间
-date = "2024-0-65"
-# 头像图片地址
-avatar = ""
-
-[[extra.about_reward.sponsors]]
-# 姓名
-name = "金主"
-# 金额
-amount = 200
-# 时间
-date = "2015-08-05"
-# 头像图片地址
-avatar = "/img/logo.webp"
-
-[extra.about_reward.style]
-# Additional styling options can be added here
-background_color = "#ffffff"
-text_color = "#333333"
-border_radius = "4px"
-padding = "20px"
-
-[extra.about_reward.display]
-# Display options
-show_avatars = true
-show_amounts = true
-show_dates = true
-sort_by = "date"    # Can be "date", "amount", or "name"
-display_limit = 10  # Number of entries to show 
-
 
 # 评论设置
 [extra.comments]

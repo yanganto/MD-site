@@ -13,43 +13,6 @@
         </div>
         <div class="post-tools" id="post-tools">
             <div class="post-tools-left">
-                <div class="rewardLeftButton">
-                    {% if config.extra.about_reward.reward.enable_reward_wz %}
-                        <div class="post-reward" onclick="AddRewardMask()">
-                            <div class="reward-button button--animated" title="打赏作者">
-                                <i class="icon-hand-heart-fill"></i> 打赏作者
-                            </div>
-                            <div class="reward-main">
-                                <ul class="reward-all">
-                                    <span class="reward-title">感谢你赐予我前进的力量</span>
-                                    <ul class="reward-group">
-                                        <li class="reward-item">
-                                            <a href="{{ config.extra.about_reward.reward.wxPay }}" target="_blank">
-                                                {{ macro::img_progressive_loading_single_size(src=config.extra.about_reward.reward.wxPay, alt="微信", class="post-qr-code-img") }}
-                                            </a>
-                                            <div class="post-qr-code-desc">微信</div>
-                                        </li>
-                                        <li class="reward-item">
-                                            <a href="{{ config.extra.about_reward.reward.alipay }}" target="_blank">
-                                                {{ macro::img_progressive_loading_single_size(src=config.extra.about_reward.reward.alipay, alt="支付宝", class="post-qr-code-img") }}
-                                            </a>
-                                            <div class="post-qr-code-desc">支付宝</div>
-                                        </li>
-                                    </ul>
-                                    <a class="reward-main-btn" href="{{ config.extra.about_reward.reward.reward_md_url }}" target="_blank">
-                                        <div class="reward-text">赞赏者名单</div>
-                                        <div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div>
-                                    </a>
-                                </ul>
-                            </div>
-                        </div>
-                    {% endif %}
-                    <div class="reward-link mode">
-                        <a class="reward-link-button" href="/subscribe">
-                            <i class="icon-plant-fill"></i>订阅
-                        </a>
-                    </div>
-                </div>
                 <div class="shareRight">
                     {% if config.extra.post.share_right.mobile_edit %}
                         <div class="copyright-link mobile">

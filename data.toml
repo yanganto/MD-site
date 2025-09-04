@@ -45,19 +45,14 @@ id = 'hot'
 index = 0
 name = '熱門'
 
-# 可选，下述標籤仅用于文章分類
 [[post.tags]]
 id = 'tech'
 index = 1
-name = '技术'
+name = '技術'
 [[post.tags]]
-id = 'traning'
+id = 'training'
 index = 2
 name = '訓練'
-[[post.tags]]
-id = 'blog'
-index = 3
-name = '博客'
 
 [[post.categories]]
 id = 'course'
@@ -83,7 +78,6 @@ nav_menu = [
     { name = "服務項目", menus = [
         { name = "關於我", href = "/about", icon = "icon-rocket", target = "_self" },
         { name = "潛水課程", href = "/course", icon = "icon-artstation", target = "_self" },
-        { name = "我的項目", href = "/tags/project", icon = "icon-lightbulb", target = "_self" },
     ] },
     { name = "文章", menus = [
         { name = "全部文章", href = "/archives", icon = "icon-book-open", target = "_self" },
@@ -108,13 +102,11 @@ footer_menu = [
     { name = "服務項目", menus = [
         { name = "關於我", href = "/about", target = "_self" },
         { name = "潛水課程", href = "/course", target = "_self" },
-        { name = "我的項目", href = "/tags/project", target = "_self" },
     ] },
     { name = "文章", menus = [
         { name = "全部文章", href = "/archives", target = "_self" },
         { name = "分類列表", href = "/categories", target = "_self" },
         { name = "標籤列表", href = "/tags", target = "_self" },
-        { name = "随機文章", href = "javascript:toRandomPost()" },
     ] },
     { name = "文件表單", menus = [
         { name = "網站版權", href = "/copyright", target = "_self" },
