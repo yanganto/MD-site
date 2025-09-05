@@ -1,8 +1,8 @@
 +++
 title = "潛水中無所不在的中性浮力"
-date = 2025-12-15
+date = 2025-09-05
 slug = "neutral buoyancy"
-description = "在水下每個分開的物件，在不同的深度都會有不同的中性浮力"
+description = "在水下每個分開的物件，在不同的深度都會有不同的浮力，需要經過調整才能達到中性浮力！"
 
 [taxonomies]
 tags = ["featured"]

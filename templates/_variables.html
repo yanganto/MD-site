@@ -182,14 +182,6 @@
                 js: '/libs/fancybox/jquery.fancybox.min.js',
                 css: '/null'
             },
-            comments: {
-                use: "{{ config.extra.comments.system }}",
-                maxBarrage: {{ config.extra.comments.barrage.max_barrage }},
-                barrageTime: {{ config.extra.comments.barrage.barrage_time }},
-                mailMd5: "{{ config.extra.comments.barrage.mail_md5 }}",
-                lazyload: {{ config.extra.comments.lazy_load }},
-                textarea: "{% if config.extra.comments.system == 'twikoo' %}el-textarea__inner{% elif config.extra.comments.system == 'artalk' %}atk-textarea{% elif config.extra.comments.system == 'waline' %}wl-editor{% else %}appearance-none{% endif %}"
-            },
             post: {
                 dynamicBackground: {{ config.extra.post.dynamicBackground }}
             },
@@ -197,38 +189,7 @@
                 switch: {{ config.extra.tool.snackbar.switch }}
             },
             postAi: {
-                {% if config.extra.post.abstract.mode != "local" %}
-                switchBtn: {{ config.extra.post.abstract.switch_btn }},
-                keys: "{{ config.extra.post.abstract.key }}",
-                btnLink: "{{ config.extra.post.abstract.btn_link | safe }}",
-                Referers: "{{ config.extra.post.abstract.referers | safe }}",
-                basicWordCount: {{ config.extra.post.abstract.basic_word_count }},
-                randomNum: {{ config.extra.post.abstract.random_num }},
-                {% endif %}
-                gptName: "{{ config.extra.post.abstract.gpt_name }}",
-                modeName: "{{ config.extra.post.abstract.mode }}"
             },
-            {%- if config.extra.comments.system == 'twikoo' -%}
-            twikoo: {
-                js: "{% if config.extra.comments.twikoo.js %}{{ config.extra.comments.twikoo.js }}{% else %}/libs/twikoo/twikoo.all.min.js{% endif %}",
-                twikooUrl: "{{ config.extra.comments.twikoo.env_id | safe }}",
-            },
-            {% endif %}
-            {%- if config.extra.comments.system == 'artalk' -%}
-            artalk: {
-                js: "{% if config.extra.comments.artalk.artalk_js %}{{ config.extra.comments.artalk.artalk_js | safe }}{% else %}/libs/artalk/Artalk.js{% endif %}",
-                css: "{% if config.extra.comments.artalk.artalk_css %}{{ config.extra.comments.artalk.artalk_css | safe }}{% else %}/libs/artalk/Artalk.css{% endif %}",
-                artalkUrl: "{{ config.extra.comments.artalk.server | safe }}",
-                siteName: "{{ config.extra.comments.artalk.site_name }}"
-            },
-            {%- endif -%}
-            {%- if config.extra.comments.system == 'waline' -%}
-            waline: {
-                js: "{% if config.extra.comments.waline.waline_js %}{{ config.extra.comments.waline.waline_js }}{% else %}https://cdn.cbd.int/@waline/client@2.15.7/dist/waline.js{% endif %}",
-                serverURL: "{{ config.extra.comments.waline.server_url }}",
-                locale: "{% if config.extra.comments.waline.locale %}{{ config.extra.comments.waline.locale }}{% else %}{% endif %}"
-            },
-            {%- endif -%}
             footer: {
                 default_enable: {{ config.extra.footer.enable }}
             },

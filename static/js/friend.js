@@ -21,7 +21,7 @@ async function loadFriendLinks() {
                 if (odd) {
                     tagsGroupHtml += '<div class="tags-group-icon-pair">';
                 }
-                var img = link.local_logo || link.logo;
+                var img = link.local_logo || link.logo || "/img/lazyload.svg";
                 tagsGroupHtml += `
                     <a class="tags-group-icon" target="_blank" href="${link.url}" title="${link.display_name}">
                         <img title="${link.display_name}" src="${img}" loading="lazy">

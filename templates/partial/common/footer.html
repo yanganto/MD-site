@@ -110,7 +110,6 @@
                         <a class="footer-bar-link" href="{{ config.extra.site.compliance_security_link }}"
                            rel="noopener external nofollow noreferrer"
                            target="_blank">
-                           {{ macro::img_progressive_loading_single_size(src="/img/beian.png", id="beian-icon") }}
                            <span>{{ config.extra.site.compliance_security }}</span>
                         </a>
                         {% endif %}
@@ -121,7 +120,7 @@
                            {{ config.extra.site.compliance_icp }}
                         </a>
                         {% endif %}
-                        <a class="footer-bar-link" href="https://github.com/iWangJiaxiang/Morning Diver">
+                        <a class="footer-bar-link" href="https://www.getzola.org/">
                             <div class="status-light"></div>
                             <span>本站以 Rust Zola 打造，安全是我們的底線</span>
                         </a>
@@ -164,9 +163,6 @@
     {% endif %}
 
     <div id="quit-box" onclick="RemoveRewardMask()"></div>
-
-    <!--评论弹幕弹窗 -->
-    <div class="comment-barrage needEndHide" style="display: none;"></div>
 
     <style>
         a.footer-bar-link.cloud {

@@ -25,7 +25,7 @@
 
 <!DOCTYPE html>
 {# <html lang="{{ lang }}"> #}
-<html lang="zh-CN">
+<html lang="zh-TW">
 
 <head>
     {# head 中自定义的 #}
@@ -114,23 +114,8 @@
     <script defer src='{{ macro::get_production_path(path="/js/rightmenu.js") }}'></script>
 {% endif %}
 
-<!-- 评论弹幕 -->
-{% if (
-    (config.extra.comments.twikoo.env_id ) or
-    (config.extra.comments.artalk.server  and config.extra.comments.artalk.site_name ) or
-    (config.extra.comments.system == 'waline' and config.extra.comments.waline.server_url )
-) and config.extra.comments.barrage.enable and config.extra.comments.enable %}
-<link rel="preload" as="style" href="{{ macro::get_production_path(path="/css/commentBarrage.css") }}" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="{{ macro::get_production_path(path="/css/commentBarrage.css") }}"></noscript>
-<script defer src='{{ macro::get_production_path(path="/js/commentBarrage.js") }}'></script>
-{% endif %}
-
-{# 文章摘要 #}
-<script data-pjax defer src="{{ macro::get_production_path(path="/js/abstract/" ~ config.extra.post.abstract.mode ~ ".js") }}"></script>
-
 {# 延迟执行的不重要脚本 #}
 <script data-pjax defer src='{{ macro::get_production_path(path="/js/bundle.js") }}'></script>
-<script defer src="{{ macro::get_production_path(path="/js/tw_cn.js") }}"></script>
 
 {% if config.extra.nav.right.search %}
     {% include "partial/nav/search-dialog.html" %}
