@@ -507,7 +507,7 @@ gongwangan = true
 copyright = true
 # 反馈
 feedback = true
-feedback_url = "mailto:mail@example.com"
+feedback_url = "mailto:yanganto@gmail.com"
 
 # 云服务商 upyun_cloud aliyun_cloud tencent_cloud huawei_cloud custom_cloud
 yunzhichi_list = ""
@@ -518,7 +518,7 @@ yunzhichi_url_link = ""
 
 [extra.footer.footer_bar]
 # 是否显示
-enable = true
+enable = false
 
 # 社交媒体
 [extra.footer.social_media]
@@ -535,14 +535,13 @@ icon = "icon-envelope"
 # 名稱
 name = "Mail"
 # 链接
-url = "mailto:mail@example.com"
+url = "mailto:yanganto@gmail.com"
 
-# 右侧社交媒体
 [[extra.footer.social_media.right]]
 option_social_data = "icon"
-icon = "icon-github"
-name = "Github"
-url = "https://github.com/yanganto/MD-site"
+icon = "icon-instagram"
+name = "Instagram"
+url = "https://www.instagram.com/morningdiver/"
 
 [extra.footer.footer_group]
 enable = true

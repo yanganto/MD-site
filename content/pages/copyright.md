@@ -13,4 +13,4 @@ type = "page"
 本網站內容皆自行潛水拍攝製作，版權採用
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en)釋出。
 
-網站源始碼採用AGPL授權自[zola theme jiaxiang.wang](https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang)。
+網站源始碼採用AGPL授權自[zola theme jiaxiang.wang](https://github.com/iWangJiaxiang/zola-theme-jiaxiang.wang)，並釋出於[Github](https://github.com/yanganto/MD-site)。

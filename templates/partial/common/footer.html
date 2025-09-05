@@ -29,7 +29,7 @@
         {% endfor %}
 
         {% if config.extra.footer.social_media.img_enable %}
-            {{ macro::img_progressive_loading_single_size(src=config.extra.site.logo, alt="返回顶部", class="footer_mini_logo", style="border-radius: 500px;", onclick="btf.scrollToDest(0, 500)") }}
+            {{ macro::img_progressive_loading_single_size(src=config.extra.site.logo, alt="回到頁首", class="footer_mini_logo", style="border-radius: 500px;", onclick="btf.scrollToDest(0, 500)") }}
         {% endif %}
 
         {% for socialMedia in config.extra.footer.social_media.right %}
