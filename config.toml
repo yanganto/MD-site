@@ -553,7 +553,7 @@ num = 3
 # 动态主色 文章主色匹配图片颜色
 dynamicBackground = true
 # 目录模糊效果
-opacity = true
+opacity = false
 # 阅读建议 两篇 two 或六篇 six
 recommendQuantity = "two"
 # 版权样式 默认或样式一 default one
