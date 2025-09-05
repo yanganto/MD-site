@@ -530,9 +530,6 @@ var rightSideFn = {
         }
         newEle.addEventListener('click', clickFn)
     },
-    showOrHideBtn: () => { // rightside 點擊設置 按鈕 展開
-        document.getElementById('rightside-config-hide').classList.toggle('show')
-    },
     scrollToTop: () => { // Back to top
         btf.scrollToDest(0, 500)
     },
@@ -787,19 +784,6 @@ $("textarea").focusout(function () {
     wjx_intype = false;
 });
 
-//当前窗口得到焦点 
-// window.onfocus = function () {
-//     document.querySelector("#keyboard-tips").classList.remove("show");
-// };
-
-// $(window).on('keyup', function (ev) {
-//     // 显示快捷键面板
-//     if (ev.keyCode == 16) {
-//         document.querySelector("#keyboard-tips").classList.remove("show");
-//     }
-// });
-
-
 // 早上好问好
 // 获取时间
 window.getTimeState = function() {
@@ -1008,12 +992,6 @@ window.initBlogLazy = runOnce('initBlogLazy')(() => {
             case 'go-up':
                 rightSideFn.scrollToTop()
                 break
-            case 'rightside-config':
-                rightSideFn.showOrHideBtn()
-                break
-            case "mobile-toc-button":
-                rightSideFn.runMobileToc(this);
-                break;
             case 'readmode':
                 rightSideFn.switchReadMode()
                 break

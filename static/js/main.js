@@ -279,14 +279,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let menusWidth = $menusEle && $menusEle.offsetWidth
     let searchWidth = $searchEle && $searchEle.offsetWidth
 
-    // 初始化评论
-    const $postComment = document.getElementById('post-comment')
-    if ($postComment) {
-        $('#to_comment').attr('style', 'display: block');
-    } else {
-        $('#to_comment').attr('style', 'display: none');
-    }
-
     // 滚动条小于 0 的时候
     if (document.body.scrollHeight <= innerHeight) {
         $rightside.style.cssText = 'opacity: 1; transform: translateX(-58px)'

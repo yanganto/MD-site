@@ -925,10 +925,6 @@ keyboard = true
 [extra.tool.right_menu]
 # 启用
 enable = true
-# 右下角悬浮操作按钮
-right_side_enable = true
-# 阅读模式
-readmode = true
 
 # 音乐播放器 左下角音乐
 [extra.tool.nav_music]
