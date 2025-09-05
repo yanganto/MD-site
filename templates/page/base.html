@@ -114,17 +114,6 @@
     <script defer src='{{ macro::get_production_path(path="/js/rightmenu.js") }}'></script>
 {% endif %}
 
-<!-- 评论弹幕 -->
-{% if (
-    (config.extra.comments.twikoo.env_id ) or
-    (config.extra.comments.artalk.server  and config.extra.comments.artalk.site_name ) or
-    (config.extra.comments.system == 'waline' and config.extra.comments.waline.server_url )
-) and config.extra.comments.barrage.enable and config.extra.comments.enable %}
-<link rel="preload" as="style" href="{{ macro::get_production_path(path="/css/commentBarrage.css") }}" onload="this.onload=null;this.rel='stylesheet'"/>
-<noscript><link rel="stylesheet" href="{{ macro::get_production_path(path="/css/commentBarrage.css") }}"></noscript>
-<script defer src='{{ macro::get_production_path(path="/js/commentBarrage.js") }}'></script>
-{% endif %}
-
 {# 延迟执行的不重要脚本 #}
 <script data-pjax defer src='{{ macro::get_production_path(path="/js/bundle.js") }}'></script>
 

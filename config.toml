@@ -211,12 +211,8 @@ logo = "/img/logo.webp"
 # 网站favicon 尺寸比logo更小
 favicon = "/img/logo.webp"
 compliance_icp = "ISO/IEC 17065"
-# 公安备案
-# compliance_security = "鲁公网安备 xxxxxxxx 号"
-# 公安备案链接
-# compliance_security_link = "https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=xxxxxx"
-# 文章默认封面
-default_cover = "/img/default-cover.webp"
+
+default_cover = "/img/lazyload.webp"
 email = "yanganto@gmail.com"
 start_year = "2025"
 
@@ -785,71 +781,6 @@ authorInfoTitle = "毕业院校"
 authorInfoContent = "XXXX学校"
 # 颜色
 authorInfoColor = "#b04fe6"
-
-# 评论设置
-[extra.comments]
-# 全局评论开关
-enable = false
-
-# 评论系统选择
-# 选项: "twikoo", "artalk", "waline"
-system = "twikoo"
-# 启用/禁用评论懒加载，针对：Twikoo、Artalk、Waline
-lazy_load = false
-
-# Artalk 配置
-[extra.comments.artalk]
-# 启用/禁用 Artalk
-enable = false
-# 标题
-site_name = ""
-# 后端URL
-server = ""
-# js文件地址
-js_url = ""
-# css文件地址
-css_url = ""
-
-# Twikoo 配置
-[extra.comments.twikoo]
-# 启用/禁用 Twikoo
-enable = true
-# 环境ID
-env_id = 'https://your-api-url'
-# js文件地址
-js_url = "https://cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"
-
-# Waline 配置
-[extra.comments.waline]
-# 启用/禁用 Waline
-enable = false
-# 后端URL
-server_url = ""
-# js文件地址
-js_url = ""
-# css文件地址
-css_url = ""
-# 语言配置 "格式：{'placeholder': '欢迎评论', 'sofa': '来发评论吧~1'}
-# 更多请查看文档：https://waline.js.org/cookbook/customize/locale.html#%E4%BE%8B%E5%AD%90"
-locale = "{'placeholder': '欢迎评论', 'sofa': '来发评论吧~'}"
-
-# 评论匿名邮箱设置
-[extra.comments.visitor_mail]
-# 启用/禁用评论匿名邮箱
-enable = false
-# 匿名邮箱
-mail = "visitor@xxx.com"
-
-# 评论弹幕设置
-[extra.comments.barrage]
-# 启用/禁用评论弹幕
-enable = true
-# 同时最多显示弹幕数
-max_barrage = 1
-# 弹幕显示间隔时间ms
-barrage_time = 4000
-# 博主邮箱MD5值 用于验证博主评论，可前往cmd5.com加密自己使用的邮箱，选择32位小写
-mail_md5 = ""
 
 # 样式设置
 [extra.style]
