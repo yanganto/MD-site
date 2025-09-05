@@ -1,7 +1,7 @@
 title = "早安潛水 MorningDiver!"
 # The default author for pages
 author = "Morning Diver"
-description = "最好的潛水學習方式"
+description = "客製化且彈性潛水學習方式"
 
 # The URL the site will be built for
 # start with "https://"
@@ -636,11 +636,11 @@ dynamic_render = true
 
 [extra.course]
 background_img = "/img/courses/AOW.jpg"
-small_title = "課程"
-big_title = "彈性且客制化的訓練"
+small_title = "課程宗旨"
+big_title = "彈性且客製化的訓練"
 detail = "安全永遠是我們的底線"
-btn_title = "主頁"
-btn_url = "/"
+btn_title = ""
+btn_url = ""
 
 # 关于设置
 [extra.about]
@@ -889,9 +889,9 @@ font_family = "PingFang SC"
 # 繁简转换
 [extra.style.translate]
 # 启用繁简转换
-enable = true
+enable = false
 # 默认编码 2: 简体中文, 1: 繁体中文 
-default_encoding = 2
+default_encoding = 1
 
 
 # 代码块设置
