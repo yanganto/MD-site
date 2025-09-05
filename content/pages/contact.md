@@ -16,5 +16,5 @@ type = "page"
 
 ## RSS訂閱我們的最新文章
 
-你可以使用第三方RSS客户端接收到博客的文章摘要通知。
-`https://blog.Morning Diver/rss.xml`
+你可以使用第三方RSS程式持續收到本站的文章摘要更更新通知
+`https://(pending)/rss.xml`

@@ -6620,24 +6620,6 @@ body[data-type=music] .page #nav #site-name span {
     }
 }
 
-
-#rightside #rightside-config-hide {
-    height: 0;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -webkit-transition: -webkit-transform .4s;
-    -moz-transition: -moz-transform .4s;
-    -o-transition: -o-transform .4s;
-    -ms-transition: -ms-transform .4s;
-    transition: transform .4s;
-    -webkit-transform: translate(45px, 0);
-    -moz-transform: translate(45px, 0);
-    -o-transform: translate(45px, 0);
-    -ms-transform: translate(45px, 0);
-    transform: translate(45px, 0)
-}
-
 #rightside #rightside-config-hide.show {
     height: auto;
     opacity: 1;
@@ -6648,13 +6630,6 @@ body[data-type=music] .page #nav #site-name span {
     -o-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0)
-}
-
-#rightside #rightside-config-hide.status {
-    height: auto;
-    opacity: 1;
-    -ms-filter: none;
-    filter: none
 }
 
 #rightside > div > a, #rightside > div > button {

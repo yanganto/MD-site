@@ -1,7 +1,7 @@
 title = "早安潛水 MorningDiver!"
 # The default author for pages
 author = "Morning Diver"
-description = "最好的潛水學習方式"
+description = "客製化且彈性潛水學習方式"
 
 # The URL the site will be built for
 # start with "https://"
@@ -507,7 +507,7 @@ gongwangan = true
 copyright = true
 # 反馈
 feedback = true
-feedback_url = "mailto:mail@example.com"
+feedback_url = "mailto:yanganto@gmail.com"
 
 # 云服务商 upyun_cloud aliyun_cloud tencent_cloud huawei_cloud custom_cloud
 yunzhichi_list = ""
@@ -518,7 +518,7 @@ yunzhichi_url_link = ""
 
 [extra.footer.footer_bar]
 # 是否显示
-enable = true
+enable = false
 
 # 社交媒体
 [extra.footer.social_media]
@@ -535,14 +535,13 @@ icon = "icon-envelope"
 # 名稱
 name = "Mail"
 # 链接
-url = "mailto:mail@example.com"
+url = "mailto:yanganto@gmail.com"
 
-# 右侧社交媒体
 [[extra.footer.social_media.right]]
 option_social_data = "icon"
-icon = "icon-github"
-name = "Github"
-url = "https://github.com/yanganto/MD-site"
+icon = "icon-instagram"
+name = "Instagram"
+url = "https://www.instagram.com/morningdiver/"
 
 [extra.footer.footer_group]
 enable = true
@@ -553,7 +552,7 @@ num = 3
 # 动态主色 文章主色匹配图片颜色
 dynamicBackground = true
 # 目录模糊效果
-opacity = true
+opacity = false
 # 阅读建议 两篇 two 或六篇 six
 recommendQuantity = "two"
 # 版权样式 默认或样式一 default one
@@ -636,11 +635,11 @@ dynamic_render = true
 
 [extra.course]
 background_img = "/img/courses/AOW.jpg"
-small_title = "課程"
-big_title = "彈性且客制化的訓練"
+small_title = "課程宗旨"
+big_title = "彈性且客製化的訓練"
 detail = "安全永遠是我們的底線"
-btn_title = "主頁"
-btn_url = "/"
+btn_title = ""
+btn_url = ""
 
 # 关于设置
 [extra.about]
@@ -889,9 +888,9 @@ font_family = "PingFang SC"
 # 繁简转换
 [extra.style.translate]
 # 启用繁简转换
-enable = true
+enable = false
 # 默认编码 2: 简体中文, 1: 繁体中文 
-default_encoding = 2
+default_encoding = 1
 
 
 # 代码块设置
@@ -926,10 +925,6 @@ keyboard = true
 [extra.tool.right_menu]
 # 启用
 enable = true
-# 右下角悬浮操作按钮
-right_side_enable = true
-# 阅读模式
-readmode = true
 
 # 音乐播放器 左下角音乐
 [extra.tool.nav_music]
