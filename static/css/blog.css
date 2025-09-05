@@ -15809,8 +15809,8 @@ div#wjx-footer-bar .footer-bar-description {
 }
 
 .author-content-item.holobioss .holobios-icon img, .author-content-item.holobioss .holobios-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 60px;
+    border-radius: 30px;
 }
 
 .author-content-item.holobioss .holobios-name {

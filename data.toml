@@ -171,10 +171,6 @@ name = "揚旛蝴蝶魚"
 bg_color = "#3e5054"
 logo = "/holobios/butterfly_fish.jpg"
 
-[[holobios.items]]
-name = "東方豹魴鮄"
-bg_color = "#0e5f87"
-video = "/holobios/Dactyloptena.mp4"
 
 [[holobios.items]]
 name = "硨磲貝"
@@ -187,21 +183,36 @@ bg_color = "#53574d"
 logo = "/holobios/RoseCoral.jpg"
 
 [[holobios.items]]
-name = "魚群風暴"
+name = "珊瑚森林"
 bg_color = "#003592"
-video = "/holobios/Fishes.mp4"
-
-[[holobios.items]]
-name = "海嵾"
-bg_color = "#93d8df"
-video = "/holobios/SeaCucumber.mp4"
+logo = "/holobios/CoralForest.jpg"
 
 [[holobios.items]]
 name = "蝠鱝"
 bg_color = "#003592"
-video = "/holobios/MentaRay.mp4"
+logo = "/holobios/Menta.jpg"
 
 [[holobios.items]]
 name = "自由潛水"
 bg_color = "#007386"
 logo = "/holobios/FreeDive.jpg"
+
+[[holobios.items]]
+name = "海龜"
+bg_color = "#007386"
+logo = "/holobios/Turtle.jpg"
+
+[[holobios.items]]
+name = "小丑魚"
+bg_color = "#007386"
+logo = "/holobios/jerryfish.jpg"
+
+[[holobios.items]]
+name = "護士鯊"
+bg_color = "#007386"
+logo = "/holobios/Shark.jpg"
+
+[[holobios.items]]
+name = "火焰花枝"
+bg_color = "#007386"
+logo = "/holobios/Cuttlefish.jpg"

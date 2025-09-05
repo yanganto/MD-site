@@ -3,7 +3,7 @@
     <div class="author-content-item holobioss">
         <div class="card-content">
             <div class="author-content-item-tips">海底世界</div>
-            <span class="author-content-item-title">去學習、去探險</span>
+            <span class="author-content-item-title">來學習、去探險</span>
             <div class="holobioss-style-group">
                 <div class="tags-group-all">
                     <div class="tags-group-wrapper">
@@ -20,11 +20,6 @@
                                         <i class="{{ tech.icon }}"></i>
                                         {% elif tech.svg_symbol_id %}
                                         <svg><use href="{{ tech.svg_sprite | default(value=data.holobios.svg_sprite) | safe }}#{{ tech.svg_symbol_id | safe }}"/></svg>
-                                        {% elif tech.video %}
-                                        <video autoplay muted loop style="width: 120px; height: 120px; border-radius: 30px;">
-                                          <source src="{{ tech.video }}" type="video/mp4">
-                                          unsupported video
-                                        </video>
                                         {% endif %}
                                     </div>
                             {% if not odd %}
@@ -77,9 +72,6 @@
                 </div>
                 {% endfor %}
             </div>
-            {% endif %}
-            {% if config.extra.about.careers.bg %}
-                {{ macro::img_progressive_loading_single_size(src=config.extra.about.careers.bg, alt="生涯", class="author-content-img") }}
             {% endif %}
         </div>
     </div>
