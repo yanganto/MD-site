@@ -25,7 +25,7 @@
 
 <!DOCTYPE html>
 {# <html lang="{{ lang }}"> #}
-<html lang="zh-CN">
+<html lang="zh-TW">
 
 <head>
     {# head 中自定义的 #}
@@ -127,7 +127,6 @@
 
 {# 延迟执行的不重要脚本 #}
 <script data-pjax defer src='{{ macro::get_production_path(path="/js/bundle.js") }}'></script>
-<script defer src="{{ macro::get_production_path(path="/js/tw_cn.js") }}"></script>
 
 {% if config.extra.nav.right.search %}
     {% include "partial/nav/search-dialog.html" %}
