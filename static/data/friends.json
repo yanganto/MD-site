@@ -1,7 +1,7 @@
 {
   "groups": [
     {
-      "display_name": "潛水教育 ",
+      "display_name": "潛水系統 ",
       "description": "Scuba diving certification agencies",
       "display_style": "beautify",
       "links": [
@@ -10,6 +10,12 @@
           "description": "Scuba Diving International (SDI) is a Scuba training and certification agency. It is the recreational arm of Technical Diving International, a technical diver training organization.",
           "url": "https://www.tdisdi.com/",
           "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/SDI.JPG"
+        },
+        {
+          "display_name": "PADI",
+          "description": "The Professional Association of Diving Instructors (PADI) is a recreational diving membership and diver training organization founded in 1966 by John Cronin and Ralph Erickson.[",
+          "url": "https://www.padi.com/",
+          "logo": "https://upload.wikimedia.org/wikipedia/en/b/b0/Logo_of_PADI.svg"
         }
       ]
     },
@@ -29,6 +35,115 @@
           "description": "鑒於魚類分類系統及種名變動頻仍，臺灣魚種之新記錄或時空分布的資料也幾乎是與日俱增，因此建立之資料庫",
           "url": "https://fishdb.sinica.edu.tw",
           "logo": "https://fishdb.sinica.edu.tw/files/muse_fishdb/muse_banner/fishdb_logo_5.png"
+        },
+        {
+          "display_name": "台灣常見經濟性水產動植物圖鑑",
+          "description": "行政院農業委員會漁業署編",
+          "url": "https://www.fa.gov.tw/book/fishlibrary/table.html",
+          "logo": "https://www.fa.gov.tw/upload/fa/images/web_structure/172/%E6%BC%81%E6%A5%AD%E7%BD%B2%20logo%20(2023)_01_%E7%BD%B2%E5%BE%BD_%E7%99%BD%E5%BA%95.png"
+        },
+        {
+          "display_name": "觀賞魚圖鑑 - 農業知識入口網",
+          "description": "行政院農業委員會漁業署編",
+          "url": "https://kmweb.moa.gov.tw/theme_list.php?theme=fish_illustration",
+          "logo": "https://www.moa.gov.tw/files/web_structure/223/1724.jpg"
+        },
+        {
+          "display_name": "臺灣百種海洋動物圖鑑",
+          "description": "海洋委員會海洋保育署編",
+          "url": "https://www.oca.gov.tw/ch/home.jsp?id=289&parentpath=0,5",
+          "logo": "https://upload.wikimedia.org/wikipedia/zh/b/bc/Emblem_of_ROC_Ocean_Conservation_Administration.svg"
+        },
+        {
+          "display_name": "美麗海生物圖鑑",
+          "description": "沖縄美ら海水族館 ",
+          "url": "https://churaumi.okinawa/tc/fishbook/",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Okinawa_Churaumi_Aquarium_logo.svg"
+        },
+        {
+          "display_name": "海洋生物資訊服務入口網 - BioViewer",
+          "description": "國科會海洋學門資料庫",
+          "url": "https://bio.odb.ntu.edu.tw/viewer/",
+          "logo": "https://www.odb.ntu.edu.tw/wp-content/uploads/2025/05/logo_round_frame.png"
+        }
+      ]
+    },
+    {
+      "display_name": "氣象資訊",
+      "description": "瞭解氣象，預先準備",
+      "display_style": "beautify",
+      "links": [
+        {
+          "display_name": "Windy",
+          "description": "提供天氣預報服務的捷克公司",
+          "url": "https://www.windy.com/-Waves-waves",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/0/02/WindyCzesh.jpg"
+        },
+        {
+          "display_name": "潮汐預報",
+          "description": "台灣中央氣象局",
+          "url": "https://www.cwa.gov.tw/V8/C/M/tide.html",
+          "logo": "https://www.cwa.gov.tw/V8/assets/img/logoBlue.svg"
+        },
+        {
+          "display_name": "恆春半島海氣象資訊網",
+          "description": "水利署",
+          "url": "https://comc1.comc.ncku.edu.tw/Hengchun/",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0c/ROC_Water_Resources_Agency_Seal.svg"
+        },
+        {
+          "display_name": "龍洞氣象",
+          "description": "Windguru",
+          "url": "https://www.windguru.cz/66592",
+          "logo": "https://www.meteorologiaenred.com/wp-content/uploads/2016/05/windguru_logo.png.webp"
+        },
+        {
+          "display_name": "墾丁南灣氣象",
+          "description": "Windguru",
+          "url": "https://www.windguru.cz/357557",
+          "logo": "https://www.meteorologiaenred.com/wp-content/uploads/2016/05/windguru_logo.png.webp"
+        },
+        {
+          "display_name": "綠島氣象",
+          "description": "Windguru",
+          "url": "https://www.windguru.cz/236611",
+          "logo": "https://www.meteorologiaenred.com/wp-content/uploads/2016/05/windguru_logo.png.webp"
+        },
+        {
+          "display_name": "蘭嶼氣象",
+          "description": "Windguru",
+          "url": "https://www.windguru.cz/273117",
+          "logo": "https://www.meteorologiaenred.com/wp-content/uploads/2016/05/windguru_logo.png.webp"
+        },
+        {
+          "display_name": "小琉球氣象",
+          "description": "Windguru",
+          "url": "https://www.windguru.cz/180634",
+          "logo": "https://www.meteorologiaenred.com/wp-content/uploads/2016/05/windguru_logo.png.webp"
+        }
+      ]
+    },
+    {
+      "display_name": "潛水工具",
+      "description": "善用工具，安全潛水",
+      "display_style": "beautify",
+      "links": [
+        {
+          "display_name": "Subsurface",
+          "description": "開源且詳細的潛水紀錄工具",
+          "url": "https://subsurface-divelog.org/",
+          "logo": "https://subsurface-divelog.org/static/images/subsurface-icon.png"
+        },
+        {
+          "display_name": "dipplanner",
+          "description": "開源減壓規劃工具",
+          "url": "https://github.com/ThomasChiroux/dipplanner",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+        },
+        {
+          "display_name": "Dive.site",
+          "description": "潛點查詢",
+          "url": "https://dive.site/"
         }
       ]
     }
