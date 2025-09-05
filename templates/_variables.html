@@ -197,16 +197,6 @@
                 switch: {{ config.extra.tool.snackbar.switch }}
             },
             postAi: {
-                {% if config.extra.post.abstract.mode != "local" %}
-                switchBtn: {{ config.extra.post.abstract.switch_btn }},
-                keys: "{{ config.extra.post.abstract.key }}",
-                btnLink: "{{ config.extra.post.abstract.btn_link | safe }}",
-                Referers: "{{ config.extra.post.abstract.referers | safe }}",
-                basicWordCount: {{ config.extra.post.abstract.basic_word_count }},
-                randomNum: {{ config.extra.post.abstract.random_num }},
-                {% endif %}
-                gptName: "{{ config.extra.post.abstract.gpt_name }}",
-                modeName: "{{ config.extra.post.abstract.mode }}"
             },
             {%- if config.extra.comments.system == 'twikoo' -%}
             twikoo: {

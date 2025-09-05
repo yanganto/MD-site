@@ -560,27 +560,6 @@ copyrightsStyle = "one"
 # 最后更新时间
 update_time = true
 
-# 文章摘要
-[extra.post.abstract]
-# 是否启用
-enable = true
-# 名稱
-gpt_name = "本地"
-# 模式 本地或天理 local tianli
-mode = "local"
-# 显示切换按钮
-switch_btn = false
-# 链接
-btn_link = ""
-# 随機次数 按钮最大的随機次数，也就是一篇文章最大随機出来几种
-random_num = 3
-# 字符数 最低获取字符数, 最小1000, 最大1999
-basic_word_count = 1000
-# api key
-key = "xxxx"
-# 你的博客地址 注意保留最后的斜杠
-referers = "https://xx.xx/"
-
 # Passage Tips Settings
 [extra.post.passage_tip]
 # 是否启用

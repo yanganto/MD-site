@@ -125,9 +125,6 @@
 <script defer src='{{ macro::get_production_path(path="/js/commentBarrage.js") }}'></script>
 {% endif %}
 
-{# 文章摘要 #}
-<script data-pjax defer src="{{ macro::get_production_path(path="/js/abstract/" ~ config.extra.post.abstract.mode ~ ".js") }}"></script>
-
 {# 延迟执行的不重要脚本 #}
 <script data-pjax defer src='{{ macro::get_production_path(path="/js/bundle.js") }}'></script>
 <script defer src="{{ macro::get_production_path(path="/js/tw_cn.js") }}"></script>
