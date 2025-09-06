@@ -377,12 +377,15 @@
 </picture>
 {% endmacro %}
 
-{# 获取生产环境优化后的 js/css 文件，如果不存在则使用原始文件 #}
+{# TODO: support get production after webpack #}
 {% macro get_production_path(path) %}
-{%- set file = load_data(path="production" ~ path, format="plain", required=false) -%}
-{%- if config.mode == "build" and file -%}
-/production{{- path -}}
-{%- else -%}
-{{- path -}}
-{%- endif -%}
+    {{- path -}}
+{#
+    {%- set file = load_data(path="production" ~ path, format="plain", required=false) -%}
+    {%- if config.mode == "build" and file -%}
+    /production{{- path -}}
+    {%- else -%}
+    {{- path -}}
+    {%- endif -%} 
+#}
 {% endmacro %}
