@@ -5,10 +5,10 @@
 recommend_posts = [
     "courses/OW/index.md",
     "articles/neutral-buoyancy/index.md",
+    "articles/softness-of-fin/index.md",
     "courses/OW/index.md",
     "articles/neutral-buoyancy/index.md",
-    "courses/OW/index.md",
-    "articles/neutral-buoyancy/index.md",
+    "articles/softness-of-fin/index.md",
 ]
 
 # 首页 header 右侧
