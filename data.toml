@@ -43,7 +43,7 @@ name = '必看'
 [[post.tags]]
 id = 'hot'
 index = 0
-name = '熱門'
+name = '最近'
 
 [[post.tags]]
 id = 'tech'
