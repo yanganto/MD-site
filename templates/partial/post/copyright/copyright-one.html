@@ -1,8 +1,7 @@
-<!-- 版权样式一 -->
+<!-- Copyright style 1 -->
 {% if config.extra.post.copyrightsStyle == 'one' %}
     {% set post=page %}
     {% set document = page | default(value=section) -%} {% set lang = document.lang -%} 
-    <!-- 版权声明 -->
     <div class="post-copyright">
         <div class="post-copyright__author_group">
             <a class="post-copyright__author_img" href="/about">
@@ -11,53 +10,12 @@
             <div class="post-copyright__author_name">{{ config.title }}</div>
             <div class="post-copyright__author_desc">{{ config.description }}</div>
         </div>
-        <div class="post-tools" id="post-tools">
-            <div class="post-tools-left">
-                <div class="shareRight">
-                    {% if config.extra.post.share_right.mobile_edit %}
-                        <div class="copyright-link mobile">
-                            <div class="copyright-qrcode">
-                                <div class="copyright-button" title="使用手机访问这篇文章">
-                                    <i class="icon-qrcode"></i>
-                                </div>
-                                <div class="copyright-main">
-                                    <div class="copyright-main-all">
-                                        <div id="qrcode"></div>
-                                        <div class="reward-dec">使用手机访问这篇文章</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    {% endif %}
-                    {% if config.extra.post.share_right.weibo_edit %}
-                        <div class="copyright-link weibo">
-                            <a class="copyright-button" rel="noopener external nofollow noreferrer" target="_blank"
-                               href="https://service.weibo.com/share/share.php?title={{ post.spec.title }}" title="分享到微博">
-                                <i class="icon-weibo" style="font-size:22px"></i>
-                            </a>
-                        </div>
-                    {% endif %}
-                    {% if config.extra.post.share_right.copyurl_edit %}
-                        <div class="copyright-link copyurl">
-                            <div class="copyright-button" id="post-share-url" onclick="rm.copyPageUrl()" title="复制链接">
-                                <i class="icon-link"></i>
-                            </div>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-        {% if post.extra.reprint_url %}
-            {% set is_original = false %}
-        {% else %}
-            {% set is_original = true %}
-        {% endif %}
         {% set copyrightUrl = post.extra.copyright_url | default(value='/copyright') %}
         {% set copyright_enable = config.extra.post.copyrights.enable | default(value=true) %}
         {% if copyright_enable %}
             <div class="post-copyright__notice">
                 <span class="post-copyright-info">
-                    {% if not is_original %}{{ config.extra.post.copyrights.reprintContent | safe }}{% else %}{{ config.extra.post.copyrights.content | safe }}{% endif %}
+                    {% if post.extra.reprint_url %}{{ config.extra.post.copyrights.reprintContent | safe }}{% else %}{{ config.extra.post.copyrights.content | safe }}{% endif %}
                 </span>
             </div>
         {% endif %}

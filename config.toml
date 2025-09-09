@@ -579,15 +579,11 @@ weibo_edit = false
 # 启用复制链接
 copyurl_edit = true
 
-# 版权声明
 [extra.post.copyrights]
-# 是否启用
 enable = true
-# 复制时加上版权信息
-copy_info = false
-# 原創声明内容 支持html
+copy_info = true
 content = """
-採用 <a target="_blank" href="/copyright">CC BY-NC-ND 4.0</a> 授權，轉載请註明 <a href="/" target="_blank" >早安潛水及網址</a>
+採用 <a target="_blank" href="/copyright">CC BY-NC-ND 4.0</a> 授權，轉載請註明 <a href="/" target="_blank" >早安潛水</a>
 """
 reprintContent = """
 本文是轉載文章，版權為早安潛水所有。
