@@ -48,7 +48,7 @@ function setPostDateList() {
             date_str = "今天";
         }
         dateTag[i].innerHTML = date_str;
-        dateTag[i].title = date + "创建";
+        dateTag[i].title = date + "創建";
     }
 }
 
@@ -59,7 +59,7 @@ function setPostDate() {
             const date = messageBox.getAttribute('data-update-date');
             const days = getPeriod(date);
             if (days > GLOBAL_CONFIG.passageTip.day) {
-                messageBox.innerHTML = `<p>本文最后更新于 ${date}，文章内容可能已经过时。</p>`;
+                messageBox.innerHTML = `<p>本文最後更新於 ${date}</p>`;
                 messageBox.style.display = "block";
                 setTimeout(function() {
                     messageBox.classList.add("fade-in");
@@ -122,7 +122,7 @@ window.travelling = function (files, success) {
         name = randomFriendLinks[0].display_name;
         link = randomFriendLinks[0].url;
     }
-    var msg = "点击前往按钮进入随機一个相關網站，不保证跳转网站的安全性和可用性。本次随機到的是本站相關網站：「" + name + "」";
+    var msg = "随機前往至：「" + name + "」";
     const style = document.createElement('style');
     document.head.appendChild(style);
     const styleSheet = style.sheet;
@@ -141,25 +141,13 @@ window.travelling = function (files, success) {
 
 //前往开往項目
 window.totraveling = function (files, success) {
-    btf.snackbarShow("即将跳转到「开往」項目的成员博客，不保证跳转网站的安全性和可用性", function (element) {
+    btf.snackbarShow("將随機前往至", function (element) {
         element.style.opacity = 0,
             travellingsTimer && clearTimeout(travellingsTimer)
     }, 5000, "取消"),
         travellingsTimer = setTimeout(function () {
             window.open("https://www.travellings.cn/go.html", "_blank")
         }, "5000")
-}
-
-// 添加相關網站按钮
-window.addFriendLink = function (files, success) {
-    var input = document.getElementsByClassName(GLOBAL_CONFIG.source.comments.textarea)[0];
-    let evt = document.createEvent('HTMLEvents');
-    evt.initEvent('input', true, true);
-    input.value = '昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主頁）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n';
-    input.dispatchEvent(evt);
-    wjx.scrollTo("#post-comment");
-    input.focus();
-    input.setSelectionRange(-1, -1);
 }
 
 //封面纯色
@@ -308,50 +296,6 @@ function colorRgb(str) {
     }
 }
 
-//评论增加放大功能
-function owoBig() {
-    new MutationObserver((e => {
-        for (let t of e)
-            if ("childList" === t.type)
-                for (let e of t.addedNodes)
-                    if (e.classList && e.classList.contains("OwO-body")) {
-                        let t = e
-                            , o = ""
-                            , n = !0
-                            , a = document.createElement("div");
-                        a.id = "owo-big",
-                            document.querySelector("body").appendChild(a),
-                            t.addEventListener("contextmenu", (e => e.preventDefault())),
-                            t.addEventListener("mouseover", (e => {
-                                "LI" === e.target.tagName && n && (n = !1,
-                                    o = setTimeout((() => {
-                                        let t = 3 * e.target.clientWidth
-                                            , o = e.x - e.offsetX - (t - e.target.clientWidth) / 2
-                                            , n = e.y - e.offsetY;
-                                        a.style.height = 3 * e.target.clientHeight + "px",
-                                            a.style.width = t + "px",
-                                            a.style.left = o + "px",
-                                            a.style.top = n + "px",
-                                            a.style.display = "flex",
-                                            a.innerHTML = `<img src="${e.target.querySelector("img").src}" loading="lazy">`
-                                    }
-                                    ), 300))
-                            }
-                            )),
-                            t.addEventListener("mouseout", (e => {
-                                a.style.display = "none",
-                                    n = !0,
-                                    clearTimeout(o)
-                            }
-                            ))
-                    }
-    }
-    )).observe(document.getElementById("post-comment"), {
-        childList: !0,
-        subtree: !0
-    })
-}
-
 //变暗变亮主方法
 function LightenDarkenColor(col, amt) {
     var usePound = false;
@@ -411,21 +355,6 @@ function AddRewardMask() {
     if (!document.querySelector(".reward-main")) return;
     document.querySelector(".reward-main").style.display = "flex";
     document.getElementById("quit-box").style.display = "flex";
-}
-
-// 评论弹幕初始化
-function initObserver() {
-    var e = document.getElementById("post-comment")
-        , t = document.getElementById("pagination");
-    e && new IntersectionObserver((function (e) {
-        e.forEach((function (e) {
-            e.isIntersecting ? (t && t.classList.add("show-window"),
-                document.querySelector(".comment-barrage").style.bottom = "-200px") : (t && t.classList.remove("show-window"),
-                    document.querySelector(".comment-barrage").style.bottom = "0px")
-        }
-        ))
-    }
-    )).observe(e)
 }
 
 //从一个给定的数组arr中,随機返回num个不重复项
@@ -760,30 +689,6 @@ var tabsFn = {
 
 // 运行区
 
-// 如果当前页有评论就执行函数
-document.getElementById("post-comment") && owoBig()
-
-//检查是否开启快捷键
-// if (localStorage.getItem('keyboardToggle') !== 'false') {
-//     document.querySelector("#consoleKeyboard").classList.add("on");
-// } else {
-//     document.querySelector("#consoleKeyboard").classList.remove("on");
-// }
-
-//输入状态检测
-$("input").focus(function () {
-    wjx_intype = true;
-});
-$("textarea").focus(function () {
-    wjx_intype = true;
-});
-$("input").focusout(function () {
-    wjx_intype = false;
-});
-$("textarea").focusout(function () {
-    wjx_intype = false;
-});
-
 // 早上好问好
 // 获取时间
 window.getTimeState = function() {
@@ -825,7 +730,7 @@ window.getTimeState = function() {
             $(".menu-darkmode-text").text("深色模式")) : (activateDarkMode(),
                 saveToLocal.set("theme", "dark", 2),
                 void 0 !== GLOBAL_CONFIG.Snackbar && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night, false, 2000),
-                $(".menu-darkmode-text").text("浅色模式")),
+                $(".menu-darkmode-text").text("淺色模式")),
             handleCases()
         wjx.darkModeStatus();
     }
@@ -931,7 +836,7 @@ document.querySelector('#console') && document.querySelector('#console').addEven
 // 检测按键：开发者模式
 window.onkeydown = function (e) {
     if (e.keyCode === 123) {
-        btf.snackbarShow('开发者模式已打开，请遵循GPL協議', false, 3000)
+        btf.snackbarShow('請尊重智慧財產權', false, 3000)
     }
 }
 
@@ -939,15 +844,12 @@ window.onkeydown = function (e) {
 $(document).unbind('keydown').bind('keydown', function (e) {
     if (GLOBAL_CONFIG.rightMenuEnable) {
         if ((e.ctrlKey || e.metaKey) && (e.keyCode == 67) && (selectTextNow != '')) {
-            btf.snackbarShow('复制成功，复制和轉載请标注本文地址');
+            btf.snackbarShow('已複製，分享請註明本站網址');
             rm.rightmenuCopyText(selectTextNow);
             return false;
         }
     }
 })
-
-// 评论
-initObserver()
 
 // 文章页背景
 GLOBAL_CONFIG.source.post.dynamicBackground && coverColor()
