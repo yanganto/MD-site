@@ -120,6 +120,79 @@
           "description": "Windguru",
           "url": "https://www.windguru.cz/180634",
           "logo": "https://www.meteorologiaenred.com/wp-content/uploads/2016/05/windguru_logo.png.webp"
+        },
+        {
+          "display_name": "海洋遊憩風險資訊",
+          "description": "國家海洋研究院GoOcean",
+          "url": "https://goocean.namr.gov.tw/",
+          "logo": "https://goocean.namr.gov.tw/Common/GetCurrentSystemLogo"
+        }
+      ]
+    },
+    {
+      "display_name": "台灣海岸即時影像",
+      "description": "台灣即時影像",
+      "display_style": "beautify",
+      "links": [
+        {
+          "display_name": "國海院即時影像",
+          "description": "中角灣、佳樂水、合界、外木山、外木山堤防堤岸、布袋港、後壁湖2、枋寮漁港1、枋寮漁港2、海生館、潮境海灣1、潮境海灣2、潮境海灣3、澎湖觀音亭海灣1、澎湖觀音亭海灣2、澎湖青灣2、無尾港、石城漁港1、石城漁港、社皆坑海灣1、社皆坑海灣2、福隆海灣、船帆石海灣、萬里漁港1、萬里漁港2、觀夕平台、鎖港海灣、頭城合興、頭城濱海公園南側、風箏坪2、龍洞四季灣1、龍洞四季灣2",
+          "url": "https://www.youtube.com/@goocean520/streams",
+          "logo": "https://goocean.namr.gov.tw/Common/GetCurrentSystemLogo"
+        },
+        {
+          "display_name": "東北角及宜蘭海岸國家風景區管理處",
+          "description": "和美漁港、外澳沙灘、福隆海水浴場、舊隧道南口、鼻頭服務區",
+          "url": "https://www.youtube.com/@necoastnsa2903/streams",
+          "logo": "https://upload.wikimedia.org/wikipedia/zh/f/f8/Northeast_and_Yilan_Coast_National_Scenic_Area_logo.svg"
+        },
+        {
+          "display_name": "中央氣象局",
+          "description": "嘉義布袋、基隆和平島1、宜蘭外澳1、宜蘭外澳2、宜蘭大里1、宜蘭大里2、宜蘭蘇澳1、宜蘭蘇澳2、屏東興海、彰化、新北市沙崙1、新北市沙崙2、新北福隆1、新北福隆2、新北福隆3、新竹、桃園永安漁港1、桃園永安漁港2、烏石港、瑞芳蝙蝠洞、白沙灣1、白沙灣2、碧砂1、碧砂2、臺中港信號台1、臺中港信號台2、臺南安平港1、臺南安平港2、臺東富岡漁港1、臺東富岡漁港2、花蓮石梯坪1、花蓮石梯坪2、苗栗外埔1、苗栗外埔2、西子灣1、西子灣2、野柳1、野柳2、雲林萡子寮1、雲林萡子寮2、龍洞1、龍洞2",
+          "url": "https://www.youtube.com/@cwa-tw/streams",
+          "logo": "https://www.cwa.gov.tw/V8/assets/img/logoBlue.svg"
+        },
+        {
+          "display_name": "東部海岸國家風景區管理處",
+          "description": "三仙台、加路蘭遊憩區、大石鼻山、石梯坪、綠島南寮漁港、綠島帆船鼻、綠島柴口浮潛區、都歷遊客中心、金樽遊憩區、長虹橋",
+          "url": "https://www.youtube.com/@cwa-tw/streams",
+          "logo": "https://www.eastcoast-nsa.gov.tw/images/static/logo-intro/logo-bg-3.png"
+        },
+        {
+          "display_name": "水利署水利防災組",
+          "description": "瑞芳區員山子分洪、高雄市美濃橋、台南市黃金海岸、高雄市田寮崇德橋、花蓮縣七星潭、壽豐花蓮大橋、花蓮縣吉安鄉南濱守望哨、新北市烏來吊橋、高雄市楠梓聖興橋、花蓮海岸忘憂亭、高雄市梓官蚵寮國小、屏東縣佳冬羌光橋",
+          "url": "https://www.youtube.com/@fhy00/streams",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0c/ROC_Water_Resources_Agency_Seal.svg"
+        },
+        {
+          "display_name": "潮境公園",
+          "description": "潮境抽水站下水點2、潮境海扇、潮境海棉、潮境礁石、潮間帶全景、長潭里",
+          "url": "https://www.youtube.com/@fhy00/streams",
+          "logo": "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+        },
+        {
+          "display_name": "大鵬灣國家風景區管理處",
+          "description": "小琉球花瓶岩",
+          "url": "https://www.youtube.com/@dbnsa1345/streams",
+          "logo": "https://admin.taiwan.net.tw/fapi/ArtPic"
+        },
+        {
+          "display_name": "台東就醬玩",
+          "description":" 南橫埡口、池上天堂路、金崙大橋、華源曙光觀景台、富岡漁港、杉原灣、富山、金樽、多良車站",
+          "url": "https://www.youtube.com/@taitungamazing7249/streams",
+          "logo": "https://yt3.googleusercontent.com/YJbss9FV6k4jT_P_NsTfKIr8_x8rekpFgwNCaRF3tf2if8wvUtCSMrn_r6P2gFCIQV_xAs_sTw=s900-c-k-c0x00ffffff-no-rj"
+        },
+        {
+          "display_name": "墾丁國家公園",
+          "description": "船帆石沙灘",
+          "url": "https://www.youtube.com/@ktnpworld/streams",
+          "logo": "https://upload.wikimedia.org/wikipedia/zh/f/f8/ROC_Kenting_National_Park_Headquarters_Logo.svg"
+        },
+        {
+          "display_name": "我愛墾丁旅遊票券中心",
+          "description": " 南灣",
+          "url": "https://www.youtube.com/@%E6%88%91%E6%84%9B%E5%A2%BE%E4%B8%81%E6%97%85%E9%81%8A%E7%A5%A8%E5%88%B8%E4%B8%AD%E5%BF%83/streams",
+          "logo": "https://scontent.ftpe7-1.fna.fbcdn.net/v/t39.30808-1/327472197_5770789083042273_7538746383759354230_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=f907e8&_nc_ohc=4DPB6zcEOuQQ7kNvwFc7Um5&_nc_oc=AdkuwpsONMCwTu6HYwfb-LB2FRv6VQJEb7ilJ-glUEWJxsoRyu0RU8yYKems4YYGzgc&_nc_zt=24&_nc_ht=scontent.ftpe7-1.fna&_nc_gid=TlY8dhwPl3omiaqfmGXXbw&oh=00_AfYK1DczZQMZqqACms1zDi3meQYZGqYhlr8s9RWoQbWFQg&oe=68C5BDE7"
         }
       ]
     },
