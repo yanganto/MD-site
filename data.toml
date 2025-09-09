@@ -85,11 +85,9 @@ nav_menu = [
         { name = "標籤列表", href = "/tags", icon = "icon-tags", target = "_self" },
         { name = "随機文章", href = "javascript:toRandomPost()", icon = "icon-dice", target = "_self" },
     ] },
-    { name = "推薦", is_vertical = true, href = "/friends", menus = [] },
+    { name = "好站推薦", is_vertical = true, href = "/friends", menus = [] },
 ]
 
-# 导航栏最左侧折叠菜单，只支持两级菜单
-# 优先使用icon image
 nav_left_menu = [
     { name = "快速選單", menus = [
         { name = "入門潛水員課程", href = "/courses/OW", icon = "icon-artstation", target = "_self" },
@@ -97,7 +95,6 @@ nav_left_menu = [
     ] },
 ]
 
-# 底部菜单
 footer_menu = [
     { name = "服務項目", menus = [
         { name = "關於我們", href = "/about", target = "_self" },
@@ -121,7 +118,7 @@ description = "成為潛水員的必經之路"
 items = [
     { name = "入門潛水員課程", img = "/img/courses/OW.png", model = "初級", button_title = "開課詳情", button_url = "/courses/OW" , description = "此課程又稱Open Water，是邁向海底世界的第一步。在課程中，你會學習基本的潛水裝備的操作方法，及意外的預防和排除方法" },
     { name = "進階潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Advanced Open Water，目的 是協助你成為獨當一面的潛水員。在課程中，除了更細緻的浮力控制及更細緻的踢動方法，你還會學習處理潛水的特殊情況，如深潛、夜潛、船潛 …" },
-    { name = "救援潛水員", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Rescue Diver，是協助你成為可以信賴的潛伴，在課程中你會學習觀察同伴的狀況，經判斷後，可以提早進行預防。同時也會學習意外發生時的盡急處置，包含水下、水面及岸上。" },
+    { name = "救援潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Rescue Diver，是協助你成為可以信賴的潛伴，在課程中你會學習觀察同伴的狀況，經判斷後，可以提早進行預防。同時也會學習意外發生時的盡急處置，包含水下、水面及岸上。" },
 ]
 
 [[course.groups]]
