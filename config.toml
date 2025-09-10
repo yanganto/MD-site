@@ -463,16 +463,16 @@ profile_style = "one"
 # 背景图片 提供自己的图片
 background_img = "/img/sidebar/profile.webp"
 # 描述信息 支持html
-profile_desc = "專為你設計的潛水訓練課程"
+profile_desc = "早安潛水<br>SDI潛水認證系統<br>彈調彈性與靈活<br>打造專為你設計的潛水訓練課程"
 # 社交媒体
 socialMedia = [
-    { icon = "icon-github", name = "GitHub", url = "https://github.com/iWangJiaxiang/Morning Diver" },
+    { icon = "icon-instagram", name = "Instagram", url = "https://www.instagram.com/morningdiver/" },
 ]
 
 [extra.sidebar.social]
 color = "#5756cb"
 socialImg = "/img/social/gzh_cover.avif"
-url = "/contact"
+url = "https://www.instagram.com/morningdiver/"
 socialImgFace = "/img/social/qr-purple.avif"
 socialImgBack = "/img/social/qr-white.avif"
 
