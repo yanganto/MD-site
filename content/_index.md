@@ -1,5 +1,5 @@
 +++
-title = "首頁"
+title = "早安潛水"
 template = "page/index.html"
 
 paginate_by = 8

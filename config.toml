@@ -440,8 +440,6 @@ indexWidget = [
 postWidget = [
     { widget = "profile" },
     { widget = "social" },
-    { widget = "toc" },
-    { widget = "comments" },
     { widget = "recent-posts" },
     { widget = "categories" },
 ]
@@ -608,6 +606,14 @@ dynamic_render = true
 background_img = "/img/courses/AOW.jpg"
 small_title = "課程宗旨"
 big_title = "彈性且客製化的訓練"
+detail = "安全永遠是我們的底線"
+btn_title = ""
+btn_url = ""
+
+[extra.activity]
+background_img = "/img/courses/AOW.jpg"
+small_title = "活動宗旨"
+big_title = "親近海洋，尊重海洋"
 detail = "安全永遠是我們的底線"
 btn_title = ""
 btn_url = ""
