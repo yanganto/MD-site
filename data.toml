@@ -6,9 +6,9 @@ recommend_posts = [
     "courses/OW/index.md",
     "activities/Intro/index.md",
     "activities/Intensive/index.md",
-    "activities/Reactive/index.md",
     "articles/neutral-buoyancy/index.md",
     "articles/softness-of-fin/index.md",
+    "articles/diving-clips/index.md",
 ]
 
 # 首页 header 右侧
@@ -77,7 +77,6 @@ index = 2
 name = '標籤'
 
 [menu]
-# 顶部菜单
 nav_menu = [
     { name = "服務項目", menus = [
         { name = "關於我們", href = "/about", icon = "icon-lightbulb", target = "_self" },
@@ -95,8 +94,8 @@ nav_menu = [
 
 nav_left_menu = [
     { name = "快速選單", menus = [
-        { name = "潛水課程", href = "/course", icon = "icon-artstation", target = "_self" },
-        { name = "潛水活動", href = "/activity", icon = "icon-rocket", target = "_self" },
+        { name = "學潛水", href = "/courses/OW", icon = "icon-artstation", target = "_self" },
+        { name = "想體驗", href = "/activities/Intro", icon = "icon-rocket", target = "_self" },
     ] },
 ]
 
