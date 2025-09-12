@@ -5,7 +5,7 @@ slug = "softness of fin"
 description = "軟蛙鞋反應延遲，硬蛙鞋動作即時"
 
 [taxonomies]
-tags = ["hot"]
+tags = []
 categories = ["article"]
 
 [extra]
