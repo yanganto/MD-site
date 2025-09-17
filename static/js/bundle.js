@@ -872,8 +872,6 @@ if (GLOBAL_CONFIG.isMusic) {
 window.initBlogLazy = runOnce('initBlogLazy')(() => {
     if (GLOBAL_CONFIG.isPost) {
         tocFn();
-        // 二维码
-        runPostAbstract()
         setPostDate()
         wjx.qrcodeCreate()
     } else {
