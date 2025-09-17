@@ -378,10 +378,10 @@
 {% endmacro %}
 
 {% macro get_production_path(path) %}
-{%- set file = load_data(path="production" ~ path, format="plain", required=false) -%}
-{%- if config.mode == "build" and file -%}
-/production{{- path -}}
-{%- else -%}
-{{- path -}}
-{%- endif -%} 
+    {%- set file = load_data(path="production" ~ path, format="plain", required=false) -%}
+    {%- if config.mode == "build" and file -%}
+        /production{{- path -}}
+    {%- else -%}
+        {{- path -}}
+    {%- endif -%} 
 {% endmacro %}
