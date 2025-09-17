@@ -469,7 +469,7 @@ socialMedia = [
 
 [extra.sidebar.social]
 color = "#5756cb"
-socialImg = "/img/social/gzh_cover.avif"
+socialImg = ""
 url = "https://www.instagram.com/morningdiver/"
 socialImgFace = "/img/social/qr-purple.avif"
 socialImgBack = "/img/social/qr-white.avif"
@@ -700,90 +700,6 @@ occupation = "PADI Advanced Open Water"
 background = "#1fffff"
 occupation = "PADI Open Water"
 
-# 文本块
-# 左边的一行10字 右面一行19字(设置两条数据，不然出不来)
-[extra.about.textarea_left]
-tittle = "心之所向"
-textarea_up = "天若有情天亦老"
-textarea_down = "人间正道是沧桑"
-
-[extra.about.textarea_right]
-tittle = "意之所当"
-textarea_up = "欲买桂花同载酒"
-textarea_down = "终不似，少年游"
-
-# 爱好
-[extra.about.hobby]
-loading_bar = ""
-
-[[extra.about.hobbies]]
-tips = "爱好运动"
-title = "乒乓球、羽毛球、游泳、潜水"
-uid = ""
-# bg_url = "/image/logo.png"
-# 类型(类名) game-lol / game-wolf / comic-content
-class =  "game-lol"
-url = ""
-
-[[extra.about.hobbies]]
-tips = "音乐玩家"
-title = "作词、作曲、编曲，吉他，钢琴"
-uid = ""
-# bg_url = "/image/logo.png"
-# 类型(类名) game-lol / game-wolf / comic-content
-class =  "game-wolf"
-url = ""
-
-# Like Settings
-[extra.about.like]
-tips = "兴趣偏好"
-title = "数码、科技、管理、人文、心理"
-bottom = "感受世界的广度，探索世界的深度"
-# bg = ""
-
-# Music Settings
-[extra.about.music]
-tips = "音乐偏好"
-title = "流行、古典、爵士、Hiphop、EDM、民谣"
-link = ""
-# bg = ""
-
-# 地图相關配置
-[extra.about.map]
-# 居住地
-StrengthenTitle = "山东·济南"
-# 地图亮色模式背景
-background = "/img/me/map.avif"
-# 地图暗色模式背景
-backgroundDark = "/img/me/map.avif"
-
-# 个人信息
-[[extra.about.map.authorInfo]]
-# 标题
-authorInfoTitle = "生于"
-# 内容
-authorInfoContent = "1996"
-# 颜色
-authorInfoColor = "#43a6c6"
-
-# 个人信息
-[[extra.about.map.authorInfo]]
-# 标题
-authorInfoTitle = "职业"
-# 内容
-authorInfoContent = "工程师"
-# 颜色
-authorInfoColor = "#c69043"
-
-# 个人信息
-[[extra.about.map.authorInfo]]
-# 标题
-authorInfoTitle = "毕业院校"
-# 内容
-authorInfoContent = "XXXX学校"
-# 颜色
-authorInfoColor = "#b04fe6"
-
 # 样式设置
 [extra.style]
 # 颜色方案 system, dark, light
@@ -838,32 +754,6 @@ keyboard = true
 # 启用
 enable = true
 
-# 音乐播放器 左下角音乐
-[extra.tool.nav_music]
-# 启用
-enable = false
-# 音乐id
-id = "xxxxxx"
-# 音乐服务 例如netease（网易云音乐）,tencent（腾讯）,kugou（酷狗）,xiami（小米音乐）,baidu（百度音乐）
-server = "tencent"
-# 播放列表地址
-all_playlist = "https://y.qq.com/n/ryqq/playlist/xxxxx"
-# 音乐api
-meting_api = "https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r"
-
-# 右下角弹窗
-[extra.tool.snackbar]
-# 启用
-switch = false
-# 标题
-introduction_title = "協議提醒助手"
-# 内容
-introduction_tip = "查看本站为你的个人隐私做出的努力"
-# 点击跳转地址
-introduction_url = "/privacy"
-# 按钮标题
-introduction_name = "本站如何保护你的隐私"
-
 # 右下角悬浮操作按钮
 [extra.tool.rightside]
 # 启用
@@ -903,7 +793,7 @@ progress_bar = true
 # 404 页面
 [extra.other.error_404]
 # 副标题
-subtitle = "请尝试站内搜索寻找文章"
+subtitle = "不好意思，找不到你要的文章"
 # 背景
 background = "/img/404.svg"
 
@@ -912,13 +802,4 @@ background = "/img/404.svg"
 # 启用
 enable = false
 # 设置
-settings = [
-    { greeting = "晚安😴", start_time = 0, end_time = 5 },
-    { greeting = "早上好鸭👋, 祝你一天好心情！", start_time = 6, end_time = 9 },
-    { greeting = "上午好👋, 状态很好，鼓励一下", start_time = 10, end_time = 10 },
-    { greeting = "11点多啦, 在坚持一下就吃饭啦～", start_time = 11, end_time = 11 },
-    { greeting = "午安👋, 宝贝", start_time = 12, end_time = 14 },
-    { greeting = "🌈充实的一天辛苦啦！", start_time = 14, end_time = 18 },
-    { greeting = "19点喽, 奖励一顿丰盛的大餐吧🍔。", start_time = 19, end_time = 19 },
-    { greeting = "晚上好👋, 在属于自己的时间好好放松😌~", start_time = 20, end_time = 24 },
-]
+settings = []

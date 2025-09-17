@@ -334,10 +334,6 @@ var btf = {
 }
 
 let wjx_cookiesTime = null
-// 第一次播放音乐
-,wjx_musicFirst = false
-// 音乐播放状态
-,wjx_musicPlaying = false
 ,wjx_keyboard = false
 ,wjx_intype = false
 ,lastSayHello = ""
@@ -566,18 +562,6 @@ var wjx = {
         } else {
             btf.snackbarShow('下載中，請稍候…');
         }
-    },
-
-    //隐藏cookie窗口
-    hidecookie: function() {
-        wjx_cookiesTime = setTimeout((()=>{
-                document.getElementById("cookies-window").classList.add("cw-hide"),
-                    setTimeout((()=>{
-                            $("#cookies-window").hide()
-                        }
-                    ), 1e3)
-            }
-        ), 3e3)
     },
 
     //隐藏今日推荐

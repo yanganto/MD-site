@@ -98,8 +98,6 @@
         isFriendLinksInFooter: {{ config.extra.footer.footer_group.enable }},
         loadingBox: {{ config.extra.other.loading_box.enable }},
         progress_bar: {{ config.extra.other.loading_box.progress_bar }},
-        navMusicEnable: {{ config.extra.tool.nav_music.enable }},
-        isMusic: {{ html_type == 'music' }},
         helloText: {{ config.extra.about.author_info_left_tags | concat(with=config.extra.about.author_info_right_tags) | json_encode | safe }},
         profileStyle: "{{ config.extra.sidebar.profile.profile_style }}",
         enable: {{ config.extra.tool.right_menu.enable }},
@@ -117,14 +115,6 @@
             bgLight: "{{ config.extra.style.theme_light_skin }}",
             bgDark: "{{ config.extra.style.theme_dark_skin }}",
             position: "top-center"
-        },
-        translate: {
-            defaultEncoding: "{{ config.extra.style.translate.default_encoding }}",
-            translateDelay: 0,
-            msgToTraditionalChinese: "繁",
-            msgToSimplifiedChinese: "简",
-            rightMenuMsgToTraditionalChinese: "轉為繁體",
-            rightMenuMsgToSimplifiedChinese: "转为简体"
         },
         prism: {
             enable: {{ config.extra.code.enable }},
@@ -182,9 +172,6 @@
             },
             post: {
                 dynamicBackground: {{ config.extra.post.dynamicBackground }}
-            },
-            tool: {
-                switch: {{ config.extra.tool.snackbar.switch }}
             },
             postAi: {
             },

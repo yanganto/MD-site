@@ -246,7 +246,6 @@ const initBlog = runOnce('initBlog')(() => {
         wjx.sayhi(),
         wjx.stopImgRightDrag(),
         //右下角 snackbar 弹窗
-        GLOBAL_CONFIG.source.tool.switch && wjx.hidecookie(),
         wjx.onlyHome(),
         wjx.initIndexEssay(),
         wjx.reflashEssayWaterFall(),
