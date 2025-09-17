@@ -377,15 +377,11 @@
 </picture>
 {% endmacro %}
 
-{# TODO: support get production after webpack #}
 {% macro get_production_path(path) %}
-    {{- path -}}
-{#
     {%- set file = load_data(path="production" ~ path, format="plain", required=false) -%}
     {%- if config.mode == "build" and file -%}
-    /production{{- path -}}
+        /production{{- path -}}
     {%- else -%}
-    {{- path -}}
+        {{- path -}}
     {%- endif -%} 
-#}
 {% endmacro %}

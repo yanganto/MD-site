@@ -145,32 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     );
 
-
-    // B站视频
-    customElements.define(
-        "bilibili",
-        class BiliBiliDom extends HTMLElement {
-            constructor() {
-                super();
-                this.options = {
-                    bvid: this.getAttribute("bvid"),
-                    page: +(this.getAttribute("page") || "1"),
-                    width: this.getAttribute("width") || "100%",
-                    height: this.getAttribute("height") || "500",
-                    autoplay: this.getAttribute("autoplay") || 0,
-                };
-                this.render();
-            }
-            render() {
-                if (!this.options.bvid) return (this.innerHTML = "请填写正确的bvid");
-                const realHeight = extractHeight(this.parentElement.offsetWidth, this.options.width, this.options.height);
-                this.setAttribute("height", realHeight);
-                this.innerHTML = `
-                    <iframe class="iframe-dom" allowfullscreen="true" scrolling="no" border="0" frameborder="no" framespacing="0" class="tool_vplayer" src="//player.bilibili.com/player.html?bvid=${this.options.bvid}&page=${this.options.page}&autoplay=${this.options.autoplay}" style="width:${this.options.width}; height:${realHeight}px;"></iframe>`;
-            }
-        }
-    );
-
     // pdf
     customElements.define(
         "pdf",
@@ -185,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.render();
             }
             render() {
-                if (!this.options.src) return (this.innerHTML = "请填写正确的pdf链接");
+                if (!this.options.src) return (this.innerHTML = "請輸入正確pdf");
                 const realHeight = extractHeight(this.parentElement.offsetWidth, this.options.width, this.options.height);
                 this.setAttribute("height", realHeight);
                 this.innerHTML = `
@@ -204,8 +178,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 this.options = {
                     link: this.getAttribute("link") || 'https://0206.ink/',
                     img: this.getAttribute("img"),
-                    tip: this.getAttribute("tip") || '小标题',
-                    cardTitle: this.getAttribute("cardTitle") || '标题',
+                    tip: this.getAttribute("tip") || '小標題',
+                    cardTitle: this.getAttribute("cardTitle") || '標題',
                     logo: this.getAttribute("logo"),
                     title: this.getAttribute("title"),
                     subTitle: this.getAttribute("subTitle"),
@@ -723,7 +697,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }" style="width:${this.options.width};height:${
                         this.options.height
                     }"></iframe>`;
-                else this.innerHTML = "视频地址未填写！";
+                else this.innerHTML = "影片聯結不正確！";
             }
         }
     );

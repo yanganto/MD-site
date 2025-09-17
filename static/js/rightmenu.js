@@ -59,12 +59,6 @@ window.oncontextmenu = function (event) {
         let $rightMenuCopyImg = $('#menu-copyimg');
         let $rightMenuDownloadImg = $('#menu-downloadimg');
         let $rightMenuSearch = $('#menu-search');
-        // let $rightMenuSearchBaidu = $('#menu-searchBaidu');
-        // let $rightMenuMusicToggle = $('#menu-music-toggle');
-        // let $rightMenuMusicBack = $('#menu-music-back');
-        // let $rightMenuMusicForward = $('#menu-music-forward');
-        // let $rightMenuMusicPlaylist = $('#menu-music-playlist');
-        // let $rightMenuMusicCopyMusicName = $('#menu-music-copyMusicName');
         let href = event.target.href;
         let imgsrc = event.target.currentSrc;
 
@@ -113,7 +107,6 @@ window.oncontextmenu = function (event) {
 
         // 判断是否为输入框
         if (event.target.tagName.toLowerCase() === 'input' || event.target.tagName.toLowerCase() === 'textarea') {
-            console.log('这是一个输入框')
             pluginMode = true;
             $rightMenuPasteText.show();
         } else {
@@ -166,14 +159,13 @@ rm.downloadimging = false;
 
 // 复制图片到剪贴板
 rm.writeClipImg = function (imgsrc) {
-    console.log('按下复制');
     rm.hideRightMenu();
-    btf.snackbarShow('正在下载中，请稍后', false, 10000)
+    btf.snackbarShow('下載中，請稍候…', false, 10000)
     if (rm.downloadimging == false) {
         rm.downloadimging = true;
         setTimeout(function () {
             copyImage(imgsrc);
-            btf.snackbarShow('复制成功！图片已添加盲水印，请遵守版权協議');
+            btf.snackbarShow('已複製，請尊重智慧財產權');
             rm.downloadimging = false;
         }, "10000")
     }
@@ -262,14 +254,14 @@ rm.rightmenuCopyText = function (txt) {
 rm.copyPageUrl = function () {
     var url = window.location.href;
     rm.copyUrl(url);
-    btf.snackbarShow('复制本页链接地址成功', false, 2000);
+    btf.snackbarShow('成功複製聯結', false, 2000);
     rm.hideRightMenu();
 }
 
 rm.sharePage = function () {
     var content = window.location.href;
     rm.copyUrl(url);
-    btf.snackbarShow('复制本页链接地址成功', false, 2000);
+    btf.snackbarShow('成功複製本頁聯結', false, 2000);
     rm.hideRightMenu();
 }
 
@@ -352,19 +344,11 @@ function replaceAll(string, search, replace) {
     return string.split(search).join(replace);
 }
 
-// 百度搜索
-rm.searchBaidu = function () {
-    btf.snackbarShow('即将跳转到百度搜索', false, 2000);
-    setTimeout(function () {
-        window.open('https://www.baidu.com/s?wd=' + selectTextNow);
-    }, "2000");
-    rm.hideRightMenu();
-}
 
 //分享链接
 rm.copyLink = function () {
     rm.rightmenuCopyText(domhref);
-    btf.snackbarShow('已复制链接地址');
+    btf.snackbarShow('聯結已複製');
 }
 
 function addRightMenuClickEvent() {

@@ -376,46 +376,7 @@ var halo = {
                 })
         }
 
-        function renderer(values) {
-            var data = getArrayItems(values, 1);
-            let powerStar = document.getElementById("power-star")
-            if (values.length === 0) {
-                powerStar.href = GLOBAL_CONFIG.source.power.powerLink
-                powerStar.innerHTML = ` 
-                        <div id="power-star-image" style="background-image: url('/themes/theme-hao/assets/img/afadian/afadian.webp')">
-                        </div>
-                        <div class="power-star-body">
-                            <div id="power-star-title">还没有人赞助～</div>
-                            <div id="power-star-desc">为爱发电，点击赞助</div>
-                        </div>`;
-            } else {
-                if (powerStar) {
-                    powerStar.href = "https://afdian.net/u/" + data[0]["user"].user_id
-                    powerStar.innerHTML = ` 
-                        <div id="power-star-image" style="background-image: url(${data[0]["user"].avatar})">
-                        </div>
-                        <div class="power-star-body">
-                            <div id="power-star-title">${data[0]["user"].name}</div>
-                            <div id="power-star-desc">更多支持，为爱发电</div>
-                        </div>`;
-                }
-
-                if (values.length > 1) {
-                    var i = 0;
-                    var htmlText = '';
-                    for (let value of values) {
-                        if (i > parseInt(show_num)) {
-                            break;
-                        }
-                        htmlText += ` <a href="${"https://afdian.net/u/" + value["user"]["user_id"]}" rel="external nofollow" target="_blank" th:title="${value["user"]["name"]}">${value["user"]["name"]}</a>`;
-                        i = i + 1;
-                    }
-                    if (document.getElementById("power-item-link")) {
-                        document.getElementById("power-item-link").innerHTML = htmlText;
-                    }
-                }
-            }
-        }
+        function renderer(values) { }
 
         function init() {
             const data = saveToLocal.get('power-data')

@@ -853,13 +853,6 @@ $(document).unbind('keydown').bind('keydown', function (e) {
 
 // 文章页背景
 GLOBAL_CONFIG.source.post.dynamicBackground && coverColor()
-// 充电
-wjx.addPowerLinksInPostRightSide()
-
-// 监听赞赏蒙版关闭
-document.addEventListener('touchstart', e => {
-    RemoveRewardMask()
-}, false)
 
 // 標籤侧边栏小组件随機颜色
 if (typeof isTagsRandomColor !== "undefined" && isTagsRandomColor) {
@@ -879,8 +872,6 @@ if (GLOBAL_CONFIG.isMusic) {
 window.initBlogLazy = runOnce('initBlogLazy')(() => {
     if (GLOBAL_CONFIG.isPost) {
         tocFn();
-        // 二维码
-        runPostAbstract()
         setPostDate()
         wjx.qrcodeCreate()
     } else {
