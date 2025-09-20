@@ -27,7 +27,6 @@
 
 {% block content %}
     {% set doc = page | default(value=section) %}
-    <!-- 头部导航栏 -->
     <header class="{% if config.extra.top.above.enable_above %}full_page{% else %}not-top-img{% endif %}" id="page-header">
         {{ macro::nav(title = config.title) }}
     </header>

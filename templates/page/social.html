@@ -11,14 +11,13 @@
 
 {% block content %}
 <link rel="stylesheet" href="{{ macro::get_production_path(path="/css/social.css") }}">
-<!-- 头部导航栏 -->
 <header class="{% if config.extra.top.above.enable_above %}full_page{% else %}not-top-img{% endif %}" id="page-header">
     {{ macro::nav(title = config.title) }}
 </header>
 <div class="socialOA" style="margin-top: 10%;">
     <div class="social">
-      <div class="social-card">
-        {{ macro::img_progressive_loading_single_size(src="/img/social/qr.jpg",class="qrcode", alt="qrcode") }}
+      <div class="social-card" onclick="javascript:window.location.href = '{{ config.extra.sidebar.social.url | safe }}'">
+        {{ macro::img_progressive_loading_single_size(src="/img/social/qr.jpg", class="qrcode", alt="qrcode" ) }}
         <div class="tips">追蹤Instagram，瞭解更多！</div>
         <div class="socialOA-card">
           <div class="socialOA-head" style="background-image: url(/img/logo.webp);"></div>
