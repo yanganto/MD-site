@@ -26,7 +26,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-25.05-small
 
       - name: Example test in features
-        run: nix build
+        run: nix build .#dev
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
