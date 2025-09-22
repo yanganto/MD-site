@@ -501,7 +501,7 @@ gongwangan = true
 copyright = true
 # 反馈
 feedback = true
-feedback_url = "mailto:yanganto@gmail.com"
+feedback_url = "mailto:yanganto+dive@gmail.com"
 
 # 云服务商 upyun_cloud aliyun_cloud tencent_cloud huawei_cloud custom_cloud
 yunzhichi_list = ""
@@ -529,7 +529,7 @@ icon = "icon-envelope"
 # 名稱
 name = "Mail"
 # 链接
-url = "mailto:yanganto@gmail.com"
+url = "mailto:yanganto+dive@gmail.com"
 
 [[extra.footer.social_media.right]]
 option_social_data = "icon"
