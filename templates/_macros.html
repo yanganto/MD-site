@@ -57,7 +57,7 @@
 <div id="menus">
     <div class="menus_items">
         <!-- 第一层仅展示使用，不做跳转 -->
-        {% set data = load_data(path="data.toml") %} 
+        {% set data = load_data(path="data/" ~ lang ~ ".toml") %} 
         {% for menu in data.menu.nav_menu %}
         <div class="menus_item">
             {% if menu.href %}
@@ -82,7 +82,7 @@
 
 {# 生成导航栏左侧折叠菜单 #}
 {% macro nav_left_menu() %}
-    {% set data = load_data(path="data.toml") %} 
+    {% set data = load_data(path="data/" ~ lang ~ ".toml") %} 
     {% set menu = data.menu.nav_left_menu %}
     <div class="back-menu-list-groups">
         {% for top_menu in menu %}
@@ -266,7 +266,7 @@
 
 {#尝试获取类型名稱 {{ macro::taxonomy_map(taxonomy=taxonomy,term=term) }} #}
 {% macro taxonomy_map(taxonomy, term) %}
-    {% set data = load_data(path="data.toml") %}
+    {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
     {% set value = data.post[taxonomy] | filter(attribute="id", value=term) | first %}
     {% if value %}
         {{ value.name }}

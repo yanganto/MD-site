@@ -1,5 +1,5 @@
 {% macro content_links() %}
-    {% set data = load_data(path="data.toml") %} 
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %} 
     {% set groups = data.friend.groups %}
     <div class="flink" id="banners">
         <div class="banners-title">

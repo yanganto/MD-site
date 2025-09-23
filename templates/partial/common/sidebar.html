@@ -1,4 +1,4 @@
-{% set data = load_data(path="data.toml") %} 
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %} 
 
 <!-- 侧栏，主要是手机端时会使用 -->
 <div id="sidebar">
@@ -61,7 +61,7 @@
             <div class="card-tag-cloud">
                 {% set tags = get_taxonomy(kind="tags") | get(key="items") | slice(end=config.extra.sidebar.tag_quantity) %}
                 {% for tag in tags %}
-                    {% set url = get_taxonomy_url(kind="tags", name=tag.name, lang=lang) %}
+                    {% set url = get_taxonomy_url(kind="tags", name=tag.name) %}
                     <a class="tag-item" style="font-size:1em" href="{{ url }}"
                        title="{{ macro::tag_name(tag=tag.name) }}">
                         <!-- 角标 -->

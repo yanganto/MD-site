@@ -1,7 +1,7 @@
 {% import "macro/template.html" as macro_template %}
 {% import "_macros.html" as macro %}
 
-{% set data = load_data(path="data.toml") %}
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %}
 
 <!-- 页脚模块 -->
 <footer id="footer">

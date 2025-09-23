@@ -5,7 +5,7 @@
             <!--  banners 使用技术栈-->            
             <div class="tags-group-wrapper">                 
                 {% set odd = true %}
-                {% set data = load_data(path="data.toml") %}
+                {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
                 {% for tech in data.holobios.items %}
                     {% if odd %}
                         <div class="tags-group-icon-pair">

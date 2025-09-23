@@ -1,6 +1,6 @@
 {% extends "page/base.html" %}
 
-{% set data = load_data(path="data.toml") %} 
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %} 
 {% set post = page %}
 
 {% block head %}

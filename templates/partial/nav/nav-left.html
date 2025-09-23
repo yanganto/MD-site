@@ -1,7 +1,7 @@
 <!-- 导航栏左侧 -->
 <div id="blog_name">
     {% if config.extra.nav.phone_left_menu and config.extra.nav.pc_left_menu %}
-        {% set data = load_data(path="data.toml") %} 
+        {% set data = load_data(path="data/" ~ lang ~ ".toml") %} 
         {% set left_menu = data.menu.nav_left_menu %}
         <!-- 菜单栏左侧按钮，没有配置时，则不展示-->
         <div class="back-home-button" tabindex="-1">

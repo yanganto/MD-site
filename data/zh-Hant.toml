@@ -1,7 +1,4 @@
-# 存放经常修改的配置，一般是网站的推荐文章、分類、標籤等信息
-
 [post]
-# 首页 Header 右侧推荐，建议 6 篇，填写 content 到 md 文件的相对地址
 recommend_posts = [
     "courses/OW/index.md",
     "activities/Intro/index.md",
@@ -11,31 +8,14 @@ recommend_posts = [
     "articles/diving-clips/index.md",
 ]
 
-# 首页 header 右侧
 [post.today_recommend]
-## 1， 推荐特定文章
-# 文章地址
 post_path = "courses/OW/index.md"
-## 2. 跳转指定页面
-# 跳转地址
 url = "/"
-# 大标题
 title = "Lorem Ipsum"
-# 背景图地址
 cover = "/path/to/banner.jpg"
-# 小标题
 small_title = "今日推薦"
 
 
-# 必须，下述標籤被用于网站导航中
-[[post.tags]]
-id = 'project'
-index = 0
-name = '項目'
-[[post.tags]]
-id = 'works'
-index = 0
-name = '作品'
 [[post.tags]]
 id = 'featured'
 index = 0
@@ -93,6 +73,10 @@ nav_menu = [
 ]
 
 nav_left_menu = [
+    { name = "Language", icon = "icon-language", menus = [
+        { name = "English", href = "/en/", icon = "icon-language", target = "_self" },
+        { name = "中文語言", href = "/", icon = "icon-language", target = "_self" },
+    ] },
     { name = "快速選單", menus = [
         { name = "學潛水", href = "/courses/OW", icon = "icon-artstation", target = "_self" },
         { name = "想體驗", href = "/activities/Intro", icon = "icon-rocket", target = "_self" },
@@ -122,7 +106,7 @@ name = "基礎課程"
 description = "成為潛水員的必經之路"
 items = [
     { name = "初級潛水員課程", img = "/img/courses/OW.png", model = "初級", button_title = "開課詳情", button_url = "/courses/OW" , description = "此課程又稱Open Water，是邁向海底世界的第一步。在課程中，你會學習基本的潛水裝備的操作方法，及意外的預防和排除方法" },
-    { name = "進階潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Advanced Open Water，目的 是協助你成為獨當一面的潛水員。在課程中，除了更細緻的浮力控制及更細緻的踢動方法，你還會學習處理潛水的特殊情況，如深潛、夜潛、船潛 …" },
+    { name = "進階潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Advanced Open Water，目的是協助你成為獨當一面的潛水員。在課程中，除了更細緻的浮力控制及更細緻的踢動方法，你還會學習處理潛水的特殊情況，如深潛、夜潛、船潛 …" },
     { name = "救援潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Rescue Diver，是協助你成為可以信賴的潛伴，在課程中你會學習觀察同伴的狀況，經判斷後，可以提早進行預防。同時也會學習意外發生時的盡急處置，包含水下、水面及岸上。" },
 ]
 
@@ -156,22 +140,8 @@ items = [
     { name = "激活潛水學習活動", img = "/img/courses/AOW.jpg", model = "初級", button_title = "活動詳情", button_url = "/activities/Reactive" , description = "這是專門設計給已有潛水證照，但因為生活繁忙，已經有點生疏的朋友。" },
 ]
 
-# icon 无法将多种颜色的图形编程font，无法合并路径，使用起来麻烦，先将svg合并 https://svgsprit.es/
-# 可以在 https://icomoon.io/ 导入 iconfont svg 文件然后重新打包 更新自己的图标
 [holobios]
-# 全局生效的 svg sprite
 svg_sprite = "/img/icons/sprite.svg"
-
-#[[holobios.items]]
-#name = "唱歌"
-## webfont class
-##icon = "holobios-icon holobios-icon-sing"
-## 图片连接
-##logo = "/img/icons/sing.svg"
-#bg_color = "#eb6840"
-## 当前 item 生效的 svg sprite
-##svg_sprite = "/img/icons/sprite.svg"
-#svg_symbol_id = "sing"
 
 [[holobios.items]]
 name = "潛水"

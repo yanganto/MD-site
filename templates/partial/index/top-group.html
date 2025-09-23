@@ -1,5 +1,5 @@
 <!-- 推薦文章 -->
-{% set data = load_data(path="data.toml") %}
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %}
 <div class="topGroup" id="topGroup">
     <div class="recent-post-group">
         {% if config.extra.top.banner_right.recommend_post.type == "latest" %}
