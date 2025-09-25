@@ -1,5 +1,5 @@
 <!-- 推薦文章 -->
-{% set data = load_data(path="data.toml") %}
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %}
 <div class="topGroup" id="topGroup">
     <div class="recent-post-group">
         {% if config.extra.top.banner_right.recommend_post.type == "latest" %}
@@ -53,7 +53,11 @@
             <div class="banner-button-group">
                 <button class="banner-button" onclick="window.event.cancelBubble=!0;wjx.hideTodayCard()">
                     <i class="icon-circle-plus"></i>
-                    <span class="banner-button-text">更多推薦</span>
+                    {%- if lang == config.default_language -%}
+                        <span class="banner-button-text">更多推薦</span>
+                    {%- else -%}
+                        <span class="banner-button-text">More</span>
+                    {%- endif -%}
                 </button>
             </div>
         </div>

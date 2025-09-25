@@ -11,7 +11,7 @@
       find css -type f -exec cleancss -o production/{} {} \;
       rm -rf css
       cd ..
-      ${zola}/bin/zola build ${build-params}
+      ${zola}/bin/zola build --minify ${build-params}
     '';
     installPhase = "cp -r public $out";
 }

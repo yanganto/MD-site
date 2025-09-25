@@ -24,19 +24,19 @@
             <div id="category">
                 <div id="category-bar">
                     <div class="category-bar-items" id="category-bar-items">
+                        {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
                         <div class="category-bar-item select"
                             id="{{ term.name }}">
                             <a href="{{ term.permalink }}" target="_self"
                                 >{{ macro::taxonomy_map(taxonomy=taxonomy.name, term=term.name) }}</a>
                         </div>                        
                         <div class="category-bar-item" id="category-bar-home">
-                            <a href="/">首頁</a>
+                            <a href="{{expected_root}}">{{data.translation.home}}</a>
                         </div>
-                        {% set data = load_data(path="data.toml") %}
                         {% set taxonomies = data.post[taxonomy.name] | sort(attribute="index") %}
                         {% for item in taxonomies %}
                             {% if term.name != item.id %}
-                                {% set term = get_taxonomy_term(kind=taxonomy.name, term=item.id, include_pages=false, required=false) %}
+                                {% set term = get_taxonomy_term(kind=taxonomy.name, term=item.id, include_pages=false, required=false, lang=lang) %}
                                 {% if term %}
                                 <div class="category-bar-item" id="{{ item.id }}">
                                     <a href="{{ term.permalink }}" target="_self">
@@ -48,7 +48,7 @@
                         {% endfor %}
                     </div>
                     <!-- 跳转到分類页 -->
-                    <a class="category-bar-more" target="_self" href="/{{ taxonomy.name | safe}}">更多</a>
+                    <a class="category-bar-more" target="_self" href="/{{ taxonomy.name | safe}}">{{data.translation.home}}</a>
                 </div>
                 <!-- 文章 -->
                 {{ macro_post_list::post_list(_path=paginator.pages) }}

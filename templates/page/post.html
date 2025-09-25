@@ -27,7 +27,7 @@
 {% endblock %}
 
 {% block content %}
-    {% set data = load_data(path="data.toml") %}
+{% set data = load_data(path="data/" ~ lang ~ ".toml") %}
     {% set post = page %}
 
     <header class="post-bg" id="page-header">

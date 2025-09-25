@@ -13,7 +13,7 @@
 
 {% block content %}
     {% set doc = page | default(value=section) %}
-    {% set data = load_data(path="data.toml") %}
+    {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
     <!-- 头部导航栏 -->
     <header class="not-top-img" id="page-header">
         {{ macro::nav(title = "活動") }}
@@ -22,7 +22,7 @@
 
     <main class="layout hide-aside" id="content-inner">
             <div id="page">
-            {{ macro_author_content::author_content(background = config.extra.activity.background_img , smallTitle = config.extra.activity.small_title, bigTitle = config.extra.activity.big_title, detail = config.extra.activity.detail, button_url = config.extra.activity.btn_url, button_title = config.extra.activity.btn_title) }}
+            {{ macro_author_content::author_content(background = config.extra.activity.background_img , smallTitle = config.extra.activity.small_title[lang], bigTitle = config.extra.activity.big_title[lang], detail = config.extra.activity.detail[lang], button_url = expected_root ~ config.extra.activity.btn_url, button_title = config.extra.activity.btn_title[lang]) }}
             {% if data.activity.groups %}
             <div id="course">
                 {% for group in data.activity.groups %}
@@ -45,8 +45,9 @@
                                 </div>
                                 <div class="course-item-content-item-toolbar">
                                     {% if activity.button_url %}
-                                        <a class="course-item-content-item-link" href="{{ activity.button_url }}" 
-                                            rel="noopener noreferrer external nofollow" target="_blank">{{ activity.button_title }}</a>
+                                        <a class="course-item-content-item-link" href="{{ activity.button_url }}" rel="noopener noreferrer external nofollow">
+                                            {{ activity.button_title }}
+                                        </a>
                                     {% endif %}
                                 </div>
                             </div>

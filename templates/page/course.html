@@ -13,7 +13,7 @@
 
 {% block content %}
     {% set doc = page | default(value=section) %}
-    {% set data = load_data(path="data.toml") %}
+    {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
     <!-- 头部导航栏 -->
     <header class="not-top-img" id="page-header">
         {{ macro::nav(title = "課程") }}
@@ -22,7 +22,7 @@
 
     <main class="layout hide-aside" id="content-inner">
             <div id="page">
-            {{ macro_author_content::author_content(background = config.extra.course.background_img , smallTitle = config.extra.course.small_title, bigTitle = config.extra.course.big_title, detail = config.extra.course.detail, button_url = config.extra.course.btn_url, button_title = config.extra.course.btn_title) }}
+            {{ macro_author_content::author_content(background = config.extra.course.background_img , smallTitle = config.extra.course.small_title[lang], bigTitle = config.extra.course.big_title[lang], detail = config.extra.course.detail[lang], button_url = expected_root ~ config.extra.course.btn_url, button_title = config.extra.course.btn_title[lang]) }}
             {% if data.course.groups %}
             <div id="course">
                 {% for group in data.course.groups %}
@@ -45,8 +45,9 @@
                                 </div>
                                 <div class="course-item-content-item-toolbar">
                                     {% if course.button_url %}
-                                        <a class="course-item-content-item-link" href="{{ course.button_url }}" rel="noopener noreferrer external nofollow"
-                                            target="_blank">{{ course.button_title }}</a>
+                                        <a class="course-item-content-item-link" href="{{ course.button_url }}" rel="noopener noreferrer external nofollow" >
+                                            {{ course.button_title }}
+                                        </a>
                                     {% endif %}
                                 </div>
                             </div>
@@ -61,7 +62,6 @@
     </main>
 
     {% include "partial/common/footer.html" %}
-    <!-- 卡片顶部气泡效果 -->
     {% if theme.config.other.bubble_enable %}
         <script async data-pjax src="/libs/canvas/bubble.js"></script>
     {% endif %}

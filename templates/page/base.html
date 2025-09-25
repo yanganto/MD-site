@@ -21,11 +21,15 @@
         {% set html_type = doc.extra.type | default(value='post') %}
     {% endif %}
 {% endif %}
+{%- if lang == config.default_language -%}
+    {%- set expected_root = "/" -%}
+{%- else -%}
+    {%- set expected_root = "/" ~ lang ~ "/" -%}
+{%- endif -%}
 
 
 <!DOCTYPE html>
-{# <html lang="{{ lang }}"> #}
-<html lang="zh-TW">
+<html lang="{{ lang }}">
 
 <head>
     {# head 中自定义的 #}

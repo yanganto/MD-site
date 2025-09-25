@@ -2,17 +2,25 @@
 <div id="category-bar">
     <div class="category-bar-items" id="category-bar-items">
         <div class="category-bar-item select" id="category-bar-home">
-            <a href="/">首頁</a>
+            {%- if lang == config.default_language -%}
+                <a href="/">首頁</a>
+            {%- else -%}
+                <a href="/en/">Home</a>
+            {%- endif -%}
         </div>
 
         {% for navTag in config.extra.layout.navs.navTag %}
             {% for tag in config.extra.tags | filter(value="nav_tag") %}
-                {% set term = get_taxonomy_term(kind="tags", name=tag) %}
+                {% set term = get_taxonomy_term(kind="tags", name=tag, lang=lang) %}
                 <div class="category-bar-item" id="{{ term.name }}">
                     <a href="{{ term.permalink }}">{{ macro::tag_name(tag=term.name) }}</a>
                 </div>
             {% endfor %}
         {% endfor %}
     </div>
-    <a class="category-bar-more" href="/tags">更多</a>
+    {%- if lang == config.default_language -%}
+        <a class="category-bar-more" href="/categories">更多</a>
+    {%- else -%}
+        <a class="category-bar-more" href="/en/categories">More</a>
+    {%- endif -%}
 </div>

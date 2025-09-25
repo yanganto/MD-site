@@ -19,7 +19,11 @@
         GLOBAL_CONFIG.htmlType = 'links';
     </script>
     <header class="not-top-img" id="page-header">
-        {{ macro::nav(title = "好站推薦") }}
+        {%- if lang == config.default_language -%}
+            {{ macro::nav(title = "好站推薦") }}
+        {%- else -%}
+            {{ macro::nav(title = "Recommendations") }}
+        {%- endif -%}
     </header>
 
     <main class="layout hide-aside" id="content-inner">
@@ -40,7 +44,7 @@
             </style>
         </div>
     </main>
-    
+
     {{ macro::setup_checkbox() }}
 
     {% include "partial/common/footer.html" %}

@@ -27,7 +27,7 @@
             <div class="category-lists">
                 <!-- <div class="category-title is-center">分類 - <span class="category-amount">11</span></div> -->
                 <div class="tag-cloud-list is-center">
-                    {% set data = load_data(path="data.toml") %}
+                    {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
                     {% set taxonomies = data.post[taxonomy.name] | sort(attribute="index") %}
                     {% for item in taxonomies %}
                         {% set term = get_taxonomy_term(kind=taxonomy.name, term=item.id, include_pages=true, required=false) %}
