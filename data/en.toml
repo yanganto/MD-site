@@ -1,11 +1,11 @@
 [post]
 recommend_posts = [
-    "en/courses/OW/index.md",
-    "activities/Intro/index.md",
-    "activities/Intensive/index.md",
-    "articles/neutral-buoyancy/index.md",
-    "articles/softness-of-fin/index.md",
-    "articles/diving-clips/index.md",
+    "courses/OW/index.en.md",
+    "activities/Intro/index.en.md",
+    "activities/Intensive/index.en.md",
+    # "articles/neutral-buoyancy/index.md",
+    # "articles/softness-of-fin/index.md",
+    # "articles/diving-clips/index.md",
 ]
 
 [post.today_recommend]
@@ -60,7 +60,7 @@ nav_menu = [
     { name = "Services", menus = [
         { name = "About", href = "/about", icon = "icon-lightbulb", target = "_self" },
         { name = "Course", href = "/en/course", icon = "icon-artstation", target = "_self" },
-        { name = "Activity", href = "/activity", icon = "icon-rocket", target = "_self" },
+        { name = "Activity", href = "/en/activity", icon = "icon-rocket", target = "_self" },
     ] },
     { name = "Articles", menus = [
         { name = "All", href = "/archives", icon = "icon-book-open", target = "_self" },
@@ -78,7 +78,7 @@ nav_left_menu = [
     ] },
     { name = "Quick menu", menus = [
         { name = "Learn it?", href = "/en/courses/OW", icon = "icon-artstation", target = "_self" },
-        { name = "Experience it?", href = "/activities/Intro", icon = "icon-rocket", target = "_self" },
+        { name = "Experience it?", href = "/en/activities/Intro", icon = "icon-rocket", target = "_self" },
     ] },
 ]
 
@@ -129,14 +129,14 @@ items = [
 name = "Introductory Activities"
 description = "You can learn about the ocean even if you have no prior knowledge."
 items = [
-    { name = "Beginner Experience Activity", img = "/img/activities/Intro.jpg", model = "Intro", button_title = "Details", button_url = "/activities/Intro" , description = "This activity is designed specifically for people with no diving experience.  Besides including two introductory dives, we also prioritize safety; a brief theoretical lesson will be provided before going into the water." },
+    { name = "Beginner Experience Activity", img = "/img/activities/Intro.jpg", model = "Intro", button_title = "Details", button_url = "/en/activities/Intro" , description = "This activity is designed specifically for people with no diving experience.  Besides including two introductory dives, we also prioritize safety; a brief theoretical lesson will be provided before going into the water." },
 ]
 [[activity.groups]]
 name = "Basic Activities"
 description = ""
 items = [
-    { name = "Enhance Learning Activities", img = "/img/activities/Intensive.jpg", model = "Beginner", button_title = "Details", button_url = "/activities/Intensive" , description = "This program is designed specifically for divers who already have a diving certification and want to improve their skills or adjust their equipment. It's ideal for those planning to dive internationally, as it helps ensure you're in top diving condition, preventing any issues that might otherwise spoil your diving experience abroad." },
-    { name = "Activate Learning Activity", img = "/img/courses/AOW.jpg", model = "Beginner", button_title = "Details", button_url = "/activities/Reactive" , description = "This program is specifically designed for those who already have a diving certification but have become a bit rusty due to a busy lifestyle." },
+    { name = "Intensive Diving Skills Program", img = "/img/activities/Intensive.jpg", model = "Beginner", button_title = "Details", button_url = "/en/activities/Intensive" , description = "This program is designed specifically for divers who already have a diving certification and want to improve their skills or adjust their equipment. It's ideal for those planning to dive internationally, as it helps ensure you're in top diving condition, preventing any issues that might otherwise spoil your diving experience abroad." },
+    { name = "Re-activate Program", img = "/img/courses/AOW.jpg", model = "Beginner", button_title = "Details", button_url = "/en/activities/Reactive" , description = "This program is specifically designed for those who already have a diving certification but have become a bit rusty due to a busy lifestyle." },
 ]
 
 [holobios]
