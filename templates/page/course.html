@@ -45,8 +45,9 @@
                                 </div>
                                 <div class="course-item-content-item-toolbar">
                                     {% if course.button_url %}
-                                        <a class="course-item-content-item-link" href="{{ course.button_url }}" rel="noopener noreferrer external nofollow"
-                                            target="_blank">{{ course.button_title }}</a>
+                                        <a class="course-item-content-item-link" href="{{ course.button_url }}" rel="noopener noreferrer external nofollow" >
+                                            {{ course.button_title }}
+                                        </a>
                                     {% endif %}
                                 </div>
                             </div>
@@ -61,7 +62,6 @@
     </main>
 
     {% include "partial/common/footer.html" %}
-    <!-- 卡片顶部气泡效果 -->
     {% if theme.config.other.bubble_enable %}
         <script async data-pjax src="/libs/canvas/bubble.js"></script>
     {% endif %}

@@ -1,6 +1,6 @@
 [post]
 recommend_posts = [
-    "courses/OW/index.md",
+    "en/courses/OW/index.md",
     "activities/Intro/index.md",
     "activities/Intensive/index.md",
     "articles/neutral-buoyancy/index.md",
@@ -9,7 +9,7 @@ recommend_posts = [
 ]
 
 [post.today_recommend]
-post_path = "courses/OW/index.md"
+post_path = "courses/OW/index.en.md"
 url = "/"
 title = "Lorem Ipsum"
 cover = "/path/to/banner.jpg"
@@ -59,7 +59,7 @@ name = 'Tags'
 nav_menu = [
     { name = "Services", menus = [
         { name = "About", href = "/about", icon = "icon-lightbulb", target = "_self" },
-        { name = "Course", href = "/course", icon = "icon-artstation", target = "_self" },
+        { name = "Course", href = "/en/course", icon = "icon-artstation", target = "_self" },
         { name = "Activity", href = "/activity", icon = "icon-rocket", target = "_self" },
     ] },
     { name = "Articles", menus = [
@@ -77,7 +77,7 @@ nav_left_menu = [
         { name = "English", href = "/en/", icon = "icon-language", target = "_self" },
     ] },
     { name = "Quick menu", menus = [
-        { name = "Learn it?", href = "/courses/OW", icon = "icon-artstation", target = "_self" },
+        { name = "Learn it?", href = "/en/courses/OW", icon = "icon-artstation", target = "_self" },
         { name = "Experience it?", href = "/activities/Intro", icon = "icon-rocket", target = "_self" },
     ] },
 ]
@@ -85,7 +85,7 @@ nav_left_menu = [
 footer_menu = [
     { name = "Services", menus = [
         { name = "About", href = "/about", target = "_self" },
-        { name = "Course", href = "/course", target = "_self" },
+        { name = "Course", href = "/en/course", target = "_self" },
         { name = "Activity", href = "/activity", target = "_self" },
         { name = "Contact", href = "/contact", target = "_self" },
     ] },
@@ -104,7 +104,7 @@ footer_menu = [
 name = "Basic Courses"
 description = "The essential steps to be a scuba diver"
 items = [
-    { name = "Open Water Diver", img = "/img/courses/OW.png", model = "Elementary", button_title = "Details", button_url = "/courses/OW" , description = "This is your first step into the underwater world. During the course, you will learn how to use basic scuba diving equipment, as well as how to prevent and handle potential emergencies." },
+    { name = "Open Water Diver", img = "/img/courses/OW.png", model = "Elementary", button_title = "Details", button_url = "/en/courses/OW" , description = "This is your first step into the underwater world. During the course, you will learn how to use basic scuba diving equipment, as well as how to prevent and handle potential emergencies." },
     { name = "Advance Open Water Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", description = "This course will help you become a self-sufficient diver. In addition to learning more advanced buoyancy control and kicking techniques, you will also learn how to handle various special diving situations, such as deep dives, night dives, and boat dives." },
     { name = "Rescue Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", description = "This course will help you become a reliable dive buddy.  You will learn to observe your dive buddy's condition and take preventative measures based on your assessment. You will also learn how to handle emergencies, including those that occur underwater, on the surface, and on land." },
 ]
