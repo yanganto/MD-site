@@ -2,15 +2,27 @@
 <div id="tag-bar">
     <div class="tag-bar-items" id="tag-bar-items">
         <div class="tag-bar-item select" id="tag-bar-home">
-            <a href="/">首頁</a>
+            {%- if lang == config.default_language -%}
+                <a href="/">首頁</a>
+            {%- else -%}
+                <a href="/en/">Home</a>
+            {%- endif -%}
         </div>
 
         {% set tags = config.extra.tags %}
         {% for tag in tags %}
             <div class="tag-bar-item" id="{{ tag.name }}">
-                <a href="{{ tag.permalink }}">{{ macro::tag_name(tag=tag.name) }}</a>
+                {%- if lang == config.default_language -%}
+                    <a href="{{ tag.permalink }}">{{ macro::tag_name(tag=tag.name) }}</a>
+                {%- else -%}
+                <a href="/{{lang}}/{{ tag.permalink }}">{{ macro::tag_name(tag=tag.name) }}</a>
+                {%- endif -%}
             </div>
         {% endfor %}
     </div>
-    <a class="tag-bar-more" href="/tags">更多</a>
+    {%- if lang == config.default_language -%}
+        <a class="tag-bar-more" href="/tags">更多</a>
+    {%- else -%}
+        <a class="tag-bar-more" href="/en/tags">More</a>
+    {%- endif -%}
 </div>

@@ -63,9 +63,9 @@ nav_menu = [
         { name = "Activity", href = "/en/activity", icon = "icon-rocket", target = "_self" },
     ] },
     { name = "Articles", menus = [
-        { name = "All", href = "/archives", icon = "icon-book-open", target = "_self" },
-        { name = "Categories", href = "/categories", icon = "icon-folder-open", target = "_self" },
-        { name = "Tags", href = "/tags", icon = "icon-tags", target = "_self" },
+        { name = "All", href = "/en/archives", icon = "icon-book-open", target = "_self" },
+        { name = "Categories", href = "/en/categories", icon = "icon-folder-open", target = "_self" },
+        { name = "Tags", href = "/en/tags", icon = "icon-tags", target = "_self" },
         { name = "Random", href = "javascript:toRandomPost()", icon = "icon-dice", target = "_self" },
     ] },
     { name = "Recommendations", is_vertical = true, href = "/friends", menus = [] },
@@ -86,13 +86,13 @@ footer_menu = [
     { name = "Services", menus = [
         { name = "About", href = "/about", target = "_self" },
         { name = "Course", href = "/en/course", target = "_self" },
-        { name = "Activity", href = "/activity", target = "_self" },
-        { name = "Contact", href = "/contact", target = "_self" },
+        { name = "Activity", href = "/en/activity", target = "_self" },
+        { name = "Contact", href = "/en/contact", target = "_self" },
     ] },
     { name = "Article", menus = [
-        { name = "All", href = "/archives", target = "_self" },
-        { name = "Categories", href = "/categories", target = "_self" },
-        { name = "Tags", href = "/tags", target = "_self" },
+        { name = "All", href = "/en/archives", target = "_self" },
+        { name = "Categories", href = "/en/categories", target = "_self" },
+        { name = "Tags", href = "/en/tags", target = "_self" },
     ] },
     { name = "Froms", menus = [
         { name = "Copyright", href = "/copyright", target = "_self" },
@@ -206,3 +206,7 @@ logo = "/holobios/Shark.jpg"
 name = "Cuttle Fish"
 bg_color = "#007386"
 logo = "/holobios/Cuttlefish.jpg"
+
+[translation]
+home = "Home"
+more = "More"

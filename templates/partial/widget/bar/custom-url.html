@@ -2,7 +2,11 @@
 <div id="category-bar">
     <div class="category-bar-items" id="category-bar-items">
         <div class="category-bar-item select" id="category-bar-home">
-            <a href="/">首頁</a>
+            {%- if lang == config.default_language -%}
+                <a href="/">首頁</a>
+            {%- else -%}
+                <a href="/en/">Home</a>
+            {%- endif -%}
         </div>
 
         {% for customUrlItem in config.extra.layout.navs.nav_custom_url %}
@@ -11,5 +15,9 @@
             </div>
         {% endfor %}
     </div>
-    <a class="category-bar-more" href="/custom">更多</a>
+    {%- if lang == config.default_language -%}
+        <a class="category-bar-more" href="/custom">更多</a>
+    {%- else -%}
+        <a class="category-bar-more" href="/en/custom">More</a>
+    {%- endif -%}
 </div>

@@ -36,9 +36,7 @@
             </div>
         </div>
         <div class="banners-title">
-            {% if config.extra.top.banner_left.title_big %}
-                {{ config.extra.top.banner_left.title_big | safe }}
-            {% endif %}
+            {{ config.extra.top.banner_left.title_big[lang] | safe }}
             {% if config.extra.top.banner_left.title_small %}
                 <div class="banners-title-small">{{ config.extra.top.banner_left.title_small | safe }}</div>
             {% endif %}

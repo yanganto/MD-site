@@ -207,3 +207,7 @@ logo = "/holobios/Shark.jpg"
 name = "火焰花枝"
 bg_color = "#007386"
 logo = "/holobios/Cuttlefish.jpg"
+
+[translation]
+home = "首頁"
+more = "更多"

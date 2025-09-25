@@ -21,6 +21,11 @@
         {% set html_type = doc.extra.type | default(value='post') %}
     {% endif %}
 {% endif %}
+{%- if lang == config.default_language -%}
+    {%- set expected_root = "/" -%}
+{%- else -%}
+    {%- set expected_root = "/" ~ lang ~ "/" -%}
+{%- endif -%}
 
 
 <!DOCTYPE html>

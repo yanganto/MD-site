@@ -68,11 +68,19 @@
             {% if config.extra.footer.footer_group.enable %}
             <div class="footer-group">
                 <div class="footer-title-group">
-                    <h3 class="footer-title">好站推薦</h3>
-                    <button class="random-friends-btn" id="footer-random-friends-btn"
-                       onclick="javascript:wjx.addFriendLinksInFooter();" title="載入更多">
-                       <i class="icon-arrow-rotate-right" style="font-size: 16px;"></i>
-                    </button>
+                    {%- if lang == config.default_language -%}
+                        <h3 class="footer-title">好站推薦</h3>
+                        <button class="random-friends-btn" id="footer-random-friends-btn"
+                           onclick="javascript:wjx.addFriendLinksInFooter();" title="載入更多">
+                           <i class="icon-arrow-rotate-right" style="font-size: 16px;"></i>
+                        </button>
+                    {%- else -%}
+                        <h3 class="footer-title">Recommendations</h3>
+                        <button class="random-friends-btn" id="footer-random-friends-btn"
+                           onclick="javascript:wjx.addFriendLinksInFooter();" title="Load more">
+                           <i class="icon-arrow-rotate-right" style="font-size: 16px;"></i>
+                        </button>
+                    {%- endif -%}
                 </div>
                 <div class="footer-links" id="friend-links-in-footer"></div>
             </div>

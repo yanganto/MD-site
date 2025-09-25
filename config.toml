@@ -275,18 +275,18 @@ video = ""
 
 # Banner 左侧
 [extra.top.banner_left]
-title_big = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\">適合你的潛水</div>"
+title_big = { zh-Hant = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\">適合你的潛水</div>", en = "<div class=\"banners-title-big\">Morning Diver</div><div class=\"banners-title-big\">Your Custom Dive</div>" } 
 title_small = ""
 
 # 分组
 [[extra.top.banner_left.category_groups]]
-title = "推薦課程"
+title = { zh-Hant =  "推薦課程", en = "New Course" }
 icon = "icon-book"
 url = "/course"
 colors = { light_one = "#358bff", light_two = "#15c6ff", dark_one = "#0653b8", dark_two = "#2fcbff" }
 
 [[extra.top.banner_left.category_groups]]
-title = "最近更新"
+title = { zh-Hant =  "最近更新", en = "New Articles" }
 icon = "icon-fire"
 url = "/tags/hot"
 colors = { light_one = "#ff6655", light_two = "#ffbf37", dark_one = "#e22a16", dark_two = "#da980c" }
@@ -342,6 +342,7 @@ shadow_effect = true
 
 # 侧边栏
 [extra.sidebar]
+title = { zh-Hant =  "最近發佈", en = "New Released" }
 # 侧边栏位置 隐藏 hide-aside 右侧 right-aside 左侧 left-aside
 location = "right-aside"
 
