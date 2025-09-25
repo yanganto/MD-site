@@ -73,9 +73,9 @@ nav_menu = [
 ]
 
 nav_left_menu = [
-    { name = "Language", icon = "icon-language", menus = [
+    { name = "語言", icon = "icon-language", menus = [
         { name = "English", href = "/en/", icon = "icon-language", target = "_self" },
-        { name = "中文語言", href = "/", icon = "icon-language", target = "_self" },
+        { name = "中文", href = "/", icon = "icon-language", target = "_self" },
     ] },
     { name = "快速選單", menus = [
         { name = "學潛水", href = "/courses/OW", icon = "icon-artstation", target = "_self" },

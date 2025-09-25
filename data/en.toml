@@ -68,12 +68,12 @@ nav_menu = [
         { name = "Tags", href = "/en/tags", icon = "icon-tags", target = "_self" },
         { name = "Random", href = "javascript:toRandomPost()", icon = "icon-dice", target = "_self" },
     ] },
-    { name = "Recommendations", is_vertical = true, href = "/friends", menus = [] },
+    { name = "Recommendations", is_vertical = true, href = "/en/friends", menus = [] },
 ]
 
 nav_left_menu = [
-    { name = "語言", icon = "icon-language", menus = [
-        { name = "中文語言", href = "/", icon = "icon-language", target = "_self" },
+    { name = "Language", icon = "icon-language", menus = [
+        { name = "中文", href = "/", icon = "icon-language", target = "_self" },
         { name = "English", href = "/en/", icon = "icon-language", target = "_self" },
     ] },
     { name = "Quick menu", menus = [
