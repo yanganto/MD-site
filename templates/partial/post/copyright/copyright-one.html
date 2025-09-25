@@ -4,7 +4,7 @@
     {% set document = page | default(value=section) -%} {% set lang = document.lang -%} 
     <div class="post-copyright">
         <div class="post-copyright__author_group">
-            <a class="post-copyright__author_img" href="/about">
+            <a class="post-copyright__author_img" href="{{expected_root}}about">
                 {{ macro::img_progressive_loading_single_size(src=config.extra.site.logo, class="post-copyright__author_img_back") }}
             </a>
             <div class="post-copyright__author_name">{{ config.title }}</div>

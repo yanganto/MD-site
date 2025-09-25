@@ -10,7 +10,7 @@
     <div id="wjx-footer-bar">
         <div class="footer-logo">{{ config.author | safe }}</div>
         <div class="footer-bar-description">{{ config.description | safe }}</div>
-        <a class="footer-bar-link" href="/about" >了解更多</a>
+        <a class="footer-bar-link" href="{{expected_root}}about" >了解更多</a>
     </div>
     {% endif %}
 
@@ -130,18 +130,32 @@
                         {% endif %}
                         <a class="footer-bar-link" href="https://www.getzola.org/">
                             <div class="status-light"></div>
-                            <span>本站以 Rust Zola 打造，安全是我們的底線</span>
+                            {%- if lang == config.default_language -%}
+                                <span>本站以 Rust Zola 打造，安全是我們的底線</span>
+                            {%- else -%}
+                                <span>This site is build with Rust Zola</span>
+                            {%- endif -%}
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bar-right">
                 {% if config.extra.footer.about %}
-                <a class="footer-bar-link" href="/about" >關於我</a>
+                    {%- if lang == config.default_language -%}
+                        <a class="footer-bar-link" href="/about" >關於我</a>
+                    {%- else -%}
+                        <a class="footer-bar-link" href="{{expected_root }}/about" >About</a>
+                    {%- endif -%}
                 {% endif %}
 
                 {% if config.extra.footer.feedback %}
-                <a class="footer-bar-link" href="{{ config.extra.footer.feedback_url }}" target="_blank">來信</a>
+                    <a class="footer-bar-link" href="{{ config.extra.footer.feedback_url }}" target="_blank">
+                        {%- if lang == config.default_language -%}
+                            來信
+                        {%- else -%}
+                            Email
+                        {%- endif -%}
+                    </a>
                 {% endif %}
 
                 {% if config.extra.footer.copyright %}
