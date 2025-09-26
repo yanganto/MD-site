@@ -121,26 +121,6 @@
 {# 延迟执行的不重要脚本 #}
 <script data-pjax defer src='{{ macro::get_production_path(path="/js/bundle.js") }}'></script>
 
-{% if config.extra.nav.right.search %}
-    {% include "partial/nav/search-dialog.html" %}
-    <script>
-        var searchLibLoaded = false
-        const searchFiles = [
-        {% if config.extra.nav.right.search_engine == 'algolia' %}
-            { type: 'css', path: '/libs/algolia/algoliasearchNetlify.css' },
-            { type: 'js', path: '/libs/algolia/algoliasearchNetlify.js' },
-            { type: 'js', path: '/libs/algolia/algoliasearch-lite.umd.js' },
-        {% elif config.extra.nav.right.search_engine == 'meilisearch' %}
-            { type: 'js', path: '/libs/meilisearch/instant-meilisearch.umd.min.js' },
-        {% endif %}
-            { type: 'js', path: '/libs/instantsearch/instantsearch-production.min-4.77.0.js' }
-        ];
-    </script>
-    <link rel="preload" as="style" href="{{ macro::get_production_path(path="/css/algolia.css") }}" onload="this.onload=null;this.rel='stylesheet'"/>
-    <noscript><link rel="stylesheet" href="{{ macro::get_production_path(path="/css/algolia.css") }}"></noscript>
-    <script defer src='{{ macro::get_production_path(path="/js/search.js") }}'></script>
-{% endif %}
-
 {# https://instant.page/ 网站预加载， 放在 </body> 之前 #}
 <script defer src="/libs/instantpage/instantpage.min.js" type="module"></script>
 

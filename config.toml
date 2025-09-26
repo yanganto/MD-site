@@ -219,25 +219,6 @@ article = true
 dark_mode = true
 # 右上角控制台按钮
 console_enable = true
-# 启用搜索
-search = false
-# 搜索引擎 选项: "meilisearch", "algolia"
-search_engine = "algolia"
-
-# Meilisearch 搜索
-[extra.search.meilisearch]
-# 服务器地址
-host = ""
-# search key
-key = ""
-# 索引名稱
-index_name = ""
-
-# Algolia 搜索
-[extra.search.algolia]
-app_id = ""
-app_key = ""
-index_name = ""
 
 # 顶部设置
 [extra.top]
