@@ -743,79 +743,6 @@ window.getTimeState = function() {
         switchDarkMode: switchDarkMode
     };
 
-// 快捷键
-$(window).on('keydown', function (ev) {
-
-    // 响应esc键
-    if (ev.keyCode == 27) {
-        wjx.hideLoading();
-        wjx.hideConsole();
-        rm.hideRightMenu();
-    }
-
-    if (wjx_keyboard && ev.shiftKey && !wjx_intype) {
-
-        // 显示快捷键面板 shift键
-        // if (ev.keyCode == 16) {
-        //     document.querySelector("#keyboard-tips").classList.add("show");
-        // }
-
-        //关闭快捷键 shift+K
-        if (ev.keyCode == 75) {
-            wjx.keyboardToggle();
-            return false;
-        }
-
-        //响应打开控制台键 shift+A
-        if (ev.keyCode == 65) {
-            wjx.showConsole();
-            return false;
-        }
-
-        //音乐控制 shift+M
-        if (ev.keyCode == 77) {
-            wjx.musicToggle();
-            return false;
-        }
-
-        //随機文章 shift+R
-        if (ev.keyCode == 82) {
-            toRandomPost();
-            return false;
-        }
-
-        //回到首页 shift+H
-        if (ev.keyCode == 72) {
-            pjax.loadUrl("/");
-            return false;
-        }
-
-        //深色模式 shift+D
-        if (ev.keyCode == 68) {
-            rm.switchDarkMode();
-            return false;
-        }
-
-        //友情链接页面 shift+L
-        if (ev.keyCode == 76) {
-            pjax.loadUrl("/link/");
-            return false;
-        }
-
-        //关于本站 shift+P
-        if (ev.keyCode == 80) {
-            pjax.loadUrl("/about/");
-            return false;
-        }
-
-        //在线工具 shift+T
-        if (ev.keyCode == 84) {
-            pjax.loadUrl("/tlink/");
-            return false;
-        }
-    }
-});
-
 //自动调整即刻短文尺寸
 window.addEventListener("resize", (function () {
     document.querySelector("#waterfall") && wjx.reflashEssayWaterFall()
@@ -833,12 +760,6 @@ document.querySelector('#console') && document.querySelector('#console').addEven
 //   e.preventDefault()
 // })
 
-// 检测按键：开发者模式
-window.onkeydown = function (e) {
-    if (e.keyCode === 123) {
-        btf.snackbarShow('請尊重智慧財產權', false, 3000)
-    }
-}
 
 //监听ctrl+C
 $(document).unbind('keydown').bind('keydown', function (e) {

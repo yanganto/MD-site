@@ -21,10 +21,6 @@
     {% include "partial/widget/sidebar/friend-link.html" %}
 {% endif %}
 
-{% if widget == "music" %}
-    {% include "partial/widget/sidebar/music.html" %}
-{% endif %}
-
 {% if widget == "power" %}
     {% include "partial/widget/sidebar/power.html" %}
 {% endif %}
@@ -133,9 +129,6 @@
         {% endif %}
         {% if widget == "hello-about" %}
             {% include "partial/widget/about/hello-about.html" %}
-        {% endif %}
-        {% if widget == "like-music" %}
-            {% include "partial/widget/about/like-music.html" %}
         {% endif %}
         {% if widget == "personalities-photo" %}
             {% include "partial/widget/about/personalities-photo.html" %}

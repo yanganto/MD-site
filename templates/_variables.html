@@ -138,42 +138,6 @@
             bgDark: "{{ config.extra.style.theme_dark_skin }}",
             position: "top-center"
         },
-        prism: {
-            enable: {{ config.extra.code.enable }},
-            enable_title: {{ config.extra.code.enable_title }},
-            enable_hr: {{ config.extra.code.enable_hr }},
-            enable_line: {{ config.extra.code.enable_line }},
-            enable_copy: {{ config.extra.code.enable_copy }},
-            enable_expander: {{ config.extra.code.enable_expander }},
-            prism_limit: {{ config.extra.code.height_limit | default(value=300) + 30 }},
-            enable_height_limit: {{ config.extra.code.enable_height_limit }}
-        },
-        {% if config.extra.nav.right.search %}
-        search: {
-            engine: "{{ config.extra.nav.right.search_engine }}",
-            {% if config.extra.nav.right.search_engine == 'algolia' %}
-            algolia: {
-                appId: "{{ config.extra.search.algolia.app_id }}",
-                apiKey: "{{ config.extra.search.algolia.app_key }}",
-                indexName: "{{ config.extra.search.algolia.index_name }}",
-            },
-            {% elif config.extra.nav.right.search_engine == 'meilisearch' %}
-            meilisearch: {
-                host: "{{ config.extra.search.meilisearch.host | safe}}",
-                apiKey: "{{ config.extra.search.meilisearch.key }}",
-                indexName: "{{ config.extra.search.meilisearch.index_name }}",
-            },
-            {% endif %}
-            hits:{
-                per_page: 6
-            },
-            languages:{
-                input_placeholder:"輸入闗鍵字後蒐尋",
-                hits_empty:"找不到您查詢的内容：${query}",
-                hits_stats:"找到 ${hits} 條結果，用時 ${time} 毫秒"
-            }
-        },
-        {% endif %}
         source: {
             power: {
                 powerLink: "{{ config.extra.sidebar.power.powerLink | safe }}",
