@@ -1,7 +1,12 @@
 <div id="rightside">
     <div id="rightside-config-show">
-        <button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="icon-arrows-left-right"></i></button>
-        <button id="go-up" type="button" title="回到頂部"><i class="icon-arrow-up"></i></button>
+        {%- if lang == config.default_language -%}
+            <button id="hide-aside-btn" type="button" title="單欄和雙欄切換"><i class="icon-arrows-left-right"></i></button>
+            <button id="go-up" type="button" title="回到頂部"><i class="icon-arrow-up"></i></button>
+        {%- else -%}
+            <button id="hide-aside-btn" type="button" title="Column Toggle"><i class="icon-arrows-left-right"></i></button>
+            <button id="go-up" type="button" title="Go Top"><i class="icon-arrow-up"></i></button>
+        {%- endif -%}
     </div>
 </div>
 

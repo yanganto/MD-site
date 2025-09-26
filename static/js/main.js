@@ -108,7 +108,7 @@ function percent() {
     var a = window.scrollY + document.documentElement.clientHeight
         , i = document.getElementById("post-comment") || document.getElementById("footer");
     i.offsetTop + i.offsetHeight / 2 < a || o > 90 ? (document.querySelector("#nav-totop").classList.add("long"),
-        n.innerHTML = "回到頁首") : (document.querySelector("#nav-totop").classList.remove("long"),
+        n.innerHTML = GLOBAL_CONFIG.lang == "zh-Hant" ? "回到頁首" : "Go Top") : (document.querySelector("#nav-totop").classList.remove("long"),
             o >= 0 && (n.innerHTML = o)),
         endresult = t - e,
         endresult < 100 ? $(".needEndHide").addClass("hide") : $(".needEndHide").removeClass("hide"),
