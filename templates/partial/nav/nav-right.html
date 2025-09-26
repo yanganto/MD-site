@@ -4,7 +4,13 @@
     <!-- 功能都需要添加开关 -->
     {% if config.extra.nav.right.article %}
     <div class="nav-button" id="randomPost_button">
-        <button class="site-page nav-item" href="javascript:void(0);" onclick="toRandomPost()" title="随機文章">
+        <button class="site-page nav-item" href="javascript:void(0);" onclick="toRandomPost()"
+            {%- if lang == config.default_language -%}
+               title="随機文章"
+            {%- else -%}
+               title="Random Articles"
+            {%- endif -%}
+            >
             <i class="nav-icon icon-dice"></i>
         </button>
     </div>
