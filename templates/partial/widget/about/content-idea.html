@@ -1,7 +1,6 @@
-<!-- 我的介绍&我的想法 -->
 <div class="author-content">
-    <div class="author-content-item myInfoAndSayHello">{{ config.extra.about.content | safe }}</div>
-    <div class="aboutsiteTips author-content-item">{{ config.extra.about.idea | safe }}</div>
+    <div class="author-content-item myInfoAndSayHello">{{ config.extra.about.content[lang] | safe }}</div>
+    <div class="aboutsiteTips author-content-item">{{ config.extra.about.idea[lang] | safe }}</div>
     <script>
         var pursuitInterval = null;
         pursuitInterval = setInterval(function () {

@@ -539,38 +539,22 @@ detail = { zh-Hant = "安全永遠是我們的底線", en ="Safety is nothing to
 btn_title = { zh-Hant = "", en =""}
 btn_url = ""
 
-# 关于设置
 [extra.about]
-# 小部件配置
 widget_list = [
-    # "hello-about",         # 我的问候
-    "content-idea",        # 我的介绍&我的想法
-    "author-career",       # 技能&职业生涯
-    "personalities-photo", # 性格&图片
-    # "textarea",            # 座右铭
-    # "hobby",                # 爱好
-    # "statistics-map",      # 数据统计&作者相關信息
+    "content-idea",
+    "author-career",
+    "personalities-photo",
 ]
 
-# 头像左侧个人標籤 (也会出现在首页个人简介中)
 author_info_left_tags = [
-    "🔍 喜歡探索水下世界",
-    "🤛 潛水保持安全距離",
-    "🏃 說走就走的行動派",
-    # "🔯 全栈架构都在行",
+    { zh-Hant = "🔍 喜歡探索水下世界", en = "🔍 What's up" },
+    { zh-Hant = "🤛 潛水保持安全距離", en = "🤛 Yo Man" },
+    { zh-Hant = "🏃 說走就走的行動派", en = "🏃 Go Go Go" },
 ]
+author_info_right_tags = []
 
-# 头像右侧个人標籤 (也会出现在首页个人简介中)
-author_info_right_tags = [
-    # "🤖️ 本業軟體工程師", 
-    # "🏠 除了潛水宅在家",
-    # "🤝 喜歡",
-    # "🎵 业余原創音乐人", 
-]
-
-# support HTML
-content = "<div class=\"title1\">早安👋</div> <div class=\"title2\">歡迎加入<span class=\"inline-word\">Morning Diver</span>，成為專業的潛水員</div>"
-idea = "<div class=\"author-content-item-tips\">專業潛水員</div> <h2>在<span class=\"inline-word\"/>潛水</span>的日子，只會<div class=\"mask\"> <span class=\"first-tips\" data-show=\"\">吃 Eat</span> <span>睡 Sleep</span> <span data-up=\"\">潛 Dive</span> </div> </h2>"
+content = { zh-Hant = "<div class=\"title1\">早安👋</div> <div class=\"title2\">歡迎加入Morning Diver，成為專業的潛水員</div>", en = "<div class=\"title1\" style=\"font-size: 18px\">Good morning👋</div> <div class=\"title2\">Our mission is to be a professional diver</div>" }
+idea = { zh-Hant = "<div class=\"author-content-item-tips\">專業潛水員</div> <h2>在潛水的日子，只會<div class=\"mask\"> <span class=\"first-tips\" data-show=\"\">吃</span> <span>睡</span> <span data-up=\"\">潛</span></div></h2>", en = "<div class=\"author-content-item-tips\" style=\"font-size: 18px\">In a diving trip,</div> <h2>A professional diver only<div class=\"mask\"> <span class=\"first-tips\" data-show=\"\">Eat</span> <span>Sleep</span> <span data-up=\"\">Dive</span></div></h2>" }
 
 hello = "Morning!"
 
@@ -579,9 +563,8 @@ hello = "Morning!"
 url = "/img/logo.webp"
 description = "照片"
 
-# 职业生涯
 [extra.about.careers]
-title = "專業 耐心 創新"
+title = { zh-Hant = "專業 耐心 創新", en = "Professional Patience Innovation" }
 bg = ""
 
 [[extra.about.careers.tags]]
@@ -698,12 +681,6 @@ background = "/img/404.svg"
 enable = false
 # 设置
 settings = []
-
-# Optional translation object for the default language
-#     [translations]
-#     title = "Un titre"
-#
-[translations]
 
 [languages.zh-Hant]
 title = "早安潛水"

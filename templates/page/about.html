@@ -38,7 +38,7 @@
                     {% if config.extra.about.author_info_left_tags | length > 0 %}
                         <div class="author-tag-left">
                             {% for authorTag in config.extra.about.author_info_left_tags %}
-                                <span class="author-tag">{{ authorTag }}</span>
+                                <span class="author-tag">{{ authorTag[lang] }}</span>
                             {% endfor %}
                         </div>
                     {% endif %}

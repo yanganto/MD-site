@@ -2,8 +2,13 @@
 <div class="author-content">
     <div class="author-content-item holobioss">
         <div class="card-content">
-            <div class="author-content-item-tips">海底世界</div>
-            <span class="author-content-item-title">來學習、去探險</span>
+            {%- if lang == config.default_language -%}
+                <div class="author-content-item-tips">海底世界</div>
+                <span class="author-content-item-title">來學習、去探險</span>
+            {%- else -%}
+                <div class="author-content-item-tips" style="font-size: 18px;">Under the sea</div>
+                <span class="author-content-item-title">Learn and Explore</span>
+            {%- endif -%}
             <div class="holobioss-style-group">
                 <div class="tags-group-all">
                     <div class="tags-group-wrapper">
@@ -59,9 +64,13 @@
 
     <div class="author-content-item careers">
         <div class="card-content">
-            <div class="author-content-item-tips">教育理念</div>
+            {%- if lang == config.default_language -%}
+                <div class="author-content-item-tips">教學理念</div>
+            {%- else -%}
+                <div class="author-content-item-tips" style="font-size: 18px;">Teaching philosophy</div>
+            {%- endif -%}
             <span class="author-content-item-title">
-                {{ config.extra.about.careers.title }}
+                {{ config.extra.about.careers.title[lang] }}
             </span>
             {% if config.extra.about.careers.tags %}
             <div class="careers-group">
