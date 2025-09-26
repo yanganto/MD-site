@@ -1,4 +1,4 @@
-{% macro author_content(background, smallTitle, bigTitle, detail, button_url, button_title) %}
+{% macro author_content(background, smallTitle, bigTitle, detail, button_url="", button_title="") %}
 <div class="author-content author-content-item essayPage single">
     {{ macro::img_progressive_loading(src=background, class="card-background-img") }}
     <div class="card-content">

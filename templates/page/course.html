@@ -22,7 +22,7 @@
 
     <main class="layout hide-aside" id="content-inner">
             <div id="page">
-            {{ macro_author_content::author_content(background = config.extra.course.background_img , smallTitle = config.extra.course.small_title[lang], bigTitle = config.extra.course.big_title[lang], detail = config.extra.course.detail[lang], button_url = expected_root ~ config.extra.course.btn_url, button_title = config.extra.course.btn_title[lang]) }}
+            {{ macro_author_content::author_content(background = config.extra.course.background_img , smallTitle = config.extra.course.small_title[lang], bigTitle = config.extra.course.big_title[lang], detail = config.extra.course.detail[lang]) }}
             {% if data.course.groups %}
             <div id="course">
                 {% for group in data.course.groups %}
