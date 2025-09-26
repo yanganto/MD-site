@@ -70,6 +70,7 @@
         {% set html_type = doc.extra.type | default(value='post') %}
         {% set title = doc.title | default(value=config.title) %}
         {# 页面类型 index,page,post,tag,category #}
+        lang: "{{lang}}",
         htmlType: "{{ html_type }}",
         postTitle: "{{ title }}",
         isPost: {{ html_type == 'post' }},
@@ -102,16 +103,37 @@
         profileStyle: "{{ config.extra.sidebar.profile.profile_style }}",
         enable: {{ config.extra.tool.right_menu.enable }},
         keyboard: {{ config.extra.tool.keyboard }},
-        date_suffix: {
+        date_suffix: 
+        {%- if lang  == 'zh-Hant' -%}
+        {
             just: '剛剛',
             min: '分鐘前',
             hour: '小時前',
             day: '天前',
             month: '個月前'
         },
+        {%- else -%}
+        {
+            just: 'just',
+            min: 'minnutes before',
+            hour: 'hours before',
+            day: 'day before',
+            month: 'month before'
+        },
+        {%- endif -%}
         Snackbar: {
-            day_to_night: "切換為深色模式",
-            night_to_day: "切換為淺色模式",
+            day_to_night: 
+            {%- if lang  == 'zh-Hant' -%}
+                "切換為深色模式",
+            {%- else -%}
+                "Dark Mode On",
+            {%- endif -%}
+            night_to_day: 
+            {%- if lang  == 'zh-Hant' -%}
+                "切換為淺色模式",
+            {%- else -%}
+                "Light Mode On",
+            {%- endif -%}
             bgLight: "{{ config.extra.style.theme_light_skin }}",
             bgDark: "{{ config.extra.style.theme_dark_skin }}",
             position: "top-center"
