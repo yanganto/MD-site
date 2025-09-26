@@ -4,13 +4,25 @@
 <div id="sidebar">
     <div id="menu-mask"></div>
     <div id="sidebar-menus">
-        <span class="sidebar-menu-item-title">功能</span>
+        {%- if lang == config.default_language -%}
+            <span class="sidebar-menu-item-title">功能</span>
+        {%- else -%}
+            <span class="sidebar-menu-item-title">Function</span>
+        {%- endif -%}
         <div class="sidebar-menu-item">
-            <button class="darkmode_switchbutton menu-child" href="javascript:void(0);" onclick="rm.switchDarkMode()"
-               title="切換顯示模式">
-                <i class="icon-moon" style="font-size: 0.9rem;line-height: 2;"></i>
-                <span>顯示模式</span>
-            </button>
+            {%- if lang == config.default_language -%}
+                <button class="darkmode_switchbutton menu-child" href="javascript:void(0);" onclick="rm.switchDarkMode()"
+                   title="切換顯示模式">
+                    <i class="icon-moon" style="font-size: 0.9rem;line-height: 2;"></i>
+                    <span>顯示模式</span>
+                </button>
+            {%- else -%}
+                <button class="darkmode_switchbutton menu-child" href="javascript:void(0);" onclick="rm.switchDarkMode()"
+                   title="Dark Mode Switch">
+                    <i class="icon-moon" style="font-size: 0.9rem;line-height: 2;"></i>
+                    <span>Dark Mode Switch</span>
+                </button>
+            {%- endif -%}
         </div>
         {% if config.extra.nav.pc_left_menu and config.extra.nav.phone_left_menu %}
             {{ macro::nav_left_menu() }}
@@ -21,13 +33,13 @@
                 <!-- 第一层仅展示使用，不做跳转 -->
                 {% for menu in data.menu.nav_menu %}
                 <div class="menus_item">
-                    {% if menu.href %}
+                    {% if menu.href and menu.menus %}
                         <a class="site-page"
                            {% if menu.target %}target="{{ menu.target }}"{% endif %}
                            href="{{ menu.href }}">
                             <span>{{ menu.name }}</span>
                         </a>
-                    {% else %}
+                    {% elif menu.menus %}
                         <button class="site-page">
                             <span>{{ menu.name }}</span>
                         </button>
@@ -55,7 +67,11 @@
             </div>
         {% endif %}
 
-        <span class="sidebar-menu-item-title">標籤</span>        
+        {%- if lang == config.default_language -%}
+            <span class="sidebar-menu-item-title">標籤</span>        
+        {%- else -%}
+            <span class="sidebar-menu-item-title">Tags</span>        
+        {%- endif -%}
         <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
             <div class="item-headline"></div>
             <div class="card-tag-cloud">

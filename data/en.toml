@@ -148,7 +148,7 @@ bg_color = "#57b6e6"
 svg_symbol_id = "divemask"
 
 [[holobios.items]]
-name = "MorningDive"
+name = "Morning.Diver"
 bg_color = "#f3fdfe"
 logo = "/img/logo.webp"
 

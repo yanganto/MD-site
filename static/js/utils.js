@@ -438,7 +438,7 @@ var wjx = {
                 var item = randomFriendLinks[i]
                 htmlText += `<a class='footer-item' href='${item.url}'  target="_blank" rel="noopener nofollow external">${item.display_name}</a>`;
             }
-            htmlText += `<a class='footer-item' href='${linksUrl}'>更多</a>`
+            htmlText += `<a class='footer-item' href='${linksUrl}'>${GLOBAL_CONFIG.lang == 'zh-Hant' ? '更多' : 'More'}</a>`
             if(document.getElementById("friend-links-in-footer")){
                 document.getElementById("friend-links-in-footer").innerHTML = htmlText;
             }
