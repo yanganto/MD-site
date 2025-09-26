@@ -741,7 +741,7 @@ taxonomies = [
 feed_filenames = ["atom.xml", "rss.xml"]
 
 [languages.en]
-title = "MorningDive"
+title = "Morning.Diver"
 description = "Your customized diving course"
 taxonomies = [
     { name = "tags", feed = true, paginate_by = 10, display_name = "Tags" },
