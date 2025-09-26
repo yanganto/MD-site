@@ -113,23 +113,6 @@ window.oncontextmenu = function (event) {
             $rightMenuPasteText.hide();
         }
 
-        //判断是否是音乐
-        const navMusicEl = document.querySelector("#nav-music");
-        if (navMusicEl && navMusicEl.contains(event.target)) {
-            pluginMode = true;
-            $rightMenuMusicToggle.show();
-            $rightMenuMusicBack.show();
-            $rightMenuMusicForward.show();
-            $rightMenuMusicPlaylist.show();
-            $rightMenuMusicCopyMusicName.show();
-        } else {
-            $rightMenuMusicToggle.hide();
-            $rightMenuMusicBack.hide();
-            $rightMenuMusicForward.hide();
-            $rightMenuMusicPlaylist.hide();
-            $rightMenuMusicCopyMusicName.hide()
-        }
-
         // 如果不是扩展模式则隐藏扩展模块
         if (pluginMode) {
             $rightMenuOther.hide();

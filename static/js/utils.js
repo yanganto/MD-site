@@ -722,24 +722,4 @@ var wjx = {
     initConsoleState: function() {
         document.documentElement.classList.contains("hide-aside") ? document.querySelector("#consoleHideAside").classList.add("on") : document.querySelector("#consoleHideAside").classList.remove("on")
     },
-
-    addEventListenerChangeMusicBg: function () {
-        const anMusicPage = document.getElementById("anMusic-page");
-        const aplayerIconMenu = anMusicPage.querySelector(".aplayer-info .aplayer-time .aplayer-icon-menu");
-
-        anMusicPage.querySelector("meting-js").aplayer.on("loadeddata", function () {
-            wjx.changeMusicBg();
-            console.info("player loadeddata");
-        });
-
-        aplayerIconMenu.addEventListener("click", function () {
-            $(".music-mask").css("display","block")
-            $(".music-mask").css("animation","0.5s ease 0s 1 normal none running to_show")
-        });
-        $(".music-mask").click(function(){
-            anMusicPage.querySelector(".aplayer-list").classList.remove("aplayer-list-hide");
-            $(".music-mask").hide();
-        })
-    },
-
 };

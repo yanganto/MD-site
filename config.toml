@@ -549,7 +549,6 @@ widget_list = [
     "personalities-photo", # 性格&图片
     # "textarea",            # 座右铭
     # "hobby",                # 爱好
-    # "like-music",          # 关注偏好&音乐偏好
     # "statistics-map",      # 数据统计&作者相關信息
 ]
 
@@ -640,31 +639,6 @@ font_family = "PingFang SC"
 enable = false
 # 默认编码 2: 简体中文, 1: 繁体中文 
 default_encoding = 1
-
-
-# 代码块设置
-[extra.code]
-# 启用代码块
-enable = true
-# 启用标题
-enable_title = true
-# 启用分割线
-enable_hr = true
-# 启用行号
-enable_line = true
-# 启用复制
-enable_copy = true
-# 启用折叠
-enable_expander = true
-# 启用高度限制
-enable_height_limit = false
-# 高度限制
-height_limit = 300
-# 主题
-theme_light = "one-dark"
-# 暗色主题
-theme_dark = "one-dark"
-# 可选主题：one-dark one-light a11y-dark atom-dark base16-ateliersulphurpool.light cb coldark-cold coldark-dark coy-without-shadows darcula dracula duotone-dark duotone-earth duotone-forest duotone-light duotone-sea duotone-space ghcolors gruvbox-dark gruvbox-light holi-theme hopscotch lucario material-dark material-light material-oceanic night-owl nord pojoaque shades-of-purple solarized-dark-atom synthwave84 vs vsc-dark-plus xonokai z-touch 
 
 # 小部件 右键菜单
 [extra.tool]

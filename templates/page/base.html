@@ -51,9 +51,6 @@
 {# 网站背景 #}
 {% include "partial/widget/global-bg.html" %}
 
-{# 背景音乐 #}
-<div id="an_music_bg"></div>
-
 <div class="{{ html_type }}" id="body-wrap" data-type="{{ html_type }}">
 {# 自定义内容 #}
 {% block content %}
@@ -65,9 +62,6 @@
 
 {# 控制台 #}
 {% include "partial/nav/console.html" %}
-
-{# 左下角音乐 #}
-{% include "partial/nav/nav-music.html" %}
 
 {# 右侧浮操作按钮 #}
 {% include "partial/widget/rightside.html" %}
@@ -124,16 +118,5 @@
 {# https://instant.page/ 网站预加载， 放在 </body> 之前 #}
 <script defer src="/libs/instantpage/instantpage.min.js" type="module"></script>
 
-<!-- 代码块自动识别语言 -->
-{% include "partial/common/code.html" %}
-
-{% if config.extra.site.analytics.umami.enable %}
-{# 名稱改为不易被屏蔽的，统计网站访问量 #}
-<script defer src="{{ config.extra.site.analytics.umami.js }}" data-website-id="{{ config.extra.site.analytics.umami.id }}"
-    {% if config.extra.site.analytics.umami.remote_url %}data-host-url="{{ config.extra.site.analytics.umami.remote_url | safe }}"{% endif %}
-    {% if config.extra.site.analytics.umami.domain %}data-domains="{{ config.extra.site.analytics.umami.domain | safe }}"{% endif %}>
-</script>
-{% endif %}
 </body>
-
 </html>
