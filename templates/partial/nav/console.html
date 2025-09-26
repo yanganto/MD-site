@@ -8,8 +8,13 @@
       <div class="console-card-group-right">
         <div class="console-card tags" onclick="wjx.hideConsole()">
           <div class="card-content">
-            <div class="author-content-item-tips">標籤</div>
-            <span class="author-content-item-title">尋找感興趣的文章</span>
+            {%- if lang == config.default_language -%}
+                <div class="author-content-item-tips">標籤</div>
+                <span class="author-content-item-title">尋找感興趣的文章</span>
+            {%- else -%}
+                <div class="author-content-item-tips">Tags</div>
+                <span class="author-content-item-title">Find Something Interesting</span>
+            {%- endif -%}
           </div>
           {% set tags = get_taxonomy(kind="tags") | get(key="items") | slice(end=config.extra.sidebar.tag_quantity) %}
           <div class="card-tag-cloud">
@@ -31,11 +36,39 @@
                         <li class="card-archive-list-item">
                             <a class="card-archive-list-link" href="/archives">
                                 <span class="card-archive-list-date">
-                                    {{ year }} {{ month }}月
+                                    {%- if month == "1" -%}
+                                        {{ year }} Jan
+                                    {%- elif month == "2" -%}
+                                        {{ year }} Feb
+                                    {%- elif month == "3" -%}
+                                        {{ year }} Mar
+                                    {%- elif month == "4" -%}
+                                        {{ year }} Apr
+                                    {%- elif month == "5" -%}
+                                        {{ year }} May
+                                    {%- elif month == "6" -%}
+                                        {{ year }} Jun
+                                    {%- elif month == "7" -%}
+                                        {{ year }} Jul
+                                    {%- elif month == "8" -%}
+                                        {{ year }} Aug
+                                    {%- elif month == "9" -%}
+                                        {{ year }} Sep
+                                    {%- elif month == "10" -%}
+                                        {{ year }} Oct
+                                    {%- elif month == "11" -%}
+                                        {{ year }} Nov
+                                    {%- elif month == "12" -%}
+                                        {{ year }} Dec
+                                    {%- endif -%}
                                 </span>
                                 <div class="card-archive-list-count-group">
                                     <span class="card-archive-list-count">{{ posts_monthly | length }}</span>
-                                    <span class="card-archive-list-count-unit">篇</span>
+                                    {%- if lang == config.default_language -%}
+                                        <span class="card-archive-list-count-unit">篇</span>
+                                    {%- else -%}
+                                        <span class="card-archive-list-count-unit" style="margin-left: 6px;">articles</span>
+                                    {%- endif -%}
                                 </div>
                             </a>
                         </li>
@@ -50,12 +83,23 @@
     <div class="button-group">
       <div class="console-btn-item">
         <button class="darkmode_switchbutton" href="javascript:void(0);" onclick="navFn.switchDarkMode();" rel="external nofollow"
-           title="切換顯示模式"><i class="icon-moon-clear-fill" style="font-size:1rem"></i>
+          {%- if lang == config.default_language -%}
+            title="切換顯示模式"
+          {%- else -%}
+            title="Dark Mode Toggle"
+          {%- endif -%}
+           ><i class="icon-moon-clear-fill" style="font-size:1rem"></i>
         </button>
       </div>
-      <div class="console-btn-item" id="consoleHideAside" onclick="wjx.hideAsideBtn()" title="顯示側邊控制">
-        <button class="asideSwitch" title="側邊開關" ><i class="icon-arrows-left-right"></i></button>
-      </div>
+      {%- if lang == config.default_language -%}
+        <div class="console-btn-item" id="consoleHideAside" onclick="wjx.hideAsideBtn()" title="顯示側邊控制">
+          <button class="asideSwitch" title="側邊開關" ><i class="icon-arrows-left-right"></i></button>
+        </div>
+      {%- else -%}
+        <div class="console-btn-item" id="consoleHideAside" onclick="wjx.hideAsideBtn()" title="Show Side Panel Switch">
+          <button class="asideSwitch" title="Side Panel Switch" ><i class="icon-arrows-left-right"></i></button>
+        </div>
+      {%- endif -%}
     </div>
     <div class="console-mask" href="javascript:void(0);" onclick="wjx.hideConsole()">
     </div>
