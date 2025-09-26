@@ -2,17 +2,6 @@
 <div id="nav-right">
 
     <!-- 功能都需要添加开关 -->
-
-    <!-- 随機前往一个开往項目网站 -->
-    {% if config.extra.nav.right.travelling %}
-    <div class="nav-button only-home" id="travellings_button" title="随機前往一个开往項目网站">
-        <a class="site-page nav-item" href="https://www.travellings.cn/go.html"  rel="external nofollow"
-           title="随機前往一个开往項目网站">
-            <i class="nav-icon icon-eicon_train-line"></i>
-        </a>
-    </div>
-    {% endif %}
-
     {% if config.extra.nav.right.article %}
     <div class="nav-button" id="randomPost_button">
         <button class="site-page nav-item" href="javascript:void(0);" onclick="toRandomPost()" title="随機文章">
@@ -25,18 +14,13 @@
     {% if config.extra.nav.right.dark_mode %}
     <div class="nav-button" id="darkmode_button">
         <button class="site-page console_switchbutton nav-item" href="javascript:void(0);"  onclick="navFn.switchDarkMode();"
-           title="切换模式 - 日夜交替，黑白互换。">
+            {%- if lang == config.default_language -%}
+               title="深色模式切換"
+            {%- else -%}
+               title="Dark Mode Toggle"
+            {%- endif -%}
+            >
             <i class="nav-icon icon-moon-clear-fill" style="font-size: 1rem;"></i>
-        </button>
-    </div>
-    {% endif %}
-
-    <!-- 搜索使用搜索插件 -->
-    {% if config.extra.nav.right.search %}
-    <div class="nav-button" id="search-button">
-        <button class="site-page social-icon search nav-item" href="javascript:void(0);" rel="external nofollow noopener noreferrer" accesskey="s" draggable="false" 
-            title="搜索🔍">
-            <i class="nav-icon icon-search--line"></i>
         </button>
     </div>
     {% endif %}
@@ -44,7 +28,12 @@
     {% if config.extra.nav.right.console_enable %}
     <div class="nav-button" id="nav-console">
         <button class="site-page console_switchbutton nav-item" href="javascript:void(0);" onclick="wjx.showConsole()"
-           title="显示中控台">
+            {%- if lang == config.default_language -%}
+               title="顯示控制面版"
+            {%- else -%}
+               title="Show Console"
+            {%- endif -%}
+            >
             <i class="nav-icon icon-dashboard"></i>
         </button>
     </div>
