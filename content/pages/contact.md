@@ -17,4 +17,4 @@ type = "page"
 ## RSS訂閱我們的最新文章
 
 你可以使用第三方RSS程式持續收到本站的文章摘要更更新通知
-`https://(pending)/rss.xml`
+[https://morning.diver.best/rss.xml](https://morning.diver.best/rss.xml)

@@ -15,4 +15,5 @@ You can stay in tuned with our latest news in the following ways:
 We currently only have an Instagram account find us on [social media](/en/social).
 
 ## Subscribe RSS 
-You can use a third-party RSS reader to receive updates and summaries of our latest articles: https://(pending)/rss.xml
+You can use a third-party RSS reader to receive updates and summaries of our latest articles:
+[https://morning.diver.best/rss.xml](https://morning.diver.best/rss.xml)

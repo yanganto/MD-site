@@ -385,13 +385,13 @@ background_img = "/img/sidebar/profile.webp"
 profile_desc = "早安潛水<br>SDI潛水認證系統<br>彈調彈性與靈活<br>打造專為你設計的潛水訓練課程"
 # 社交媒体
 socialMedia = [
-    { icon = "icon-instagram", name = "Instagram", url = "https://www.instagram.com/morningdiver/" },
+    { icon = "icon-instagram", name = "Instagram", url = "https://www.instagram.com/morning.diver/" },
 ]
 
 [extra.sidebar.social]
 color = "#5756cb"
 socialImg = ""
-url = "https://www.instagram.com/morningdiver/"
+url = "https://www.instagram.com/morning.diver/"
 socialImgFace = "/img/social/qr-purple.avif"
 socialImgBack = "/img/social/qr-white.avif"
 
