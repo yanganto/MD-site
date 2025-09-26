@@ -61,14 +61,25 @@
         {% for menu in data.menu.nav_menu %}
         <div class="menus_item">
             {% if menu.href %}
-                <a class="site-page nav-item"
+                <a 
+                    {% if lang == config.default_language %}
+                       class="site-page nav-item zh"
+                    {% else %}
+                       class="site-page nav-item"
+                    {% endif %}
                    {% if menu.target %}target="{{ menu.target }}"{% endif %}
                    {%- if menu.rel -%}rel="{{ menu.rel }}"{%- endif -%}
                    href="{{ menu.href }}">
                     <span>{{ menu.name }}</span>
                 </a>
             {% else %}
-                <button class="site-page nav-item">
+                <button 
+                    {% if lang == config.default_language %}
+                       class="site-page nav-item zh"
+                    {% else %}
+                       class="site-page nav-item"
+                    {% endif %}
+                    >
                     <span>{{ menu.name }}</span>
                 </button>
             {% endif %}
