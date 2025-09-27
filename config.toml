@@ -456,7 +456,7 @@ url = "mailto:yanganto+dive@gmail.com"
 option_social_data = "icon"
 icon = "icon-instagram"
 name = "Instagram"
-url = "https://www.instagram.com/morningdiver/"
+url = "https://www.instagram.com/morning.diver/"
 
 [extra.footer.footer_group]
 enable = true
