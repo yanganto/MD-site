@@ -73,12 +73,12 @@ nav_menu = [
 
 nav_left_menu = [
     { name = "Language", icon = "icon-language", menus = [
-        { name = "中文", href = "/", icon = "icon-language", target = "_self" },
-        { name = "English", href = "/en/", icon = "icon-language", target = "_self" },
+        { name = "中文", href = "/", icon = "icon-language", target = "_blank" },
+        { name = "English", href = "/en/", icon = "icon-language", target = "_blank" },
     ] },
     { name = "Quick menu", menus = [
-        { name = "Learn it?", href = "/en/courses/OW", icon = "icon-artstation", target = "_self" },
-        { name = "Experience it?", href = "/en/activities/Intro", icon = "icon-rocket", target = "_self" },
+        { name = "Learn it", href = "/en/courses/OW", icon = "icon-artstation", target = "_self" },
+        { name = "Try it", href = "/en/activities/Intro", icon = "icon-rocket", target = "_self" },
     ] },
 ]
 
