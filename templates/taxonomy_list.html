@@ -30,7 +30,7 @@
                     {% set data = load_data(path="data/" ~ lang ~ ".toml") %}
                     {% set taxonomies = data.post[taxonomy.name] | sort(attribute="index") %}
                     {% for item in taxonomies %}
-                        {% set term = get_taxonomy_term(kind=taxonomy.name, term=item.id, include_pages=true, required=false) %}
+                        {% set term = get_taxonomy_term(kind=taxonomy.name, term=item.id, include_pages=true, required=false, lang=lang) %}
                         {% if term %}
                         <a style="font-size: 1em;" href="{{ term.permalink }}" id="{{ item.id }}">
                             <span style="font-size: 22px;" class="tags-punctuation">{{ item.name }}</span>
