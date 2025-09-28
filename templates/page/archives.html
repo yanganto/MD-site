@@ -19,7 +19,11 @@
     <main class="layout" id="content-inner">
         <!-- archive -->
         <div id="archive">
-            <div class="article-sort-title">文章<sup>{{ posts | length }}</sup></div>
+            {%- if lang == config.default_language -%}
+                <div class="article-sort-title">文章<sup>{{ posts | length }}</sup></div>
+            {%- else -%}
+                <div class="article-sort-title">Articles<sup>{{ posts | length }}</sup></div>
+            {%- endif -%}
 
             {# Group posts by year. #}
             {% set posts_by_year = posts | group_by(attribute="year") %}

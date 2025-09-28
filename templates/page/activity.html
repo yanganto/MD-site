@@ -32,8 +32,8 @@
                     <div class="course-item-content">
                         {% for activity in group.items %}
                         <div class="course-item-content-item">
-                            <div class="course-item-content-item-cover">       
-                                {{ macro::img_progressive_loading(src=activity.img, alt=activity.name, class="course-item-content-item-image") }}                   
+                            <div class="course-item-content-item-cover">
+                                {{ macro::img_progressive_loading(src=activity.img, alt=activity.name, class="course-item-content-item-image") }}
                             </div>
                             <div class="course-item-content-item-name" >
                                 {{ activity.name }}
