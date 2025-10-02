@@ -30,8 +30,8 @@ We focus on quality and pace of learning. We move to the next stage only after e
 
 ### Course Flexibility
 The course is primarily held in northern Taiwan.  However, due to the limited infrastructure and accessibility of public transportation and facilities along the northeastern coast, we will assist students with logistics. We provide transportation within a one-hour drive from the training location, and our vehicles are equipped with freshwater and shower facilities for students to rinse off immediately after their dives. The four open water dives can be split into two separate days, minimizing fatigue and maximizing learning.  This allows for flexibility in location and timing. Students can combine the course with a trip to Jiufen or Keelung, then travel to the northeastern coast for a full-day two open water dives, returning to Banqiao High-Speed Rail Station afterward. We encourage students to explore the northern coast and northeastern region, enriching their understanding of Taiwan while completing the course. This also benefits the local economy without incurring extra costs.
-
 Our instructors also have experience teaching in Kenting and other areas outside Taipei. Students are generally responsible for their own accommodation and transportation costs.  For locations north of Taichung, there is an additional fee of 66 USD; for Kenting, 133 USD, with safety being our non-negotiable priority.
+Alternatively, students can start with a regulator with Hogarthian setting, these features will be explained in the course, and the instructors will tailor their teaching methods to suit each student's individual needs.
 
 ### Fees
 The course fee is 660 USD.  Class location is flexible, including pools or open water locations in different regions of Taiwan. Additional travel and accommodation expenses for more remote locations are not included in the course fee, but we will assist with arrangements.
