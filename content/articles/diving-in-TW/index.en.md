@@ -5,7 +5,7 @@ slug = "diving-in-TW"
 description = "April to October are the good diving season in north Taiwan"
 
 [taxonomies]
-tags = ["hot"]
+tags = []
 categories = ["article"]
 
 [extra]

@@ -217,6 +217,12 @@
           "display_name": "Dive.site",
           "description": "潛點查詢",
           "url": "https://dive.site/"
+        },
+        {
+          "display_name": "Manta Matcher",
+          "description": "Manta查詢回報",
+          "url": "https://mantamatcher.org",
+          "logo": "https://mantamatcher.org/cust/mantamatcher/img/why-we-do-this.png"
         }
       ]
     }

@@ -46,6 +46,10 @@ name = '活動'
 id = 'article'
 index = 3
 name = '文章'
+[[post.categories]]
+id = 'travel'
+index = 3
+name = '旅遊'
 
 [[post.taxonomies]]
 id = 'categories'

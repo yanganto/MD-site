@@ -3,9 +3,9 @@ recommend_posts = [
     "courses/OW/index.en.md",
     "activities/Intro/index.en.md",
     "activities/Intensive/index.en.md",
-    # "articles/neutral-buoyancy/index.md",
-    # "articles/softness-of-fin/index.md",
-    # "articles/diving-clips/index.md",
+    "articles/neutral-buoyancy/index.en.md",
+    "articles/softness-of-fin/index.en.md",
+    "articles/diving-clips/index.en.md",
 ]
 
 [post.today_recommend]
@@ -45,6 +45,10 @@ name = 'Activity'
 id = 'article'
 index = 3
 name = 'Article'
+[[post.categories]]
+id = 'travel'
+index = 3
+name = 'Travel'
 
 [[post.taxonomies]]
 id = 'categories'
