@@ -21,15 +21,15 @@ Morning Diver's customized scuba diving lessons utilize the internationally reco
 ### Course Content
 The 2025-2026 course includes:
 
-1. Complete theoretical course (classroom instruction)
+1. Complete theoretical course (classroom instruction, remote possible)
 2. Confined water trainings (number of sessions may vary)
 3. Four open water dives (ocean)
-All necessary scuba diving equipment is provided.
+4. Final check, video recording review and exam (remote possible)
 
-We focus on quality and pace of learning. We move to the next stage only after ensuring students understand and master each skill, making the learning process as natural and stress-free as possible.
+We focus on quality and pace of learning.  We move to the next stage only after ensuring students understand and master each skill, making the learning process as natural and stress-free as possible.  The overall training days will be 4 to 5 days, and it is possible to pack in 3 days, if you have special requirement, but not recommended.  We provide all the basic diving equipment needed for the class, and if you have any special requirements, we will provide a list and help you rent or purchase it.
 
 ### Course Flexibility
-The course is primarily held in northern Taiwan.  However, due to the limited infrastructure and accessibility of public transportation and facilities along the northeastern coast, we will assist students with logistics. We provide transportation within a one-hour drive from the training location, and our vehicles are equipped with freshwater and shower facilities for students to rinse off immediately after their dives. The four open water dives can be split into two separate days, minimizing fatigue and maximizing learning.  This allows for flexibility in location and timing. Students can combine the course with a trip to Jiufen or Keelung, then travel to the northeastern coast for a full-day two open water dives, returning to Banqiao High-Speed Rail Station afterward. We encourage students to explore the northern coast and northeastern region, enriching their understanding of Taiwan while completing the course. This also benefits the local economy without incurring extra costs.
+The course is primarily held in northern Taiwan.  However, due to the limited infrastructure and accessibility of public transportation and facilities along the northeastern coast, we will assist students with logistics. **We provide transportation within a one-hour drive from the training location**, and our vehicles are equipped with freshwater and shower facilities for students to rinse off immediately after their dives. The four open water dives can be split, minimizing fatigue and maximizing learning.  This allows for flexibility in location and timing. Students can combine the course with a trip to Jiufen or Keelung, then go to the northeastern coast for open water traning dives, returning to Banqiao High-Speed Rail Station afterward. We encourage students to explore the northern coast and northeastern region, enriching their understanding of Taiwan while completing the course. This also benefits the local economy without incurring extra costs.
 Our instructors also have experience teaching in Kenting and other areas outside Taipei. Students are generally responsible for their own accommodation and transportation costs.  For locations north of Taichung, there is an additional fee of 66 USD; for Kenting, 133 USD, with safety being our non-negotiable priority.
 Alternatively, students can start with a regulator with Hogarthian setting, these features will be explained in the course, and the instructors will tailor their teaching methods to suit each student's individual needs.
 
