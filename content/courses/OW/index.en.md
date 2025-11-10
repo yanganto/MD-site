@@ -22,7 +22,7 @@ Morning Diver's customized scuba diving lessons utilize the internationally reco
 The 2025-2026 course includes:
 
 1. Complete theoretical course (classroom instruction)
-2. Calm water training (number of sessions may vary)
+2. Confined water trainings (number of sessions may vary)
 3. Four open water dives (ocean)
 All necessary scuba diving equipment is provided.
 

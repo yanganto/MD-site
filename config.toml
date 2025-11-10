@@ -569,39 +569,39 @@ bg = ""
 
 [[extra.about.careers.tags]]
 background = "#ff5f1f"
-occupation = "SDI Instructor"
+occupation = "SDI Open Water Instructor (#42030)"
 
 [[extra.about.careers.tags]]
 background = "#ff5f1f"
-occupation = "PADI Dive Master (#561728)"
+occupation = "SDI Sidemount Instructor (#42030)"
 
 [[extra.about.careers.tags]]
 background = "#ff5f1f"
-occupation = "YUHSIN Service & Maintenance Certificate (SMC2025E0090-002)"
-
-[[extra.about.careers.tags]]
-background = "#ff5f1f"
-occupation = "EFR-Primary Care(CPR) & Sec Care(1st aid) (2409AR0252)"
+occupation = "TDI Nitrox Instructor (#42030)"
 
 [[extra.about.careers.tags]]
 background = "#ff5f1f"
 occupation = "SDI Equipment Specialist (#1653748)"
 
 [[extra.about.careers.tags]]
-background = "#1fffff"
+background = "#ff5f1f"
 occupation = "TDI Sidemount Diver (#1708793)"
+
+[[extra.about.careers.tags]]
+background = "#1fffff"
+occupation = "PADI Dive Master (#561728)"
+
+[[extra.about.careers.tags]]
+background = "#1fffff"
+occupation = "EFR-Primary Care(CPR) & Sec Care(1st aid) (2409AR0252)"
 
 [[extra.about.careers.tags]]
 background = "#1fffff"
 occupation = "PADI Rescue Diver"
 
 [[extra.about.careers.tags]]
-background = "#1fffff"
-occupation = "PADI Advanced Open Water"
-
-[[extra.about.careers.tags]]
-background = "#1fffff"
-occupation = "PADI Open Water"
+background = "#5336ff"
+occupation = "YUHSIN Service & Maintenance Certificate (SMC2025E0090-002)"
 
 # 样式设置
 [extra.style]
