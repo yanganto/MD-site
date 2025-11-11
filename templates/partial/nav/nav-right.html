@@ -1,5 +1,18 @@
 <!-- 导航栏菜单栏 -->
 <div id="nav-right">
+    <div class="nav-button" id="randomPost_button">
+        <button class="site-page nav-item" href="javascript:void(0);"
+            {%- if lang == config.default_language -%}
+               onclick="window.open('/en/')"
+               title="English"
+            {%- else -%}
+               onclick="window.open('/')"
+               title="中文"
+            {%- endif -%}
+            >
+            <i class="nav-icon icon-language"></i>
+        </button>
+    </div>
 
     <!-- 功能都需要添加开关 -->
     {% if config.extra.nav.right.article %}
