@@ -146,7 +146,7 @@ index_format = "elasticlunr_javascript"
 # SEO 设置
 seo = "一個潛水教學網站"
 # 网站logo
-logo = "/img/logo.webp"
+logo = "/img/logo.png"
 # 网站favicon 尺寸比logo更小
 favicon = "/img/logo.webp"
 compliance_icp = "ISO/IEC 17065"
@@ -560,7 +560,7 @@ hello = "Morning!"
 
 # 照片
 [[extra.about.photos]]
-url = "/img/logo.webp"
+url = "/img/logo.png"
 description = "照片"
 
 [extra.about.careers]
@@ -664,7 +664,7 @@ loading_img = "/img/lazyload.svg"
 # 启用
 enable = true
 # 加载图片
-img = "/img/logo.webp"
+img = "/img/logo.png"
 # 加载进度条
 progress_bar = true
 
