@@ -154,7 +154,7 @@ svg_symbol_id = "divemask"
 [[holobios.items]]
 name = "早安潛水"
 bg_color = "#f3fdfe"
-logo = "/img/logo.webp"
+logo = "/img/logo.png"
 
 [[holobios.items]]
 name = "東方豹魴鮄"

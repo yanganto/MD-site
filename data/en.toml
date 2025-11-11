@@ -153,7 +153,7 @@ svg_symbol_id = "divemask"
 [[holobios.items]]
 name = "Morning.Diver"
 bg_color = "#f3fdfe"
-logo = "/img/logo.webp"
+logo = "/img/logo.png"
 
 [[holobios.items]]
 name = "Dactyloptena Orientalis"
