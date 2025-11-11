@@ -109,22 +109,23 @@ name = "Basic Courses"
 description = "The essential steps to be a scuba diver"
 items = [
     { name = "SDI Open Water Scuba Diver", img = "/img/courses/OW.png", model = "Elementary", button_title = "Details", button_url = "/en/courses/OW" , description = "This is your first step into the underwater world. During the course, you will learn how to use basic scuba diving equipment, as well as how to prevent and handle potential emergencies." },
-    { name = "Advanced Adventure Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", description = "This course will help you become a self-sufficient diver. In addition to learning more advanced buoyancy control and kicking techniques, you will also learn how to handle various special diving situations, such as deep dives, night dives, and boat dives." },
-    { name = "Rescue Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", description = "This course will help you become a reliable dive buddy.  You will learn to observe your dive buddy's condition and take preventative measures based on your assessment. You will also learn how to handle emergencies, including those that occur underwater, on the surface, and on land." },
+    { name = "Advanced Adventure Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", button_title = "Inquiry", button_url = "mailto:yanganto+dive@gmail.com", description = "This course will help you become a self-sufficient diver. In addition to learning more advanced buoyancy control and kicking techniques, you will also learn how to handle various special diving situations, such as deep dives, night-limited visibility dives, etc." },
+    { name = "Rescue Diver", img = "/img/courses/RES.jpg", model = "Intermediate", button_title = "Inquiry", button_url = "mailto:yanganto+dive@gmail.com", description = "This course will help you become a reliable dive buddy.  You will learn to observe your dive buddy's condition and take preventative measures based on your assessment. You will also learn how to handle emergencies, including those that occur underwater, on the surface, and on land." },
 ]
 
 [[course.groups]]
 name = "Specialized Courses"
 description = "Explore different diving styles"
 items = [
-    { name = "TDI Nitrox Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", description = "Understanding decompression theory and learning how to safely use enriched oxygen gas for diving, including understanding the risks associated with enriched oxygen and the procedures for its safe use, will provide you with the knowledge and skills to adjust the conservative settings on your dive computer, and to calculate the risks of using enriched oxygen even without a dive computer—all essential theoretical knowledge for becoming a competent diver." },
+    { name = "TDI Nitrox Diver", img = "/img/courses/AOW.jpg", model = "Intermediate", button_title = "Inquiry", button_url = "mailto:yanganto+dive@gmail.com", description = "Understanding decompression theory and learning how to safely use enriched oxygen gas for diving, including understanding the risks associated with enriched oxygen and the procedures for its safe use, will provide you with the knowledge and skills to adjust the conservative settings on your dive computer, and to calculate the risks of using enriched oxygen even without a dive computer—all essential theoretical knowledge for becoming a competent diver." },
+    { name = "SDI Sidemount Diver", img = "/img/courses/SM.jpg", model = "Intermediate", button_title = "Inquiry", button_url = "mailto:yanganto+dive@gmail.com", description = "Learn to set up a sidemount system that suits you, as well as how to prevent and handle potential emergencies, and use a sidemount BCD for diving." },
 ]
 
 [[course.groups]]
 name = "Leadership Courses"
 description = "Greater abilities, Greater Responsibilities"
 items = [
-    { name = "Master Scuba Diver", img = "/img/courses/DM.jpg", model = "High", description = "This program comprehensively enhances diving skills and teaches how to plan diving trips; participants will also serve as assistant instructors in beginner and intermediate courses, providing support and guidance to other students." },
+    { name = "Master Scuba Diver", img = "/img/courses/DM.jpg", model = "High", button_title = "Inquiry", button_url = "mailto:yanganto+dive@gmail.com", description = "This program comprehensively enhances diving skills and teaches how to plan diving trips; participants will also serve as assistant instructors in beginner and intermediate courses, providing support and guidance to other students." },
 ]
 
 [activity]

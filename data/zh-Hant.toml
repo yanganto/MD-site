@@ -109,23 +109,24 @@ footer_menu = [
 name = "基礎課程"
 description = "成為潛水員的必經之路"
 items = [
-    { name = "初級潛水員課程", img = "/img/courses/OW.png", model = "初級", button_title = "開課詳情", button_url = "/courses/OW" , description = "此課程又稱Open Water，是邁向海底世界的第一步。在課程中，你會學習基本的潛水裝備的操作方法，及意外的預防和排除方法" },
-    { name = "進階潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Advanced Open Water，目的是協助你成為獨當一面的潛水員。在課程中，除了更細緻的浮力控制及更細緻的踢動方法，你還會學習處理潛水的特殊情況，如深潛、夜潛、船潛 …" },
-    { name = "救援潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", description = "此課程又稱 Rescue Diver，是協助你成為可以信賴的潛伴，在課程中你會學習觀察同伴的狀況，經判斷後，可以提早進行預防。同時也會學習意外發生時的盡急處置，包含水下、水面及岸上。" },
+    { name = "初級潛水員課程", img = "/img/courses/OW.png", model = "初級", button_title = "開課詳情", button_url = "/courses/OW", description = "SDI Open Water Scuba Diver，又常簡稱OW，是邁向海底世界的第一步。在課程中，你會學習基本的潛水裝備的操作方法，及意外的預防和排除方法" },
+    { name = "進階潛水員課程", img = "/img/courses/AOW.jpg", model = "中級", button_title = "來信詢問", button_url = "mailto:yanganto+dive@gmail.com", description = "Advanced Adventure Diver，又常簡稱 AOW，目的是協助你成為獨當一面的潛水員。在課程中，除了更細緻的浮力控制及更細緻的踢動方法，你還會學習處理潛水的特殊情況，如深潛、夜潛、…" },
+    { name = "救援潛水員課程", img = "/img/courses/RES.jpg", model = "中級", button_title = "來信詢問", button_url = "mailto:yanganto+dive@gmail.com", description = "此課程又稱 Rescue Diver，是協助你成為可以信賴的潛伴，在課程中你會學習觀察同伴的狀況，經判斷後，可以提早進行預防。同時也會學習意外發生時的盡急處置，包含水下、水面及岸上。" },
 ]
 
 [[course.groups]]
 name = "專長課程"
 description = "用不同方式潛水，獲得更多體驗"
 items = [
-    { name = "TDI高氧課程", img = "/img/courses/AOW.jpg", model = "中級", description = "瞭解減壓理論並學習如何安全的使用高氧氣體來潛水，除了瞭解高氧的風險，安全的使用高氧的程序外，你將會有知識及能力調整電腦錶保守參數細節，以及瞭解在即使沒有電腦錶的情形下，怎麼對使用高氧氣體的風險進行換算，是紮實學會潛水不可少的理論知識。" },
+    { name = "TDI高氧課程", img = "/img/courses/AOW.jpg", model = "中級", button_title = "來信詢問", button_url = "mailto:yanganto+dive@gmail.com", description = "瞭解減壓理論並學習如何安全的使用高氧氣體來潛水，除了瞭解高氧的風險，安全的使用高氧的程序外，你將會有知識及能力調整電腦錶保守參數細節，以及瞭解在即使沒有電腦錶的情形下，怎麼對使用高氧氣體的風險進行換算，是紮實學會潛水不可少的理論知識。" },
+    { name = "SDI側掛課程", img = "/img/courses/SM.jpg", model = "中級", button_title = "來信詢問", button_url = "mailto:yanganto+dive@gmail.com", description = "學習設定適合自己的側掛系統，以及意外狀況排除，並使用側掛BCD進行潛水。" },
 ]
 
 [[course.groups]]
 name = "領導課程"
 description = "能力越強，責任越重"
 items = [
-    { name = "潛水長課程", img = "/img/courses/DM.jpg", model = "高級", description = "整體性的強化潛水技能，並且學習規劃潛水旅遊，在初級和中級課程中擔任助教的角色，照顧大家" },
+    { name = "潛水長課程", img = "/img/courses/DM.jpg", model = "高級", button_title = "來信詢問", button_url = "mailto:yanganto+dive@gmail.com", description = "整體性的強化潛水技能，並且學習規劃潛水旅遊，在初級和中級課程中擔任助教的角色，照顧大家" },
 ]
 
 [activity]

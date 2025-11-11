@@ -588,20 +588,24 @@ background = "#ff5f1f"
 occupation = "TDI Sidemount Diver (#1708793)"
 
 [[extra.about.careers.tags]]
-background = "#1fffff"
+background = "#024ea3"
 occupation = "PADI Dive Master (#561728)"
 
 [[extra.about.careers.tags]]
-background = "#1fffff"
+background = "#024ea3"
 occupation = "EFR-Primary Care(CPR) & Sec Care(1st aid) (2409AR0252)"
 
 [[extra.about.careers.tags]]
-background = "#1fffff"
+background = "#024ea3"
 occupation = "PADI Rescue Diver"
 
 [[extra.about.careers.tags]]
 background = "#5336ff"
 occupation = "YUHSIN Service & Maintenance Certificate (SMC2025E0090-002)"
+
+[[extra.about.careers.tags]]
+background = "#107c6b"
+occupation = "Molchanovs Wave 1 Freediver (#32559)"
 
 # 样式设置
 [extra.style]
