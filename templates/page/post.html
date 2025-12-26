@@ -136,6 +136,11 @@
                 <iframe src="https://www.instagram.com/reel/{{ page.extra.reel }}/embed/" allowtransparency="true" allowfullscreen="true" frameborder="0" height="700" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="max-width: 1080px; background: white; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
             </div>
             {% endif %}
+            {% if page.extra.vreel %}
+            <div style="margin-top: 20px;">
+                <iframe src="https://www.instagram.com/reel/{{ page.extra.vreel }}/embed/" allowtransparency="true" allowfullscreen="true" frameborder="0" height="1020" data-instgrm-payload-id="instagram-media-payload-0" scrolling="no" style="max-width: 800px; background: white; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;"></iframe>
+            </div>
+            {% endif %}
             {% if page.extra.img %}
             <div style="margin-top: 20px;">
                 {{ macro::img_progressive_loading_single_size(src=page.extra.img) }}
